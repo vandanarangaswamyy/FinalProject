@@ -3,6 +3,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package userinterface.MentalHealthCare;
+import Business.EcoSystem;
+import Business.UserAccount.UserAccount;
+import Business.Student.Student;
+import Business.Student.StudentDirectory;
+import Business.Enterprise.Enterprise;
+import Business.Network.Network;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import java.awt.CardLayout;
+import java.awt.Component;
+import Business.Organization.Organization;
+import Business.WorkQueue.MentalHealthCareRequest;
+import Business.WorkQueue.PhysicalHealthCareRequest;
 
 /**
  *
@@ -12,9 +27,49 @@ public class MHC_WorkRequestJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form MHC_WorkRequestJPanel
-     */
-    public MHC_WorkRequestJPanel() {
-        initComponents();
+     */ 
+            JPanel userProcessContainer;
+            EcoSystem system;
+           UserAccount userAccount;
+            MentalHealthCareRequest request;
+            
+    MHC_WorkRequestJPanel(JPanel userProcessContainer, MentalHealthCareRequest request, EcoSystem system, UserAccount userAccount) {
+          initComponents();
+           this.request = request;
+           this.system= system;
+           this.userAccount =userAccount;
+          StudentDirectory vdr =  system.getVd();
+        //ArrayList<Business.Student.Student> vetDir = vd.getStudent_Dir();
+        String studentName = "";
+        for (Student v : system.getVd().getStudent_Dir() ) {
+            if (v.getUsername().equals(request.getSender().getUsername())) {
+                studentName = v.getFirstName()+ " "+ v.getLastName();
+                break;
+
+            }
+        }
+           
+           lblMainConcern.setText(((MentalHealthCareRequest) request).getMain_Concern());
+           
+            lbl_MedicalHistory.setText(((MentalHealthCareRequest) request).getMedicalHistory_mental());    
+           
+           
+           lbl_Mood.setText(((MentalHealthCareRequest) request).getMood());
+           lbl_patientName.setText(studentName);
+           
+           lbl_symptoms.setText(((MentalHealthCareRequest) request).getMood());
+           lbl_Brain_injury.setText(((MentalHealthCareRequest) request).getBrain_injury());
+           
+           
+          
+           
+          
+           lbl_concernDescription.setText(((MentalHealthCareRequest) request).getDetails_concern());
+           
+           
+          this.userProcessContainer = userProcessContainer;
+          
+          txt_EmailID.setEnabled(false);
     }
 
     /**
@@ -26,19 +81,235 @@ public class MHC_WorkRequestJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        btnBack = new javax.swing.JButton();
+        btnSubmitReq = new javax.swing.JButton();
+        lblMainConcern = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtArea_Comments = new javax.swing.JTextArea();
+        lbl = new javax.swing.JLabel();
+        txtAnalysis = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        lbl_patientName = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        lbl_concernDescription = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        lbl_MedicalHistory = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        lbl_Brain_injury = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        lbl_symptoms = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        lbl_Mood = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        txt_EmailID = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+
+        jPanel1.setBackground(new java.awt.Color(246, 198, 103));
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnBack.setBackground(new java.awt.Color(12, 36, 60));
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
+        btnBack.setText("Back");
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, -1, -1));
+
+        btnSubmitReq.setBackground(new java.awt.Color(12, 36, 60));
+        btnSubmitReq.setForeground(new java.awt.Color(255, 255, 255));
+        btnSubmitReq.setText("Submit Result");
+        btnSubmitReq.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSubmitReqActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSubmitReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 420, 130, 40));
+
+        lblMainConcern.setText("jLabel2");
+        jPanel1.add(lblMainConcern, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 153, 140, 33));
+
+        jLabel2.setText("Main Concern:");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 162, -1, -1));
+
+        jLabel3.setText("Comments");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 190, -1, -1));
+
+        txtArea_Comments.setColumns(20);
+        txtArea_Comments.setRows(5);
+        jScrollPane1.setViewportView(txtArea_Comments);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, 225, 133));
+
+        lbl.setText("Analysis");
+        jPanel1.add(lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 130, -1, -1));
+        jPanel1.add(txtAnalysis, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, 225, -1));
+
+        jLabel4.setText("Patient Name: ");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 121, -1, -1));
+
+        lbl_patientName.setText("jLabel5");
+        jPanel1.add(lbl_patientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 121, 98, -1));
+
+        jLabel6.setText("Concern Description:");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, 30));
+
+        lbl_concernDescription.setText("jLabel7");
+        jPanel1.add(lbl_concernDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 169, 50));
+
+        jLabel7.setText("Medical History");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 100, 30));
+
+        lbl_MedicalHistory.setText("jLabel8");
+        jPanel1.add(lbl_MedicalHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, -1, 30));
+
+        jLabel8.setText("Serious Injury");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, 30));
+
+        lbl_Brain_injury.setText("jLabel9");
+        jPanel1.add(lbl_Brain_injury, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 350, -1, 30));
+
+        jLabel9.setText("Symptoms");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, 30));
+
+        lbl_symptoms.setText("jLabel10");
+        jPanel1.add(lbl_symptoms, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, -1, 30));
+
+        jLabel10.setText("Mood:");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, -1, 30));
+
+        lbl_Mood.setText("jLabel11");
+        jPanel1.add(lbl_Mood, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, -1, 30));
+
+        jLabel11.setFont(new java.awt.Font("Tamil MN", 1, 18)); // NOI18N
+        jLabel11.setText("Student Details");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 197, -1));
+
+        jLabel12.setFont(new java.awt.Font("Tamil MN", 1, 18)); // NOI18N
+        jLabel12.setText("Doctor Analysis");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, -1, -1));
+
+        jLabel1.setText("Email ID");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 380, 79, 23));
+        jPanel1.add(txt_EmailID, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 380, 220, -1));
+
+        jLabel14.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel14.setText("Process Mental Healthcare Request");
+        jLabel14.setFocusable(false);
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, -1, 30));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 882, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 882, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 494, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 494, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+
+        userProcessContainer.remove(this);
+        Component[] componentArray = userProcessContainer.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        MentalHealthCareWorkAreaJPanel dwjp = (MentalHealthCareWorkAreaJPanel) component;
+        dwjp.populateTable();
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_btnBackActionPerformed
+
+    private void btnSubmitReqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitReqActionPerformed
+        if(txtAnalysis.getText().equals("")){
+            JOptionPane.showMessageDialog(null,"Doctor Analysis can't be empty");
+            return;
+        }
+        // mhc_request.setMessage(resultJTextField.getText());
+        request.setStatus("Approved");
+        request.setDoctorComments(txtArea_Comments.getText());
+        request.setDoctorAnalysis(txtAnalysis.getText());
+
+        String studentName = "";
+        for (Student v : system.getVd().getStudent_Dir() ) {
+            if (v.getUsername().equals(request.getSender().getUsername())) {
+                studentName = v.getFirstName()+ " "+ v.getLastName();
+                break;
+
+            }
+        }
+
+        String to = String.valueOf(request.getSender());
+        String subject = "Report for the MHC request raised : "+ request.getMain_Concern();
+        String user = "maheshprasad4569@gmail.com";
+        String pass = "Mahi1234$";
+        String message = " Hello "+ studentName
+        + "Please Look into the report provide by your dcotor for your MHC request concern: " + ((MentalHealthCareRequest) request).getMain_Concern()
+        + " Doctor Name: "+  request.getReceiver() + "  \n"+
+        "According to the reports generated by your doctor, You are facing :  " + txtAnalysis.getText()+
+        "with comments  : " + txtArea_Comments.getText()+"\n\n"+" Please contact your doctor for more details. "
+        +"\n\n "
+        + "Regards "+
+        request.getReceiver();
+
+        txtArea_Comments.setText("");
+
+        txtAnalysis.setText("");
+
+        txt_EmailID.setText("");
+    }//GEN-LAST:event_btnSubmitReqActionPerformed
+ private boolean usernamePatternCorrect() {
+       Pattern p = Pattern.compile("^[a-zA-Z0-9]+[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$");
+       Matcher m = p.matcher(txt_EmailID.getText());
+       boolean b = m.matches();
+       return b;
+   }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnSubmitReq;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lbl;
+    private javax.swing.JLabel lblMainConcern;
+    private javax.swing.JLabel lbl_Brain_injury;
+    private javax.swing.JLabel lbl_MedicalHistory;
+    private javax.swing.JLabel lbl_Mood;
+    private javax.swing.JLabel lbl_concernDescription;
+    private javax.swing.JLabel lbl_patientName;
+    private javax.swing.JLabel lbl_symptoms;
+    private javax.swing.JTextField txtAnalysis;
+    private javax.swing.JTextArea txtArea_Comments;
+    private javax.swing.JTextField txt_EmailID;
     // End of variables declaration//GEN-END:variables
 }
