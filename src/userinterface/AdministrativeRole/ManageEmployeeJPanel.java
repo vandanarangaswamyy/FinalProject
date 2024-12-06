@@ -16,6 +16,8 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author vandanarangaswamy
  */
+public class ManageEmployeeJPanel extends javax.swing.JPanel {
+    
 private OrganizationDirectory organizationDir;
     private JPanel userProcessContainer;
     

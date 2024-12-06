@@ -3,127 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Business;
+package Business.Role;
 
-import Business.Listings.HouseListingDirectory;
-import Business.Listings.TempHouseListingDirectory;
-import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.Role.Role;
-import Business.Role.SystemAdminRole;
+import Business.UserAccount.UserAccount;
+import userinterface.PermHousing.PermHousingWorkAreaJPanel;
+import Business.EcoSystem;
 import Business.UserAccount.UserAccountDirectory;
 import Business.Student.StudentDirectory;
-import java.util.ArrayList;
-
+import Business.Enterprise.Enterprise;
+import javax.swing.JPanel;
+import userinterface.MentalHealthCare.MentalHealthCareWorkAreaJPanel;
 
 
 /**
  *
  * @author anirudhraj
  */
-
-
-public class EcoSystem extends Organization{
-    private static EcoSystem business;
-    private ArrayList<Network> networkList;
-
-    public StudentDirectory getVd() 
-    {
-        return vd;
-    }
-
-    public void setVd(StudentDirectory vd) 
-    {
-        this.vd = vd;
-    }
-
-    public UserAccountDirectory getUad() 
-    {
-        return uad;
-    }
-
-    public void setUad(UserAccountDirectory uad) 
-    {
-        this.uad = uad;
-    }
+public class MentalHealthCareRole  extends Role
+{
     
-    private StudentDirectory vd;
-    private UserAccountDirectory uad;
-    private HouseListingDirectory hsd;
-    private TempHouseListingDirectory thsd;
-
-    public TempHouseListingDirectory getThsd() 
-    {
-        return thsd;
-    }
-
-    public void setThsd(TempHouseListingDirectory thsd) 
-    {
-        this.thsd = thsd;
-    }
-
-    public HouseListingDirectory getHsd() 
-    {
-        return hsd;
-    }
-
-    public void setHsd(HouseListingDirectory hsd)
-    {
-        this.hsd = hsd;
-    }
-    public static EcoSystem getInstance()
-    {
-        if(business==null){
-            business=new EcoSystem();
-        }
-        return business;
-    }
-    
-    public Network createAndAddNetwork()
-    {
-        Network network=new Network();
-        networkList.add(network);
-        return network;
-    }
     @Override
-    public ArrayList<Role> getSupportedRole() 
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, StudentDirectory vd , UserAccountDirectory user_Dir) 
     {
-        ArrayList<Role> roleList=new ArrayList<Role>();
-        roleList.add(new SystemAdminRole());
-        return roleList;
-    }
-    
-    private EcoSystem()
-    {
-        super(null);
-        networkList=new ArrayList<Network>();
+        
+        return new MentalHealthCareWorkAreaJPanel(userProcessContainer, account, organization, enterprise, vd , business);
     }
 
-    
-    public ArrayList<Network> getNetworkList() 
-    {
-        return networkList;
-    }
-
-    
-    
-    public void setNetworkList(ArrayList<Network> networkList) {
-        this.networkList = networkList;
-    }
-    
-    
-    
-    public boolean checkIfUserIsUnique(String userName)
-    
-    {
-        if(!this.getUserAccountDirectory().checkIfUsernameIsUnique(userName))
-        {
-            return false;
-        }
-        for(Network network:networkList)
-        {
-            
-        }
-        return true;
-    }
 }
