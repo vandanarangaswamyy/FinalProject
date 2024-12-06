@@ -1,20 +1,112 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package userinterface.StudentRole;
 
+import Business.EcoSystem;
+import Business.Enterprise.Enterprise;
+import Business.Network.Network;
+import Business.Organization.GradSchoolOrganization;
+import Business.Organization.Organization;
+import Business.UserAccount.UserAccount;
+import Business.Student.StudentDirectory;
+import Business.WorkQueue.GradSchoolRequest;
+import java.awt.CardLayout;
+import java.awt.Component;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
 /**
  *
- * @author vandanarangaswamy
+ * @author sahitinallamolu
  */
 public class RequestGradJPanel2 extends javax.swing.JPanel {
 
     /**
      * Creates new form RequestGradJPanel2
      */
-    public RequestGradJPanel2() {
+    private JPanel userProcessContainer;
+    private Enterprise enterprise;
+    private EcoSystem system;
+    private StudentDirectory vd;
+    private UserAccount userAccount;
+    
+    
+    
+    String hsGrade;
+    String highSchool;
+    String bachGrade;
+    String bachDegree;
+    String bachUni;
+    
+
+    RequestGradJPanel2(JPanel userProcessContainer, UserAccount userAccount, StudentDirectory vd, EcoSystem system, String highSchool, String hsGrade, String bachUni, String bachGrade, String bachDegree) {
+
+        
+        this.userProcessContainer = userProcessContainer;
+        this.vd = vd;
+        this.userAccount = userAccount;
+        this.system = system;
+        this.hsGrade = hsGrade;
+        this.highSchool = highSchool;
+        this.bachUni = bachUni;
+        this.bachGrade = bachGrade;
+        this.bachDegree = bachDegree;
+
         initComponents();
+        populateData();
+
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void populateData() {
+        String message = null;
+
+        if (bachDegree.equals("Computer Science")) {
+            comboProgram.addItem("Masters in Computer Science");
+            comboProgram.addItem("Masters in Computer Systems Engineering");
+            message = "Masters in Computer Science & Masters in Computer Systems Engineering";
+        }
+        else if (bachDegree.equals("Electrical Engineering")) {
+            comboProgram.addItem("Masters in Electrical Systems");
+            comboProgram.addItem("Masters in Power Systems");
+            message = "Masters in Electrical Systems & Masters in Power Systems";
+        } 
+        
+        else if (bachDegree.equals("Human Relations")) {
+            comboProgram.addItem("Masters in Human Relations");
+            comboProgram.addItem("Masters in HR");
+            message = "Masters in Human Relations & Masters in HR";
+        } 
+        
+        else if (bachDegree.equals("Medical")) {
+            comboProgram.addItem("Post Doctoral - 2");
+            comboProgram.addItem("Post Doctoral - 1");
+            message = "Post Doctoral - 1 & Post Doctoral 2";
+        } 
+        
+        else if (bachDegree.equals("Biotechnology")) {
+            comboProgram.addItem("Masters in Biomedical Engineering");
+            comboProgram.addItem("Masters in Biochemical Engineering");
+            message = "Masters in Biomedical Engineering & Biochemical Engineering";
+        } 
+        
+        else if (bachDegree.equals("Law")) {
+            comboProgram.addItem("Criminal Law Specialization");
+            comboProgram.addItem("Corporate Law Specialization");
+            message = "Criminal Law Specialization & Corporate Law Specialization";
+        }
+
+        
+        
+        txtRecommend1.setText("Based on your Bachelor's Degree in " + bachDegree + ", the following courses are recommended");
+        txtRecommend.setText(message);
     }
 
     /**
@@ -26,19 +118,192 @@ public class RequestGradJPanel2 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        txtRecommend = new javax.swing.JLabel();
+        comboProgram = new javax.swing.JComboBox<String>();
+        jLabel5 = new javax.swing.JLabel();
+        comboUniversity = new javax.swing.JComboBox<String>();
+        txtRecommend1 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        comboUniversity1 = new javax.swing.JComboBox<String>();
+        jLabel7 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtAdditional = new javax.swing.JTextArea();
+        btnSubmit = new javax.swing.JButton();
+        Home = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(246, 198, 103));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel3.setText("Apply for a Master's Degree");
+        jLabel3.setFocusable(false);
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, -1, -1));
+
+        jLabel1.setText("Choose Desired Program");
+        jLabel1.setFocusable(false);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, -1, 30));
+
+        txtRecommend.setBackground(new java.awt.Color(20, 53, 94));
+        txtRecommend.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
+        txtRecommend.setForeground(new java.awt.Color(20, 53, 94));
+        add(txtRecommend, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 580, 31));
+
+        add(comboProgram, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, 220, -1));
+
+        jLabel5.setText("Choose University");
+        jLabel5.setFocusable(false);
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, -1, 30));
+
+        comboUniversity.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Northeastern Univerisity", "Arizona State University", "NJIT", "NYU", "University of Cincinati", "University of Florida" }));
+        add(comboUniversity, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 220, -1));
+
+        txtRecommend1.setBackground(new java.awt.Color(20, 53, 94));
+        txtRecommend1.setForeground(new java.awt.Color(20, 53, 94));
+        add(txtRecommend1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 580, 31));
+
+        jLabel6.setText("Additional Information");
+        jLabel6.setFocusable(false);
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, -1, 30));
+
+        comboUniversity1.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Spring", "Fall", "Summer" }));
+        add(comboUniversity1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, 220, -1));
+
+        jLabel7.setText("Desired Intake");
+        jLabel7.setFocusable(false);
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, -1, 30));
+
+        txtAdditional.setColumns(20);
+        txtAdditional.setRows(5);
+        jScrollPane1.setViewportView(txtAdditional);
+
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, -1, -1));
+
+        btnSubmit.setBackground(new java.awt.Color(12, 36, 60));
+        btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
+        btnSubmit.setText("Submit Application");
+        btnSubmit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSubmitActionPerformed(evt);
+            }
+        });
+        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 400, 230, 40));
+
+        Home.setBackground(new java.awt.Color(12, 36, 60));
+        Home.setForeground(new java.awt.Color(255, 255, 255));
+        Home.setText("Home");
+        Home.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HomeActionPerformed(evt);
+            }
+        });
+        add(Home, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 460, 230, 40));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
+        // TODO add your handling code here:
+
+        
+        
+        GradSchoolRequest request = new GradSchoolRequest();
+        request.setAdditionalInfo(txtAdditional.getText());
+        request.setBachDegree(bachDegree);
+        request.setBachGrade(bachGrade);
+        request.setBachUni(bachUni);
+        request.setDesIntake((String) comboUniversity1.getSelectedItem());
+        request.setDesProgram((String) comboProgram.getSelectedItem());
+        request.setHighSchool(highSchool);
+        request.setHsGrade(hsGrade);
+        request.setSender(userAccount);
+        request.setStatus("Applied");
+        request.setMessage("Request for Grad School");
+
+        
+        
+        Organization org = null;
+        System.out.println("Request Page2");
+
+        for (Network network : system.getNetworkList()) {
+            //Step 2.a: check against each enterprise
+            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                System.out.println(enterprise);
+
+//                    userAccount = enterprise.getUserAccountDirectory().authenticateUser(userName, password);
+                //Step 3:check against each organization for each enterprise
+                for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+                    System.out.println(organization);
+
+                    if (organization instanceof GradSchoolOrganization) {
+                        org = organization;
+                        System.out.println(org);
+                        break;
+                    }
+
+                }
+            }
+        }
+
+        if (org != null) {
+            org.getWorkQueue().getWorkRequestList().add(request);
+            System.out.println("Added GradSchoolRequest to Org");
+            userAccount.getWorkQueue().getWorkRequestList().add(request);
+            System.out.println("Added VocationalRequest to UserAccount");
+            JOptionPane.showMessageDialog(null, "Your Application has been submitted Successfully", "Information", JOptionPane.INFORMATION_MESSAGE);
+
+        }
+
+
+
+//        JOptionPane.showMessageDialog(null, "Request Submitted Successfully", "Information", JOptionPane.INFORMATION_MESSAGE);
+
+        comboProgram.setEnabled(false);
+
+        comboUniversity.setEnabled(false);
+
+        comboUniversity1.setEnabled(false);
+
+        txtAdditional.setEnabled(false);
+//        backJButton1.setEnabled(false);
+        btnSubmit.setEnabled(false);
+
+
+    }//GEN-LAST:event_btnSubmitActionPerformed
+
+    private void HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeActionPerformed
+
+//        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+//        userProcessContainer.add("StudentWorkAreaJPanel", new StudentWorkAreaJPanel(userProcessContainer, userAccount, vd, system, highSchool, hsGrade, bachUni, bachGrade, bachDegree));
+//        layout.next(userProcessContainer);
+        
+
+
+        userProcessContainer.remove(this);
+        Component[] componentArray = userProcessContainer.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        StudentWorkAreaJPanel dwjp = (StudentWorkAreaJPanel) component;
+        dwjp.populateRequestTable();
+        
+        
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_HomeActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Home;
+    private javax.swing.JButton btnSubmit;
+    private javax.swing.JComboBox<String> comboProgram;
+    private javax.swing.JComboBox<String> comboUniversity;
+    private javax.swing.JComboBox<String> comboUniversity1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea txtAdditional;
+    private javax.swing.JLabel txtRecommend;
+    private javax.swing.JLabel txtRecommend1;
     // End of variables declaration//GEN-END:variables
 }
