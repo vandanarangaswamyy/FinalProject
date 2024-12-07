@@ -7,7 +7,7 @@ package Business.Role;
 
 
 import javax.swing.JPanel;
-import userinterface.PartTimeRole.PartTimeAreaJPanel;
+import userinterface.PartTimeRole.PartTImeAreaJPanel;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
@@ -30,7 +30,7 @@ public class PartTimeRole extends Role
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,StudentDirectory vd, UserAccountDirectory user_Dir)
     {
         
-        return new PartTimeAreaJPanel(userProcessContainer, account, (PartTimeOrganization)organization, enterprise, vd, business);
+        return new PartTImeAreaJPanel(userProcessContainer, account, (PartTimeOrganization)organization, enterprise, vd, business);
     }
 
 

@@ -229,7 +229,7 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
         
-        PartTimeAreaJPanel dwjp = (PartTimeAreaJPanel) component;
+        PartTImeAreaJPanel dwjp = (PartTImeAreaJPanel) component;
         dwjp.populateTable();
         
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();

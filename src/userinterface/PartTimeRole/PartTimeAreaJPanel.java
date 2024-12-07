@@ -30,7 +30,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author anirudhraj
  */
-public class PartTimeAreaJPanel extends javax.swing.JPanel {
+public class PartTImeAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem business;
@@ -40,7 +40,7 @@ public class PartTimeAreaJPanel extends javax.swing.JPanel {
     private UserAccount userAccount;
     
 
-    public PartTimeAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization vocationalSchoolOrganization, Enterprise enterprise, StudentDirectory vd,EcoSystem business) {
+    public PartTImeAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization vocationalSchoolOrganization, Enterprise enterprise, StudentDirectory vd,EcoSystem business) {
         
         initComponents();
         
