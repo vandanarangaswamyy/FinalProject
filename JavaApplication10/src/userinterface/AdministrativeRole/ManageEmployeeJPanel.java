@@ -8,6 +8,7 @@ import Business.Employee.Employee;
 import Business.Organization.Organization;
 import Business.Organization.OrganizationDirectory;
 import java.awt.CardLayout;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
@@ -191,7 +192,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         
         
         organization.getEmployeeDirectory().createEmployee(name);
-        
+        JOptionPane.showMessageDialog(null, "Successfully Created");
         populateTable(organization);
         txtName.setText("");
         

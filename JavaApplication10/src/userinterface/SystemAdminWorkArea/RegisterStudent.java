@@ -262,8 +262,8 @@ public class RegisterStudent extends javax.swing.JPanel {
         v.setStudent_ID(txtStudentID.getText());
         v.setUsername(txtUsername.getText());
         v.setPassword(password);
-        System.out.println("Registered Student succesfully");
-        
+        JOptionPane.showMessageDialog(null, "Registered Student succesfully");
+   
         
         txtFirstName.setText("");
         txtLastName.setText("");

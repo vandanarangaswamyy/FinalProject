@@ -252,8 +252,9 @@ if(txtAnalysis.getText().equals("")){
                      + "Regards "+
                      request.getReceiver();
              
+             JOptionPane.showMessageDialog(null, "Request submitted successfully");
              
-                     txtArea_Comments.setText("");
+                txtArea_Comments.setText("");
                 
                 txtAnalysis.setText("");
          

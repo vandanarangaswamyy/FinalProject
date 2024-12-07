@@ -114,6 +114,7 @@ public class RequestGradJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        txtRecommend = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         highSchoolCheck = new javax.swing.JCheckBox();
@@ -128,21 +129,26 @@ public class RequestGradJPanel extends javax.swing.JPanel {
         jLabel10 = new javax.swing.JLabel();
         txtBachGrade = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        comboDegree = new javax.swing.JComboBox<String>();
+        comboDegree = new javax.swing.JComboBox<>();
         backJButton = new javax.swing.JButton();
-        txtRecommend = new javax.swing.JLabel();
         txtRecommend1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        comboProgram = new javax.swing.JComboBox<String>();
-        comboUniversity = new javax.swing.JComboBox<String>();
+        comboProgram = new javax.swing.JComboBox<>();
+        comboUniversity = new javax.swing.JComboBox<>();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        comboUniversity1 = new javax.swing.JComboBox<String>();
+        comboUniversity1 = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtAdditional = new javax.swing.JTextArea();
         jLabel14 = new javax.swing.JLabel();
         btnSubmit = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+
+        txtRecommend.setBackground(new java.awt.Color(20, 53, 94));
+        txtRecommend.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
+        txtRecommend.setForeground(new java.awt.Color(20, 53, 94));
+        txtRecommend.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/StudentRole/NEU.jpg"))); // NOI18N
 
         setBackground(new java.awt.Color(246, 198, 103));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -222,7 +228,7 @@ public class RequestGradJPanel extends javax.swing.JPanel {
         jLabel11.setFocusable(false);
         add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, 23));
 
-        comboDegree.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Computer Science", "Electrical Engineering", "Human Relations", "Medical", "Biotechnology", "Law" }));
+        comboDegree.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Computer Science", "Electrical Engineering", "Human Relations", "Medical", "Biotechnology", "Law" }));
         add(comboDegree, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, 210, -1));
 
         backJButton.setBackground(new java.awt.Color(12, 36, 60));
@@ -235,44 +241,38 @@ public class RequestGradJPanel extends javax.swing.JPanel {
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, -1, -1));
 
-        txtRecommend.setBackground(new java.awt.Color(20, 53, 94));
-        txtRecommend.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        txtRecommend.setForeground(new java.awt.Color(20, 53, 94));
-        add(txtRecommend, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 160, 580, 31));
-
         txtRecommend1.setBackground(new java.awt.Color(20, 53, 94));
         txtRecommend1.setForeground(new java.awt.Color(20, 53, 94));
-        add(txtRecommend1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 140, 580, 20));
+        add(txtRecommend1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 160, 580, 20));
 
-        jLabel4.setText("Choose Desired Program");
         jLabel4.setFocusable(false);
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 120, -1, 30));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 160, 30));
 
         add(comboProgram, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 120, 220, -1));
 
-        comboUniversity.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Northeastern Univerisity", "Arizona State University", "NJIT", "NYU", "University of Cincinati", "University of Florida" }));
-        add(comboUniversity, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 160, 220, -1));
+        comboUniversity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Northeastern Univerisity", "Arizona State University", "NJIT", "NYU", "University of Cincinati", "University of Florida" }));
+        add(comboUniversity, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 260, 220, -1));
 
         jLabel12.setText("Choose University");
         jLabel12.setFocusable(false);
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 160, -1, 30));
+        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 260, -1, 30));
 
         jLabel13.setText("Desired Intake");
         jLabel13.setFocusable(false);
-        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 240, -1, 30));
+        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 320, -1, 30));
 
-        comboUniversity1.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Spring", "Fall", "Summer" }));
-        add(comboUniversity1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 240, 220, -1));
+        comboUniversity1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Spring", "Fall", "Summer" }));
+        add(comboUniversity1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 320, 220, -1));
 
         txtAdditional.setColumns(20);
         txtAdditional.setRows(5);
         jScrollPane1.setViewportView(txtAdditional);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 280, 220, -1));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 360, 220, -1));
 
         jLabel14.setText("Additional Information");
         jLabel14.setFocusable(false);
-        add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 300, -1, 30));
+        add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 380, -1, 30));
 
         btnSubmit.setBackground(new java.awt.Color(12, 36, 60));
         btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
@@ -293,6 +293,10 @@ public class RequestGradJPanel extends javax.swing.JPanel {
             }
         });
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 410, 210, 40));
+
+        jLabel15.setText("Choose Desired Program");
+        jLabel15.setFocusable(false);
+        add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 120, -1, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void highSchoolCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_highSchoolCheckActionPerformed
@@ -403,7 +407,7 @@ public class RequestGradJPanel extends javax.swing.JPanel {
             return;
             
         }
-        
+  
         
         
         
@@ -457,7 +461,7 @@ public class RequestGradJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Your Application has been submitted Successfully", "Information", JOptionPane.INFORMATION_MESSAGE);
             
         }
-        
+       
         
         comboProgram.setEnabled(false);
         
@@ -498,7 +502,7 @@ public class RequestGradJPanel extends javax.swing.JPanel {
         highSchoolCheck.setEnabled(false);
         btnSubmit.setEnabled(false);
         
-
+       
     }//GEN-LAST:event_btnSubmitActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -584,6 +588,7 @@ public class RequestGradJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

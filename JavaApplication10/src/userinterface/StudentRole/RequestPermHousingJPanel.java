@@ -190,7 +190,7 @@ public class RequestPermHousingJPanel extends javax.swing.JPanel {
 //            dB4OUtil.storeSystem(system);
 //            System.out.println("Stored Inside System");
             }
-            JOptionPane.showMessageDialog(null, "Request Has Been Raised. You will be notified accordingly.", "Warning", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Request Has Been Raised. You will be notified accordingly.", "Information", JOptionPane.WARNING_MESSAGE);
             requestTestJButton.setEnabled(false);
             messageJTextField.setText("");
             messageJTextField.setEnabled(false);
