@@ -112,6 +112,8 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         eduRequestsTable = new javax.swing.JTable();
         jLabel7 = new javax.swing.JLabel();
+        txtTotalRequests2 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(246, 198, 103));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -192,7 +194,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel4.setText("Total Requests Raised");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, 300, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, 200, -1));
         add(homePic, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 80, 70));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
@@ -257,6 +259,17 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel7.setText("My Requests");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 300, -1));
+
+        txtTotalRequests2.setBackground(new java.awt.Color(51, 51, 51));
+        txtTotalRequests2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        txtTotalRequests2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtTotalRequests2.setFocusable(false);
+        txtTotalRequests2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(txtTotalRequests2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 360, 110, 70));
+
+        jLabel8.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel8.setText("Total Requests Processed");
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 330, 230, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void refreshTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshTestJButtonActionPerformed
@@ -313,34 +326,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_permhousingrequestjButton1ActionPerformed
 
     public void populateRequestTable() {
-
-        String f = "img/ez_logo.png";
-        ImageIcon ficon = new ImageIcon(f.toString());
-        Image fimage = ficon.getImage();
-        Image fimagescaling = fimage.getScaledInstance(300, 75, Image.SCALE_SMOOTH);
-        ImageIcon scaled = new ImageIcon(fimagescaling);
-
-        f = "img/edu.png";
-        ficon = new ImageIcon(f.toString());
-        fimage = ficon.getImage();
-        fimagescaling = fimage.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
-        scaled = new ImageIcon(fimagescaling);
-        hospPic.setIcon(scaled);
-
-        f = "img/home.png";
-        ficon = new ImageIcon(f.toString());
-        fimage = ficon.getImage();
-        fimagescaling = fimage.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
-        scaled = new ImageIcon(fimagescaling);
-        eduPic.setIcon(scaled);
-
-        f = "img/med.png";
-        ficon = new ImageIcon(f.toString());
-        fimage = ficon.getImage();
-        fimagescaling = fimage.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
-        scaled = new ImageIcon(fimagescaling);
-        homePic.setIcon(scaled);
-
+        
         txtWelcome.setText("Welcome back, " + userAccount.getUsername());
 
 
@@ -426,7 +412,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         }
 
         txtTotalRequests1.setText(Integer.toString(totalRequests));
-    
+        txtTotalRequests2.setText(Integer.toString( (acceptedRequests + rejectedRequests)));
 
     }
 
@@ -444,12 +430,14 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JButton permhousingrequestjButton;
     private javax.swing.JButton permhousingrequestjButton1;
     private javax.swing.JButton refreshTestJButton;
     private javax.swing.JLabel txtTotalRequests1;
+    private javax.swing.JLabel txtTotalRequests2;
     private javax.swing.JLabel txtWelcome;
     // End of variables declaration//GEN-END:variables
 }

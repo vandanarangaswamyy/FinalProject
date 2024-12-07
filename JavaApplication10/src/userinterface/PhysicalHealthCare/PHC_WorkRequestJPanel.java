@@ -424,6 +424,7 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
                                                         txt_bodyTemp.setText("");
                                                                 txt_PrescribeMedicine.setText("");
                                                                         txtArea_Comments.setText("");
+            JOptionPane.showMessageDialog(null, "Submitted");                                                            
     }//GEN-LAST:event_submitJButtonActionPerformed
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

@@ -16,6 +16,7 @@ import Business.Student.StudentDirectory;
 import Business.WorkQueue.PhysicalHealthCareRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -239,7 +240,11 @@ public class Request_PHC_JPanel extends javax.swing.JPanel {
             String subject = "Request from studnent for PHC : with following details : " + String.valueOf(c_lSymptoms.getSelectedItem()) +"  and concern : "+  txt_mainConcern.getText();
             String user = "sahitinallamolu@gmail.com";
             String pass = "sahiti22";
-
+            JOptionPane.showMessageDialog(null, "Request submitted succesfully");
+            
+            txt_MedicalHistory.setText("");
+            txt_mainConcern.setText("");
+            txtDetails.setText("");
             //            dB4OUtil.storeSystem(system);
             //            System.out.println("Stored Inside System");
         }

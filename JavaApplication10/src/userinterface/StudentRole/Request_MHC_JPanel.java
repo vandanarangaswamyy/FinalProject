@@ -16,6 +16,7 @@ import Business.Student.StudentDirectory;
 import Business.WorkQueue.MentalHealthCareRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -214,6 +215,13 @@ String concern=txt_mainConcern.getText();
                 String subject = "Request from student for MHC : with following details : " + String.valueOf(c_MentalSymptons.getSelectedItem()) +"  and concern : "+  txt_mainConcern.getText();
                 String user = "sahitinallamolu@gmail.com";
                 String pass = "sahiti22";
+                
+                JOptionPane.showMessageDialog(null, "Submitted");
+                
+                txt_MedicalHistory.setText(" ");
+                txt_mainConcern.setText(" ");
+                txt_mood.setText(" ");
+                txtDetails.setText(" ");
                  
                  
             //            dB4OUtil.storeSystem(system);

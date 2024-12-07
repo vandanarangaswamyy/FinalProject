@@ -147,10 +147,13 @@ public class RequestTempHousingJPanel extends javax.swing.JPanel {
         
         if (org != null) {
             org.getWorkQueue().getWorkRequestList().add(tr);
-            System.out.println("Added Request to Org ");
-            userAccount.getWorkQueue().getWorkRequestList().add(tr);
-            System.out.println("Added Request to UserAccount ");
+//            System.out.println("Added Request to Org ");
+            JOptionPane.showMessageDialog(null, "Added Request to Org ");
 
+            userAccount.getWorkQueue().getWorkRequestList().add(tr);
+//            System.out.println("Added Request to UserAccount ");
+
+            JOptionPane.showMessageDialog(null, "Added Request to UserAccount ");
     }//GEN-LAST:event_btnRequestActionPerformed
     JOptionPane.showMessageDialog(null, "Request Has Been Raised. You will be notified accordingly.", "Warning", JOptionPane.WARNING_MESSAGE);
     btnRequest.setEnabled(false);
