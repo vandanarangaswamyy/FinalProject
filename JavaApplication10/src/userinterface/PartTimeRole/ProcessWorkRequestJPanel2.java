@@ -64,7 +64,7 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
                 txtVetID.setText("Student ID: " + v.getStudent_ID());
                 txtAddress.setText("Address: " + v.getResidentAddress());
                 txtGender.setText("Gender: " + v.getGender());
-                txtMilType.setText("Military Branch: " + v.getArmyType());
+                txtMilType.setText("Branch: " + v.getArmyType());
                 break;
 
             }
@@ -262,7 +262,8 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
                 }
             }
         }
-        
+                
+  
         if (org != null) {
             org.getWorkQueue().getWorkRequestList().add(jrequest);
             System.out.println("Added Reqyesr to Org ");
@@ -295,6 +296,10 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
 
 
     }//GEN-LAST:event_btnCompleteActionPerformed
+        else {
+        JOptionPane.showMessageDialog(null, "Candidate: " + request.getSender().getUsername() + "is not elibile to be recommended for a fulltime role", "Warning", JOptionPane.INFORMATION_MESSAGE);
+        return;
+        }
     }
 
 

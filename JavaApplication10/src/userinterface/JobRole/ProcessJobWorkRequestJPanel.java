@@ -66,7 +66,7 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
         jLabel1.setText("Process Job Request");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, -1, -1));
 
-        jLabel2.setText("Suggested Job Role :");
+        jLabel2.setText("Prior Job Experience:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, -1, -1));
 
         txtJobRole.setEditable(false);

@@ -61,6 +61,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         }
           if (entType.equals("Job")) {
             cmbOrgType.addItem(Organization.Type.Job);
+            cmbOrgType.addItem(Organization.Type.VocationalSchool);
         }
     }
     

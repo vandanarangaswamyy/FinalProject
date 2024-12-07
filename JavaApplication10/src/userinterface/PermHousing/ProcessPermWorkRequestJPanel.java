@@ -52,7 +52,6 @@ public class ProcessPermWorkRequestJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        submitJButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         resultJTextField = new javax.swing.JTextField();
         backJButton = new javax.swing.JButton();
@@ -62,19 +61,9 @@ public class ProcessPermWorkRequestJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 204, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        submitJButton.setBackground(new java.awt.Color(20, 53, 94));
-        submitJButton.setForeground(new java.awt.Color(255, 255, 255));
-        submitJButton.setText("Submit Result");
-        submitJButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                submitJButtonActionPerformed(evt);
-            }
-        });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(244, 112, -1, -1));
-
         jLabel1.setText("Result");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 48, -1, -1));
-        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(158, 44, 169, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, -1, -1));
+        add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 169, -1));
 
         backJButton.setBackground(new java.awt.Color(20, 53, 94));
         backJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -84,7 +73,7 @@ public class ProcessPermWorkRequestJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 112, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, -1));
 
         btnAccept.setBackground(new java.awt.Color(12, 36, 60));
         btnAccept.setForeground(new java.awt.Color(255, 255, 255));
@@ -94,7 +83,7 @@ public class ProcessPermWorkRequestJPanel extends javax.swing.JPanel {
                 btnAcceptActionPerformed(evt);
             }
         });
-        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, 130, 40));
+        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 130, 40));
 
         btnReject.setBackground(new java.awt.Color(12, 36, 60));
         btnReject.setForeground(new java.awt.Color(255, 255, 255));
@@ -104,7 +93,7 @@ public class ProcessPermWorkRequestJPanel extends javax.swing.JPanel {
                 btnRejectActionPerformed(evt);
             }
         });
-        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 130, 40));
+        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 130, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -121,26 +110,6 @@ public class ProcessPermWorkRequestJPanel extends javax.swing.JPanel {
         
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
-
-    private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
-        
-            permHousingRequest.setComment(resultJTextField.getText());
-            
-            permHousingRequest.setStatus("Accepted");
-            
-            permHousingRequest.setAvailibility(1);
-            
-            
-            JOptionPane.showMessageDialog(null, "House Assigned to student" + permHousingRequest.getSender(), "Information", JOptionPane.INFORMATION_MESSAGE);
-           
-            resultJTextField.setText("");
-            
-        
-
-           
-            
-        
-    }//GEN-LAST:event_submitJButtonActionPerformed
 //added newly
     private void btnAcceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcceptActionPerformed
 
@@ -175,6 +144,5 @@ public class ProcessPermWorkRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnReject;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField resultJTextField;
-    private javax.swing.JButton submitJButton;
     // End of variables declaration//GEN-END:variables
 }

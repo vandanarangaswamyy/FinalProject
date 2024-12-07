@@ -9,6 +9,9 @@ import Business.EcoSystem;
 import Business.UserAccount.UserAccountDirectory;
 import Business.Student.StudentDirectory;
 import java.awt.CardLayout;
+import java.awt.Image;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,6 +24,7 @@ import javax.swing.JPanel;
 import static userinterface.MainJFrame.main;
 import userinterface.SystemAdminWorkArea.RegisterStudent;
 import userinterface.SystemAdminWorkArea.ViewAllStudents;
+import userinterface.utils.UIUtils;
 
 /**
  *
@@ -33,7 +37,13 @@ UserAccountDirectory user_Dir;
 StudentDirectory student_Di;
     public GuestUserJPanel() {
         initComponents();
-        
+        //UIUtils.setBackgroundImage(dplabel, "resources/education.jpg");
+        setIcon();
+    }
+    
+    public void setIcon(){
+    ImageIcon image=new ImageIcon("/userinterface/utils/education.jpg");
+    dplabel.setIcon(image);
     }
 
    
@@ -43,7 +53,10 @@ StudentDirectory student_Di;
        this.student_Di =student_Di;
        this.user_Dir= user_Dir;
        this.container=container;
+
     }
+    
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -54,10 +67,14 @@ StudentDirectory student_Di;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        dplabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         btnRegstrStudents = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(255, 204, 51));
+
+        dplabel.setBackground(new java.awt.Color(204, 204, 255));
+        dplabel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setText("Sign Up");
@@ -77,7 +94,9 @@ StudentDirectory student_Di;
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(25, 25, 25)
+                .addComponent(dplabel, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(btnRegstrStudents, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -89,13 +108,19 @@ StudentDirectory student_Di;
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(61, 61, 61)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(67, 67, 67)
-                .addComponent(btnRegstrStudents, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(368, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(61, 61, 61)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(67, 67, 67)
+                        .addComponent(btnRegstrStudents, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(93, 93, 93)
+                        .addComponent(dplabel, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(356, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+    
 
     private void btnRegstrStudentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegstrStudentsActionPerformed
         // TODO add your handling code here:
@@ -108,6 +133,7 @@ StudentDirectory student_Di;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnRegstrStudents;
+    private javax.swing.JLabel dplabel;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

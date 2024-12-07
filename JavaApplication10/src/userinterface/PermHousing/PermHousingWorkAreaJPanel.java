@@ -355,6 +355,7 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
         PermHousingRequest request = (PermHousingRequest) workRequestJTable.getValueAt(selectedRow, 0);
 
         request.setStatus("Processing");
+        
 
         ProcessPermWorkRequestJPanel processWorkRequestJPanel = new ProcessPermWorkRequestJPanel(userProcessContainer, request,business);
         

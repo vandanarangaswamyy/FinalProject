@@ -192,7 +192,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel4.setText("Total Requests Raised");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, 300, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 330, 300, -1));
         add(homePic, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 80, 70));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
@@ -215,7 +215,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         txtTotalRequests1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTotalRequests1.setFocusable(false);
         txtTotalRequests1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtTotalRequests1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 360, 110, 70));
+        add(txtTotalRequests1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 360, 110, 70));
 
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel6.setText("Apply for Education");
@@ -252,7 +252,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(eduRequestsTable);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 510, 210));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 540, 210));
 
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel7.setText("My Requests");
@@ -320,14 +320,14 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         Image fimagescaling = fimage.getScaledInstance(300, 75, Image.SCALE_SMOOTH);
         ImageIcon scaled = new ImageIcon(fimagescaling);
 
-        f = "img/edu.png";
+        f = "resources/education.jpg";
         ficon = new ImageIcon(f.toString());
         fimage = ficon.getImage();
         fimagescaling = fimage.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         scaled = new ImageIcon(fimagescaling);
         hospPic.setIcon(scaled);
 
-        f = "img/home.png";
+        f = "resources/education.jpg";
         ficon = new ImageIcon(f.toString());
         fimage = ficon.getImage();
         fimagescaling = fimage.getScaledInstance(50, 50, Image.SCALE_SMOOTH);
@@ -356,7 +356,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
             totalRequests = totalRequests + 1;
 
             if (request instanceof PartTimeRequest) {
-                Object[] row = new Object[4];
+                Object[] row = new Object[5];
                 row[0] = "VocationalTraining";
                 row[1] = request.getReceiver();
                 row[2] = request.getStatus();
@@ -367,7 +367,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
             }
 
             if (request instanceof GradSchoolRequest) {
-                Object[] row = new Object[4];
+                Object[] row = new Object[5];
                 row[0] = "Grad School";
                 row[1] = request.getReceiver();
                 row[2] = request.getStatus();
@@ -377,7 +377,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
             }
 
             if (request instanceof PhysicalHealthCareRequest) {
-                Object[] row = new Object[4];
+                Object[] row = new Object[5];
                 row[0] = "Physical Healthcare";
                 row[1] = request.getReceiver();
                 row[2] = request.getStatus();
@@ -386,40 +386,44 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
             }
 
             if (request instanceof MentalHealthCareRequest) {
-                Object[] row = new Object[4];
+                Object[] row = new Object[5];
                 row[0] = "Mental Healthcare";
                 row[1] = request.getReceiver();
                 row[2] = request.getStatus();
                 row[3] = request.getRequestDate();
+                row[4]=request.getResolveDate();
                 eduModel.addRow(row);
             }
 
             if (request instanceof TempHousingRequest) {
-                Object[] row = new Object[4];
+                Object[] row = new Object[5];
                 row[0] = "Temp Housing";
                 row[1] = request.getReceiver();
                 row[2] = request.getStatus();
                 row[3] = request.getRequestDate();
+                row[4]=request.getResolveDate();
                 eduModel.addRow(row);
             }
 
             if (request instanceof PermHousingRequest) {
-                Object[] row = new Object[4];
+                Object[] row = new Object[5];
                 row[0] = "Permanent Housing";
                 row[1] = request.getReceiver();
                 row[2] = request.getStatus();
                 row[3] = request.getRequestDate();
+                row[4]=request.getResolveDate();
                 eduModel.addRow(row);
             }
 
             
             
             if (request instanceof JobWorkRequest) {
-                Object[] row = new Object[4];
+                Object[] row = new Object[5];
                 row[0] = "Employment Request";
                 row[1] = request.getReceiver();
                 row[2] = request.getStatus();
                 row[3] = request.getRequestDate();
+                row[4]=request.getResolveDate();
                 eduModel.addRow(row);
             }
 

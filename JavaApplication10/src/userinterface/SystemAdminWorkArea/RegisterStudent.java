@@ -47,7 +47,7 @@ public class RegisterStudent extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
         
 
-        String f = "img/ez_logo.png";
+        String f = "interface/utils/education.jpg";
         
         ImageIcon ficon = new ImageIcon(f.toString());
         Image fimage = ficon.getImage();

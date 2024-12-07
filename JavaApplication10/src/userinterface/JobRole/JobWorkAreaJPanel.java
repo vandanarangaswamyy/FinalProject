@@ -371,6 +371,7 @@ public class JobWorkAreaJPanel extends javax.swing.JPanel {
 
         int selectedRow = tblReq.getSelectedRow();
         if (selectedRow < 0) {
+            JOptionPane.showMessageDialog(null, "Please select a row first", "Warning", JOptionPane.INFORMATION_MESSAGE);
             return;
         }
 
