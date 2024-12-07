@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package userinterface.PartTimeRole;
 
@@ -24,9 +25,10 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+
 /**
  *
- * @author vandanarangaswamy
+ * @author anirudhraj
  */
 public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
 
@@ -83,7 +85,6 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         rejectJButton = new javax.swing.JButton();
         submitJButton = new javax.swing.JButton();
         backJButton = new javax.swing.JButton();
@@ -100,8 +101,8 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
         btnRecommendForJob = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(246, 198, 103));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(246, 198, 103));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         rejectJButton.setBackground(new java.awt.Color(12, 36, 60));
         rejectJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -111,7 +112,7 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
                 rejectJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(rejectJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 155, 40));
+        add(rejectJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 155, 40));
 
         submitJButton.setBackground(new java.awt.Color(12, 36, 60));
         submitJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -121,7 +122,7 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 150, 40));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 150, 40));
 
         backJButton.setBackground(new java.awt.Color(12, 36, 60));
         backJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -131,43 +132,43 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, -1, -1));
 
         txtCourse.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         txtCourse.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtCourse, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 106, 291, 23));
+        add(txtCourse, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 106, 291, 23));
 
         txtHeader.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtHeader.setFocusable(false);
-        jPanel1.add(txtHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 62, 357, 32));
+        add(txtHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 62, 357, 32));
 
         txtCampus.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         txtCampus.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtCampus, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 135, 291, 23));
+        add(txtCampus, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 135, 291, 23));
 
         txtFunding.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         txtFunding.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtFunding, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 222, 291, 23));
+        add(txtFunding, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 222, 291, 23));
 
         txtQual.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         txtQual.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtQual, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 193, 291, 23));
+        add(txtQual, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 193, 291, 23));
 
         txtVetID.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         txtVetID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtVetID, new org.netbeans.lib.awtextra.AbsoluteConstraints(427, 106, 190, 23));
+        add(txtVetID, new org.netbeans.lib.awtextra.AbsoluteConstraints(427, 106, 190, 23));
 
         txtGender.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         txtGender.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 190, 23));
+        add(txtGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 190, 23));
 
         txtMilType.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         txtMilType.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtMilType, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 190, 23));
+        add(txtMilType, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 190, 23));
 
         txtAddress.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         txtAddress.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 220, 190, 23));
+        add(txtAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 220, 190, 23));
 
         btnComplete.setBackground(new java.awt.Color(12, 36, 60));
         btnComplete.setForeground(new java.awt.Color(255, 255, 255));
@@ -177,7 +178,7 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
                 btnCompleteActionPerformed(evt);
             }
         });
-        jPanel1.add(btnComplete, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 290, 160, 40));
+        add(btnComplete, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 290, 160, 40));
 
         btnRecommendForJob.setBackground(new java.awt.Color(12, 36, 60));
         btnRecommendForJob.setForeground(new java.awt.Color(255, 255, 255));
@@ -187,71 +188,101 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
                 btnRecommendForJobActionPerformed(evt);
             }
         });
-        jPanel1.add(btnRecommendForJob, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, 160, 40));
+        add(btnRecommendForJob, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, 160, 40));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Part-Time Job Request");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, 500, -1));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 900, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, 500, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void rejectJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rejectJButtonActionPerformed
         // TODO add your handling code here:
-
+        
         request.setStatus("Rejected");
-
+        
         JOptionPane.showMessageDialog(null, "Candidate: " + request.getSender().getUsername() + " Rejected. Status will be updated accordingly.", "Warning", JOptionPane.INFORMATION_MESSAGE);
         rejectJButton.setEnabled(false);
         submitJButton.setEnabled(false);
+
+
 
     }//GEN-LAST:event_rejectJButtonActionPerformed
 
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
 
         request.setStatus("Accepted");
-
+        
         JOptionPane.showMessageDialog(null, "Candidate: " + request.getSender().getUsername() + " Accepted. Status will be updated accordingly.", "Information", JOptionPane.INFORMATION_MESSAGE);
         submitJButton.setEnabled(false);
         rejectJButton.setEnabled(false);
         //btnComplete.setEnabled(false);
+
+
 
     }//GEN-LAST:event_submitJButtonActionPerformed
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
 
         userProcessContainer.remove(this);
-
+        
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
-
-        PartTImeAreaJPanel dwjp = (PartTImeAreaJPanel) component;
+        
+        PartTimeAreaJPanel dwjp = (PartTimeAreaJPanel) component;
         dwjp.populateTable();
-
+        
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
+    
+        
+    private void btnRecommendForJobActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRecommendForJobActionPerformed
+        // TODO add your handling code here:
+      if(request.getStatus()=="Graduated")
+      {
 
+        JobWorkRequest jrequest = new JobWorkRequest();
+        jrequest.setAreaOfInterest(txtCourse.getText());
+        jrequest.setCampus(txtCampus.getText());
+        jrequest.setHighestQualification(txtQual.getText());
+        jrequest.setCandidateName(request.getSender().getUsername());
+        Organization org = null;
+
+        for (Network network : system.getNetworkList()) {
+            //Step 2.a: check against each enterprise
+            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                //                    userAccount = enterprise.getUserAccountDirectory().authenticateUser(userName, password);
+                //Step 3:check against each organization for each enterprise
+                for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+                    if (organization instanceof JobOrganization) {
+                        org = organization;
+                        break;
+                    }
+                }
+            }
+        }
+        
+        if (org != null) {
+            org.getWorkQueue().getWorkRequestList().add(jrequest);
+            System.out.println("Added Reqyesr to Org ");
+            account.getWorkQueue().getWorkRequestList().add(jrequest);
+            System.out.println("Added Reqyesr to UserAccount ");
+            
+            String to = "abhinavmathod1995@gmail.com";
+            String subject = "Request for Student job";
+            String user = "maheshprasad4569@gmail.com";
+            String pass = "Mahi1234$";
+            
+            JOptionPane.showMessageDialog(null, "Candidate: " + request.getSender().getUsername() + "Job Recommendation Sent to Admin!", "Information", JOptionPane.INFORMATION_MESSAGE);
+            btnRecommendForJob.setEnabled(false);
+        
+
+            //SendMail.send(to,subject, message, user, pass);
+        }
+        
+    }//GEN-LAST:event_btnRecommendForJobActionPerformed
+    }
     private void btnCompleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCompleteActionPerformed
         // TODO add your handling code here:
         if(request.getStatus()=="Accepted")
@@ -262,52 +293,9 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
             submitJButton.setEnabled(false);
             btnComplete.setEnabled(false);
 
+
     }//GEN-LAST:event_btnCompleteActionPerformed
-
-    private void btnRecommendForJobActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRecommendForJobActionPerformed
-        // TODO add your handling code here:
-        if(request.getStatus()=="Graduated")
-        {
-
-            JobWorkRequest jrequest = new JobWorkRequest();
-            jrequest.setAreaOfInterest(txtCourse.getText());
-            jrequest.setCampus(txtCampus.getText());
-            jrequest.setHighestQualification(txtQual.getText());
-            jrequest.setCandidateName(request.getSender().getUsername());
-            Organization org = null;
-
-            for (Network network : system.getNetworkList()) {
-                //Step 2.a: check against each enterprise
-                for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
-                    //                    userAccount = enterprise.getUserAccountDirectory().authenticateUser(userName, password);
-                    //Step 3:check against each organization for each enterprise
-                    for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
-                        if (organization instanceof JobOrganization) {
-                            org = organization;
-                            break;
-                        }
-                    }
-                }
-            }
-
-            if (org != null) {
-                org.getWorkQueue().getWorkRequestList().add(jrequest);
-                System.out.println("Added Reqyesr to Org ");
-                account.getWorkQueue().getWorkRequestList().add(jrequest);
-                System.out.println("Added Reqyesr to UserAccount ");
-
-                String to = "abhinavmathod1995@gmail.com";
-                String subject = "Request for Student job";
-                String user = "maheshprasad4569@gmail.com";
-                String pass = "Mahi1234$";
-
-                JOptionPane.showMessageDialog(null, "Candidate: " + request.getSender().getUsername() + "Job Recommendation Sent to Admin!", "Information", JOptionPane.INFORMATION_MESSAGE);
-                btnRecommendForJob.setEnabled(false);
-
-                //SendMail.send(to,subject, message, user, pass);
-            }
-
-    }//GEN-LAST:event_btnRecommendForJobActionPerformed
+    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -315,7 +303,6 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
     private javax.swing.JButton btnComplete;
     private javax.swing.JButton btnRecommendForJob;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton rejectJButton;
     private javax.swing.JButton submitJButton;
     private javax.swing.JLabel txtAddress;

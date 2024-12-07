@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package userinterface;
 
@@ -31,7 +31,7 @@ public class MainJFrame extends javax.swing.JFrame {
     /**
      * Creates new form MainJFrame
      */
-        private EcoSystem system;
+    private EcoSystem system;
     
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     private StudentDirectory student_Di;
@@ -69,7 +69,7 @@ public class MainJFrame extends javax.swing.JFrame {
     public StudentDirectory getDir() {
         return student_Di;
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -136,7 +136,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 txtSignUpActionPerformed(evt);
             }
         });
-        jPanel1.add(txtSignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 450, 120, -1));
+        jPanel1.add(txtSignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, 120, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setText("Password");
@@ -154,26 +154,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane1.setRightComponent(container);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 707, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jSplitPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 707, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 478, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jSplitPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        getContentPane().add(jSplitPane1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -226,7 +207,8 @@ public class MainJFrame extends javax.swing.JFrame {
                 container.add("StudentWorkAreaJPanel", panel);
                 CardLayout layout = (CardLayout) container.getLayout();
                 layout.next(container);
-
+                
+              
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid credentials");
                 return;
@@ -262,10 +244,10 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void txtSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSignUpActionPerformed
         // TODO add your handling code here:
-        GuestUserJPanel panel = new GuestUserJPanel(container, system,student_Di, user_Dir);
-        container.add("GuestUserJPanel", panel);
-        CardLayout layout = (CardLayout) container.getLayout();
-        layout.next(container);
+                GuestUserJPanel panel = new GuestUserJPanel(container, system,student_Di, user_Dir);
+                container.add("GuestUserJPanel", panel);
+                CardLayout layout = (CardLayout) container.getLayout();
+                layout.next(container);
     }//GEN-LAST:event_txtSignUpActionPerformed
 
     /**
@@ -302,7 +284,6 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel container;
     private javax.swing.JLabel homePic1;

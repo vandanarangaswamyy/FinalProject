@@ -1,22 +1,73 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package userinterface.SystemAdminWorkArea;
 
+import Business.EcoSystem;
+import Business.Student.Student;
+import javax.swing.table.DefaultTableModel;
+import Business.Student.StudentDirectory;
+import java.awt.CardLayout;
+import java.awt.Component;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.URL;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 /**
  *
- * @author vandanarangaswamy
+ * @author dhaan
  */
 public class ViewAllStudents extends javax.swing.JPanel {
-
+   private JPanel userProcessContainer;
+   StudentDirectory vet_Dir;
+    private EcoSystem system;
+    
     /**
      * Creates new form ViewAllStudents
      */
-    public ViewAllStudents() {
+    public ViewAllStudents(JPanel userProcessContainer, EcoSystem system,StudentDirectory vet_Dir) {
+        
         initComponents();
+        
+        this.vet_Dir = vet_Dir;
+        this.system = system;
+        this.userProcessContainer = userProcessContainer;
+        
+        populateStudentDetails();
     }
+ public void populateStudentDetails() {
+     
+        int rowCount = tblViewAllStudent.getRowCount();
+        
+        DefaultTableModel model = (DefaultTableModel) tblViewAllStudent.getModel();
+        
+        for (int i = rowCount - 1; i >= 0; i--) {
+            model.removeRow(i);
+        }
+        
+        
 
+        for (Student v : system.getVd().getStudent_Dir()) {
+            
+            Object row[] = new Object[4];
+            
+            row[0] = v;
+            row[1] = v.getStudent_ID();
+            row[2] = v.getAge();
+            row[3]= v.getGender();
+            
+            
+            model.addRow(row);
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -26,19 +77,61 @@ public class ViewAllStudents extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblViewAllStudent = new javax.swing.JTable();
+        jLabel6 = new javax.swing.JLabel();
+        btnBack = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(246, 198, 103));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        tblViewAllStudent.setBackground(new java.awt.Color(12, 36, 60));
+        tblViewAllStudent.setForeground(new java.awt.Color(255, 255, 255));
+        tblViewAllStudent.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Student Name ", "Student ID", "Age", "Gender"
+            }
+        ));
+        jScrollPane1.setViewportView(tblViewAllStudent);
+
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 820, 185));
+
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel6.setText("View Students");
+        jLabel6.setFocusable(false);
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 50, -1, -1));
+
+        btnBack.setBackground(new java.awt.Color(12, 36, 60));
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
+        btnBack.setText("<< Back");
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        // TODO add your handling code here:
+        userProcessContainer.remove(this);      
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_btnBackActionPerformed
+
+     
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBack;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable tblViewAllStudent;
     // End of variables declaration//GEN-END:variables
 }

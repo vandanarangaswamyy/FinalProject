@@ -1,9 +1,9 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package userinterface.GradSchoolRole;
-
 
 import Business.EcoSystem;
 import Business.Student.Student;
@@ -85,7 +85,6 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         txtHeader = new javax.swing.JLabel();
         txtVetID = new javax.swing.JLabel();
         txtGender = new javax.swing.JLabel();
@@ -107,24 +106,24 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
         btnReject = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(246, 198, 103));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(246, 198, 103));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtHeader.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         txtHeader.setFocusable(false);
-        jPanel1.add(txtHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 357, 32));
+        add(txtHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 357, 32));
 
         txtVetID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtVetID, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 280, 23));
+        add(txtVetID, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 280, 23));
 
         txtGender.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 280, 23));
+        add(txtGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 280, 23));
 
         txtMilType.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtMilType, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 280, 23));
+        add(txtMilType, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 280, 23));
 
         txtAddress.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 280, 23));
+        add(txtAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 280, 23));
 
         btnBack.setBackground(new java.awt.Color(12, 36, 60));
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
@@ -134,40 +133,40 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
-        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 100, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 100, -1));
 
         txtHS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtHS, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 140, 272, 26));
+        add(txtHS, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 140, 272, 26));
 
         txtHS1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtHS1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 272, 26));
+        add(txtHS1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 272, 26));
 
         txtHS2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtHS2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, 272, 26));
+        add(txtHS2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, 272, 26));
 
         txtHS3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtHS3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 272, 26));
+        add(txtHS3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 272, 26));
 
         txtHS4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtHS4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 272, 26));
+        add(txtHS4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 272, 26));
 
         jLabel1.setText("Applicant Details");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
 
         jLabel2.setText("Seeking Admission for:");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
 
         jLabel3.setText("Bachelor's Degree Information");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 280, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 280, -1, -1));
 
         txtHS5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtHS5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 272, 26));
+        add(txtHS5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 272, 26));
 
         txtHS6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtHS6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 272, 26));
+        add(txtHS6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 272, 26));
 
         txtHS7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(txtHS7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 272, 26));
+        add(txtHS7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 272, 26));
 
         btnAccept.setBackground(new java.awt.Color(12, 36, 60));
         btnAccept.setForeground(new java.awt.Color(255, 255, 255));
@@ -177,7 +176,7 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
                 btnAcceptActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, 130, 40));
+        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, 130, 40));
 
         btnReject.setBackground(new java.awt.Color(12, 36, 60));
         btnReject.setForeground(new java.awt.Color(255, 255, 255));
@@ -187,31 +186,10 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
                 btnRejectActionPerformed(evt);
             }
         });
-        jPanel1.add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 460, 130, 40));
+        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 460, 130, 40));
 
         jLabel4.setText("High School Information");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, -1, -1));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 709, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 593, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -224,6 +202,7 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
         dwjp.populateTable();
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
+
     }//GEN-LAST:event_btnBackActionPerformed
 
     private void btnAcceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcceptActionPerformed
@@ -232,6 +211,8 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(null, "Candidate: " + request.getSender().getUsername() + " Accepted. Status will be updated accordingly.", "Information", JOptionPane.INFORMATION_MESSAGE);
         btnAccept.setEnabled(false);
         btnReject.setEnabled(false);
+
+        
 
     }//GEN-LAST:event_btnAcceptActionPerformed
 
@@ -242,6 +223,7 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
         btnReject.setEnabled(false);
         btnAccept.setEnabled(false);
 
+       
     }//GEN-LAST:event_btnRejectActionPerformed
 
 
@@ -253,7 +235,6 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel txtAddress;
     private javax.swing.JLabel txtGender;
     private javax.swing.JLabel txtHS;

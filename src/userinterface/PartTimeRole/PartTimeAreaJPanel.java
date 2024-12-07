@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package userinterface.PartTimeRole;
 
@@ -24,11 +25,12 @@ import java.net.URLConnection;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
+
 /**
  *
- * @author vandanarangaswamy
+ * @author anirudhraj
  */
-public class PartTImeAreaJPanel extends javax.swing.JPanel {
+public class PartTimeAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem business;
@@ -38,7 +40,7 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
     private UserAccount userAccount;
     
 
-    public PartTImeAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization vocationalSchoolOrganization, Enterprise enterprise, StudentDirectory vd,EcoSystem business) {
+    public PartTimeAreaJPanel(JPanel userProcessContainer, UserAccount account, Organization vocationalSchoolOrganization, Enterprise enterprise, StudentDirectory vd,EcoSystem business) {
         
         initComponents();
         
@@ -63,7 +65,6 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         workRequestJTable = new javax.swing.JTable();
         refreshJButton = new javax.swing.JButton();
@@ -90,8 +91,8 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(246, 198, 103));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(246, 198, 103));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         workRequestJTable.setBackground(new java.awt.Color(12, 36, 60));
         workRequestJTable.setForeground(new java.awt.Color(255, 255, 255));
@@ -123,7 +124,7 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(workRequestJTable);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 680, 132));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 680, 132));
 
         refreshJButton.setBackground(new java.awt.Color(12, 36, 60));
         refreshJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -133,7 +134,7 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 210, 110, 40));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 210, 110, 40));
 
         assignJButton.setBackground(new java.awt.Color(12, 36, 60));
         assignJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -143,14 +144,14 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
                 assignJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 170, 50));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 170, 50));
 
         txtAcc.setBackground(new java.awt.Color(255, 102, 0));
         txtAcc.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtAcc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtAcc.setFocusable(false);
         txtAcc.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 88, 34));
+        add(txtAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 88, 34));
 
         processJButton.setBackground(new java.awt.Color(12, 36, 60));
         processJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -160,190 +161,120 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 530, 170, 50));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 530, 170, 50));
 
         txtWelcome.setFont(new java.awt.Font("Arial", 2, 14)); // NOI18N
         txtWelcome.setFocusable(false);
-        jPanel1.add(txtWelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 580, 30));
+        add(txtWelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 580, 30));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel3.setText("Total Requests");
         jLabel3.setFocusable(false);
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
 
         txtTotalRequests1.setBackground(new java.awt.Color(255, 102, 0));
         txtTotalRequests1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtTotalRequests1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTotalRequests1.setFocusable(false);
         txtTotalRequests1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtTotalRequests1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 88, 34));
+        add(txtTotalRequests1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 88, 34));
 
         txtRej.setBackground(new java.awt.Color(255, 102, 0));
         txtRej.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtRej.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtRej.setFocusable(false);
         txtRej.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtRej, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 88, 34));
+        add(txtRej, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 88, 34));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel4.setText("Overall - Across Organization");
         jLabel4.setFocusable(false);
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel5.setText("Total Accepted");
         jLabel5.setFocusable(false);
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel6.setText("Total Rejected");
         jLabel6.setFocusable(false);
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, -1));
 
         txtTotalRequests2.setBackground(new java.awt.Color(255, 153, 0));
         txtTotalRequests2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtTotalRequests2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTotalRequests2.setFocusable(false);
         txtTotalRequests2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtTotalRequests2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 88, 34));
+        add(txtTotalRequests2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 88, 34));
 
         txtAcc1.setBackground(new java.awt.Color(255, 153, 0));
         txtAcc1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtAcc1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtAcc1.setFocusable(false);
         txtAcc1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtAcc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 88, 34));
+        add(txtAcc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 88, 34));
 
         txtRej1.setBackground(new java.awt.Color(255, 153, 0));
         txtRej1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtRej1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtRej1.setFocusable(false);
         txtRej1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtRej1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 88, 34));
+        add(txtRej1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 88, 34));
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel7.setText("Total Rejected");
         jLabel7.setFocusable(false);
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel8.setText("Total Accepted");
         jLabel8.setFocusable(false);
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel9.setText("Total Requests");
         jLabel9.setFocusable(false);
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel10.setText("My Requests");
         jLabel10.setFocusable(false);
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
 
         txtPend.setBackground(new java.awt.Color(255, 102, 0));
         txtPend.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtPend.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPend.setFocusable(false);
         txtPend.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtPend, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 88, 34));
+        add(txtPend, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 88, 34));
 
         jLabel11.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel11.setText("Recommended");
         jLabel11.setFocusable(false);
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 80, -1));
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 80, -1));
 
         txtPend1.setBackground(new java.awt.Color(255, 153, 0));
         txtPend1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtPend1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPend1.setFocusable(false);
         txtPend1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtPend1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 88, 34));
+        add(txtPend1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 88, 34));
 
         jLabel12.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel12.setText("Recommended");
         jLabel12.setFocusable(false);
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, -1, -1));
+        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel13.setText("Part-Time Job Work Panel");
         jLabel13.setFocusable(false);
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, -1, -1));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 881, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 881, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 673, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 673, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
         populateTable();
     }//GEN-LAST:event_refreshJButtonActionPerformed
-
-    private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed
-
-        int selectedRow = workRequestJTable.getSelectedRow();
-
-        if (selectedRow < 0) {
-            return;
-        }
-        WorkRequest request = (WorkRequest) workRequestJTable.getValueAt(selectedRow, 0);
-        request.setReceiver(userAccount);
-        request.setStatus("Pending");
-        populateTable();
-    }//GEN-LAST:event_assignJButtonActionPerformed
-
-    private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
-
-        int selectedRow = workRequestJTable.getSelectedRow();
-
-        if (selectedRow < 0) {
-            return;
-        }
-
-        //        PartTimeRequest request = (PartTimeRequest) workRequestJTable.getValueAt(selectedRow, 0);
-        //        request.setStatus("Processing");
-        //        ProcessWorkRequestJPanel processWorkRequestJPanel = new ProcessWorkRequestJPanel(userProcessContainer, request);
-        //        userProcessContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);
-        //        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        //        layout.next(userProcessContainer);
-        //
-        PartTimeRequest request = (PartTimeRequest) workRequestJTable.getValueAt(selectedRow, 0);
-
-        if(request.getStatus().equalsIgnoreCase("Pending") || request.getStatus().equals(null))
-        {
-
-            request.setStatus("Processing");
-        }
-
-        if(request.getStatus().equalsIgnoreCase("Employed"))
-        {
-            JOptionPane.showMessageDialog(null, "Candidate is already employed!!", "Warning", JOptionPane.INFORMATION_MESSAGE);
-            return;
-        }
-
-        ProcessWorkRequestJPanel2 processWorkRequestJPanel = new ProcessWorkRequestJPanel2(userProcessContainer, request, vd,business,userAccount);
-        userProcessContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-
-    }//GEN-LAST:event_processJButtonActionPerformed
 
     public void populateTable() {
         DefaultTableModel model = (DefaultTableModel) workRequestJTable.getModel();
@@ -418,7 +349,67 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
 
         }
     }
-    
+
+
+    private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed
+
+        int selectedRow = workRequestJTable.getSelectedRow();
+
+        
+        
+        if (selectedRow < 0) {
+            return;
+        }
+        WorkRequest request = (WorkRequest) workRequestJTable.getValueAt(selectedRow, 0);
+        request.setReceiver(userAccount);
+        request.setStatus("Pending");
+        populateTable();
+
+    }//GEN-LAST:event_assignJButtonActionPerformed
+
+    private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
+
+        int selectedRow = workRequestJTable.getSelectedRow();
+
+        
+        
+        if (selectedRow < 0) {
+            return;
+        }
+
+//        PartTimeRequest request = (PartTimeRequest) workRequestJTable.getValueAt(selectedRow, 0);
+//        request.setStatus("Processing");
+//        ProcessWorkRequestJPanel processWorkRequestJPanel = new ProcessWorkRequestJPanel(userProcessContainer, request);
+//        userProcessContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);
+//        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+//        layout.next(userProcessContainer);
+//        
+        PartTimeRequest request = (PartTimeRequest) workRequestJTable.getValueAt(selectedRow, 0);
+        
+        if(request.getStatus().equalsIgnoreCase("Pending") || request.getStatus().equals(null))
+        {
+            
+        request.setStatus("Processing");
+        }
+        
+        
+        if(request.getStatus().equalsIgnoreCase("Employed"))
+        {
+         JOptionPane.showMessageDialog(null, "Candidate is already employed!!", "Warning", JOptionPane.INFORMATION_MESSAGE);
+         return;
+        }
+        
+        
+        ProcessWorkRequestJPanel2 processWorkRequestJPanel = new ProcessWorkRequestJPanel2(userProcessContainer, request, vd,business,userAccount);
+        userProcessContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+
+
+    }//GEN-LAST:event_processJButtonActionPerformed
+
+       
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton assignJButton;
     private javax.swing.JLabel jLabel10;
@@ -432,7 +423,6 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton processJButton;
     private javax.swing.JButton refreshJButton;

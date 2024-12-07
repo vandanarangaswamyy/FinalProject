@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package userinterface.AdministrativeRole;
 
@@ -12,11 +12,15 @@ import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
 /**
-/**
  *
  * @author vandanarangaswamy
  */
-private OrganizationDirectory organizationDir;
+
+
+public class ManageEmployeeJPanel extends javax.swing.JPanel {
+
+    
+    private OrganizationDirectory organizationDir;
     private JPanel userProcessContainer;
     
     /**
@@ -83,7 +87,6 @@ private OrganizationDirectory organizationDir;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtOrgTable = new javax.swing.JTable();
         btnCreateEmployee = new javax.swing.JButton();
@@ -96,8 +99,8 @@ private OrganizationDirectory organizationDir;
         jLabel3 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(246, 198, 103));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(246, 198, 103));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtOrgTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -126,8 +129,12 @@ private OrganizationDirectory organizationDir;
             }
         });
         jScrollPane1.setViewportView(txtOrgTable);
+        if (txtOrgTable.getColumnModel().getColumnCount() > 0) {
+            txtOrgTable.getColumnModel().getColumn(0).setResizable(false);
+            txtOrgTable.getColumnModel().getColumn(1).setResizable(false);
+        }
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 480, 92));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 480, 92));
 
         btnCreateEmployee.setBackground(new java.awt.Color(12, 36, 60));
         btnCreateEmployee.setForeground(new java.awt.Color(255, 255, 255));
@@ -137,7 +144,7 @@ private OrganizationDirectory organizationDir;
                 btnCreateEmployeeActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCreateEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, 170, 40));
+        add(btnCreateEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, 170, 40));
 
         cmbOrg.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cmbOrg.addActionListener(new java.awt.event.ActionListener() {
@@ -145,10 +152,10 @@ private OrganizationDirectory organizationDir;
                 cmbOrgActionPerformed(evt);
             }
         });
-        jPanel1.add(cmbOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, 180, -1));
+        add(cmbOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, 180, -1));
 
         jLabel1.setText("Organization");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, -1, -1));
 
         btnBack.setBackground(new java.awt.Color(12, 36, 60));
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
@@ -158,56 +165,46 @@ private OrganizationDirectory organizationDir;
                 btnBackActionPerformed(evt);
             }
         });
-        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, -1, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, -1, -1));
 
         jLabel2.setText("Name");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, -1));
-        jPanel1.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 180, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 180, -1));
 
         cmgOrg2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel1.add(cmgOrg2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 180, -1));
+        add(cmgOrg2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 180, -1));
 
         jLabel3.setText("Organization");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel8.setText("Manage Employee");
         jLabel8.setFocusable(false);
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 537, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 537, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 455, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 455, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCreateEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateEmployeeActionPerformed
-
+        
+        
         Organization organization = (Organization) cmgOrg2.getSelectedItem();
         String name = txtName.getText();
-
+        
+        
         organization.getEmployeeDirectory().createEmployee(name);
-
+        
         populateTable(organization);
         txtName.setText("");
-
+        
     }//GEN-LAST:event_btnCreateEmployeeActionPerformed
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+
+        userProcessContainer.remove(this);
+        
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_btnBackActionPerformed
 
     private void cmbOrgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbOrgActionPerformed
         Organization organization = (Organization) cmbOrg.getSelectedItem();
@@ -215,16 +212,6 @@ private OrganizationDirectory organizationDir;
             populateTable(organization);
         }
     }//GEN-LAST:event_cmbOrgActionPerformed
-
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-
-        userProcessContainer.remove(this);
-
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-
-        layout.previous(userProcessContainer);
-    }//GEN-LAST:event_btnBackActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
@@ -235,7 +222,6 @@ private OrganizationDirectory organizationDir;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField txtName;
     private javax.swing.JTable txtOrgTable;

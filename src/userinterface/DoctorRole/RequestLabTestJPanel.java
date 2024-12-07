@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package userinterface.DoctorRole;
 
@@ -16,6 +16,7 @@ import java.awt.Component;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JPanel;
+
 /**
  *
  * @author vandanarangaswamy
@@ -52,7 +53,6 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         btnreqTest = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         txtMessage = new javax.swing.JTextField();
@@ -60,8 +60,8 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         valueLabel = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(246, 198, 103));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(246, 198, 103));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnreqTest.setBackground(new java.awt.Color(12, 36, 60));
         btnreqTest.setForeground(new java.awt.Color(255, 255, 255));
@@ -71,11 +71,11 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
                 btnreqTestActionPerformed(evt);
             }
         });
-        jPanel1.add(btnreqTest, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 110, 40));
+        add(btnreqTest, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 110, 40));
 
         jLabel1.setText("Message");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, -1, -1));
-        jPanel1.add(txtMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 110, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, -1, -1));
+        add(txtMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 110, -1));
 
         backJButton.setBackground(new java.awt.Color(12, 36, 60));
         backJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -85,46 +85,25 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
 
         valueLabel.setText("<value>");
-        jPanel1.add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 130, -1));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 130, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
-        jPanel1.add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 120, 30));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 506, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 506, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 357, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 120, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnreqTestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnreqTestActionPerformed
-
+        
         String message = txtMessage.getText();
-
+        
         LabTestWorkRequest request = new LabTestWorkRequest();
         request.setMessage(message);
         request.setSender(userAccount);
         request.setStatus("Sent");
-
+        
         Organization org = null;
         for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()){
             if (organization instanceof LabOrganization){
@@ -136,11 +115,11 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
             org.getWorkQueue().getWorkRequestList().add(request);
             userAccount.getWorkQueue().getWorkRequestList().add(request);
         }
-
+        
     }//GEN-LAST:event_btnreqTestActionPerformed
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
-
+        
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
@@ -148,16 +127,14 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         dwjp.populateRequestTable();
         CardLayout layout = (CardLayout)userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-
+        
     }//GEN-LAST:event_backJButtonActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JButton btnreqTest;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtMessage;
     private javax.swing.JLabel valueLabel;
     // End of variables declaration//GEN-END:variables

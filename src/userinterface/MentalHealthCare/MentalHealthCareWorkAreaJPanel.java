@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package userinterface.MentalHealthCare;
 
@@ -18,18 +19,19 @@ import Business.Student.StudentDirectory;
 import Business.WorkQueue.WorkRequest;
 import javax.swing.table.DefaultTableModel;
 import userinterface.SystemAdminWorkArea.ViewAllStudents;
+
 /**
  *
- * @author vandanarangaswamy
+ * @author anirudhraj
  */
 public class MentalHealthCareWorkAreaJPanel extends javax.swing.JPanel {
 
-    private JPanel userProcessContainer;
+     private JPanel userProcessContainer;
     private EcoSystem system;
     private StudentDirectory vd;
     private Enterprise enterprise;
     private UserAccount userAccount;
-    private MentalHealthCareOrganzition MHC_Organization;
+    private  MentalHealthCareOrganzition MHC_Organization;
     
 
     /**
@@ -57,7 +59,6 @@ public class MentalHealthCareWorkAreaJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         workRequestJTable = new javax.swing.JTable();
         refreshJButton = new javax.swing.JButton();
@@ -82,8 +83,8 @@ public class MentalHealthCareWorkAreaJPanel extends javax.swing.JPanel {
         txtWelcome = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(246, 198, 103));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(246, 198, 103));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         workRequestJTable.setBackground(new java.awt.Color(12, 36, 60));
         workRequestJTable.setForeground(new java.awt.Color(255, 255, 255));
@@ -115,7 +116,7 @@ public class MentalHealthCareWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(workRequestJTable);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, 977, 130));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, 977, 130));
 
         refreshJButton.setBackground(new java.awt.Color(20, 53, 94));
         refreshJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -125,7 +126,7 @@ public class MentalHealthCareWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(999, 48, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(999, 48, -1, -1));
 
         btnAssign.setBackground(new java.awt.Color(20, 53, 94));
         btnAssign.setForeground(new java.awt.Color(255, 255, 255));
@@ -135,7 +136,7 @@ public class MentalHealthCareWorkAreaJPanel extends javax.swing.JPanel {
                 btnAssignActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAssign, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 520, 118, 46));
+        add(btnAssign, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 520, 118, 46));
 
         processJButton.setBackground(new java.awt.Color(20, 53, 94));
         processJButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -145,11 +146,11 @@ public class MentalHealthCareWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 520, 120, 46));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 520, 120, 46));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Veteran Request List");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, -1, -1));
 
         btnViewAllStudents.setBackground(new java.awt.Color(20, 53, 94));
         btnViewAllStudents.setForeground(new java.awt.Color(255, 255, 255));
@@ -159,123 +160,106 @@ public class MentalHealthCareWorkAreaJPanel extends javax.swing.JPanel {
                 btnViewAllStudentsActionPerformed(evt);
             }
         });
-        jPanel1.add(btnViewAllStudents, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 150, 50));
+        add(btnViewAllStudents, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 150, 50));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel4.setText("Overall - Across Organization");
         jLabel4.setFocusable(false);
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 111, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 111, -1, -1));
 
         txtTotalRequests1.setBackground(new java.awt.Color(153, 255, 255));
         txtTotalRequests1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtTotalRequests1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTotalRequests1.setFocusable(false);
         txtTotalRequests1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtTotalRequests1, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 130, 88, 34));
+        add(txtTotalRequests1, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 130, 88, 34));
 
         txtAcc.setBackground(new java.awt.Color(153, 255, 255));
         txtAcc.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtAcc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtAcc.setFocusable(false);
         txtAcc.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 130, 88, 34));
+        add(txtAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 130, 88, 34));
 
         txtPend.setBackground(new java.awt.Color(153, 255, 255));
         txtPend.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtPend.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPend.setFocusable(false);
         txtPend.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtPend, new org.netbeans.lib.awtextra.AbsoluteConstraints(279, 130, 88, 34));
+        add(txtPend, new org.netbeans.lib.awtextra.AbsoluteConstraints(279, 130, 88, 34));
 
         jLabel11.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel11.setText("Total Pending");
         jLabel11.setFocusable(false);
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 170, -1, -1));
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 170, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel5.setText("Total Accepted");
         jLabel5.setFocusable(false);
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 170, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 170, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel6.setText("Total Requests");
         jLabel6.setFocusable(false);
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 170, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 170, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel10.setText("My Requests");
         jLabel10.setFocusable(false);
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 210, -1, -1));
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 210, -1, -1));
 
         txtTotalRequests2.setBackground(new java.awt.Color(153, 153, 255));
         txtTotalRequests2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtTotalRequests2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTotalRequests2.setFocusable(false);
         txtTotalRequests2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtTotalRequests2, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 229, 88, 34));
+        add(txtTotalRequests2, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 229, 88, 34));
 
         jLabel9.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel9.setText("Total Requests");
         jLabel9.setFocusable(false);
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 269, -1, -1));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 269, -1, -1));
 
         txtAcc1.setBackground(new java.awt.Color(153, 153, 255));
         txtAcc1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtAcc1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtAcc1.setFocusable(false);
         txtAcc1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtAcc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 229, 88, 34));
+        add(txtAcc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 229, 88, 34));
 
         jLabel8.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel8.setText("Total Accepted");
         jLabel8.setFocusable(false);
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 269, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 269, -1, -1));
 
         txtPend1.setBackground(new java.awt.Color(153, 153, 255));
         txtPend1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         txtPend1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPend1.setFocusable(false);
         txtPend1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(txtPend1, new org.netbeans.lib.awtextra.AbsoluteConstraints(279, 230, 88, 34));
+        add(txtPend1, new org.netbeans.lib.awtextra.AbsoluteConstraints(279, 230, 88, 34));
 
         jLabel12.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel12.setText("Total Pending");
         jLabel12.setFocusable(false);
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 270, -1, -1));
+        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 270, -1, -1));
 
         txtWelcome.setBackground(new java.awt.Color(204, 204, 255));
         txtWelcome.setFont(new java.awt.Font("Arial", 2, 14)); // NOI18N
         txtWelcome.setFocusable(false);
-        jPanel1.add(txtWelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 63, 580, 30));
+        add(txtWelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 63, 580, 30));
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel7.setText("Mental Healthcare Dashboard");
         jLabel7.setFocusable(false);
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 20, -1, 40));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1043, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1043, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 722, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 722, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 20, -1, 40));
     }// </editor-fold>//GEN-END:initComponents
- 
-    public void populateRequestTable(){
+
+    private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
+        populateTable();
+        populateRequestTable();
+    }//GEN-LAST:event_refreshJButtonActionPerformed
+ public void populateRequestTable(){
     }
     
        public void populateTable() {
@@ -351,25 +335,19 @@ public class MentalHealthCareWorkAreaJPanel extends javax.swing.JPanel {
 
     }
        
-    
-    private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
-        populateTable();
-        populateRequestTable();
-    }//GEN-LAST:event_refreshJButtonActionPerformed
-
     private void btnAssignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignActionPerformed
 
         int selectedRow = workRequestJTable.getSelectedRow();
 
         if (selectedRow >= 0) {
-            WorkRequest request = (WorkRequest) workRequestJTable.getValueAt(selectedRow, 0);
-            request.setReceiver(userAccount);
-            request.setStatus("Pending");
-            populateTable();
+           WorkRequest request = (WorkRequest) workRequestJTable.getValueAt(selectedRow, 0);
+        request.setReceiver(userAccount);
+        request.setStatus("Pending");
+        populateTable();
         } else{
             JOptionPane.showMessageDialog(null,"Please select any row from above table","Warning",JOptionPane.WARNING_MESSAGE);
         }
-
+     
     }//GEN-LAST:event_btnAssignActionPerformed
 
     private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
@@ -377,28 +355,30 @@ public class MentalHealthCareWorkAreaJPanel extends javax.swing.JPanel {
         int selectedRow = workRequestJTable.getSelectedRow();
 
         if (selectedRow >= 0) {
-            MentalHealthCareRequest request = (MentalHealthCareRequest) workRequestJTable.getValueAt(selectedRow, 0);
-            if(request.getStatus().equalsIgnoreCase("Approved"))
-            {
-                JOptionPane.showMessageDialog(null, "Already Processed!!", "Warning", JOptionPane.INFORMATION_MESSAGE);
-                return;
-                //btnReject.setEnabled(false);
-            }
-            request.setStatus("Processing");
+           MentalHealthCareRequest request = (MentalHealthCareRequest) workRequestJTable.getValueAt(selectedRow, 0);
+                    if(request.getStatus().equalsIgnoreCase("Approved"))
+                    {
+            JOptionPane.showMessageDialog(null, "Already Processed!!", "Warning", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        //btnReject.setEnabled(false);
+                    }
+        request.setStatus("Processing");
 
-            MHC_WorkRequestJPanel mentalHealthCareRequest = new MHC_WorkRequestJPanel(userProcessContainer, request,system,userAccount);
-            userProcessContainer.add("MentalHealthCareRequest", mentalHealthCareRequest);
-            CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-            layout.next(userProcessContainer);
+        MHC_WorkRequestJPanel mentalHealthCareRequest = new MHC_WorkRequestJPanel(userProcessContainer, request,system,userAccount);
+        userProcessContainer.add("MentalHealthCareRequest", mentalHealthCareRequest);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
         }else{
             JOptionPane.showMessageDialog(null,"Please select any row from above table","Warning",JOptionPane.WARNING_MESSAGE);
         }
+        
 
+     
     }//GEN-LAST:event_processJButtonActionPerformed
 
     private void btnViewAllStudentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewAllStudentsActionPerformed
         // TODO add your handling code here:
-        ViewAllStudents rg = new ViewAllStudents(userProcessContainer, system, vd);
+         ViewAllStudents rg = new ViewAllStudents(userProcessContainer, system, vd);
         userProcessContainer.add("ViewAllStudents", rg);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
@@ -418,7 +398,6 @@ public class MentalHealthCareWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton processJButton;
     private javax.swing.JButton refreshJButton;

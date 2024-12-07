@@ -1,76 +1,34 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package Business.Organization;
 import java.util.ArrayList;
-import Business.Organization.Organization.Type;
+import Business.Role.PartTimeRole;
+import Business.Role.Role;
 
 
 /**
  *
  * @author anirudhraj
  */
-public class OrganizationDirectory {
+public class PartTimeOrganization extends Organization{
 
-    private ArrayList<Organization> organizationList;
-    
-    
-
-    public OrganizationDirectory() {
-        organizationList = new ArrayList();
-    }
-    
-    
-
-    public ArrayList<Organization> getOrganizationList() {
-        return organizationList;
-    }
-
-    public Organization createOrganization(Type type) 
+    public PartTimeOrganization() 
     {
-        Organization organization = null;
-        if (type.getValue().equals(Type.Doctor.getValue())) {
-            organization = new DoctorOrganization();
-            organizationList.add(organization);
-        } else if (type.getValue().equals(Type.Lab.getValue())) {
-            organization = new LabOrganization();
-            organizationList.add(organization);
-        } else if (type.getValue().equals(Type.VocationalSchool.getValue())) {
-            organization = new PartTimeOrganization();
-            organizationList.add(organization);
-        } else if (type.getValue().equals(Type.GradSchool.getValue())) {
-            organization = new GradSchoolOrganization();
-            organizationList.add(organization);
-        }
         
         
-        
-        else if (type.getValue().equals(Type.TempHousing.getValue())) {
-            organization = new TempHousingOrganization();
-            organizationList.add(organization);
-        }
-        else if (type.getValue().equals(Type.PermHousing.getValue())) {
-            organization = new PermHousingOrganization();
-            organizationList.add(organization);
-        } 
-        
-        else if (type.getValue().equals(Type.PhysicalHealthCare.getValue())) 
-        {
-            organization = new PhysicalHealthCareOrganization();
-            organizationList.add(organization);
-        } 
-        else if (type.getValue().equals(Type.MentalHeathCare.getValue())) 
-        {
-            organization = new MentalHealthCareOrganzition();
-            organizationList.add(organization);
-        }
-        
-        else if (type.getValue().equals(Type.Job.getValue())) {
-            organization = new JobOrganization();
-            organizationList.add(organization);
-        }
-
-        return organization;
+        super(Organization.Type.VocationalSchool.getValue());
     }
+    
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        ArrayList<Role> roles = new ArrayList();
+        
+        
+        roles.add(new PartTimeRole());
+        return roles;
+    }
+     
 }

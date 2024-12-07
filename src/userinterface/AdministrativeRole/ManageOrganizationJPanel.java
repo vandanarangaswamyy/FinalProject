@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package userinterface.AdministrativeRole;
 
@@ -11,6 +11,7 @@ import Business.Organization.OrganizationDirectory;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author vandanarangaswamy
@@ -82,7 +83,6 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
             model.addRow(row);
         }
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -92,7 +92,6 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblOrg = new javax.swing.JTable();
         btnAddOrg = new javax.swing.JButton();
@@ -101,8 +100,8 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         btnBack = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(246, 198, 103));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(246, 198, 103));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblOrg.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -131,8 +130,12 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
             }
         });
         jScrollPane1.setViewportView(tblOrg);
+        if (tblOrg.getColumnModel().getColumnCount() > 0) {
+            tblOrg.getColumnModel().getColumn(0).setResizable(false);
+            tblOrg.getColumnModel().getColumn(1).setResizable(false);
+        }
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 480, 92));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 480, 92));
 
         btnAddOrg.setBackground(new java.awt.Color(12, 36, 60));
         btnAddOrg.setForeground(new java.awt.Color(255, 255, 255));
@@ -142,7 +145,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                 btnAddOrgActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAddOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 170, 40));
+        add(btnAddOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 170, 40));
 
         cmbOrgType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cmbOrgType.addActionListener(new java.awt.event.ActionListener() {
@@ -150,10 +153,10 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                 cmbOrgTypeActionPerformed(evt);
             }
         });
-        jPanel1.add(cmbOrgType, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 210, -1));
+        add(cmbOrgType, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 210, -1));
 
         jLabel1.setText("Organization Type ");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
 
         btnBack.setBackground(new java.awt.Color(12, 36, 60));
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
@@ -163,33 +166,12 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
-        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, -1, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel8.setText("Manage Organization");
         jLabel8.setFocusable(false);
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, -1, -1));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 562, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 418, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddOrgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddOrgActionPerformed
@@ -199,10 +181,6 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         populateTable();
     }//GEN-LAST:event_btnAddOrgActionPerformed
 
-    private void cmbOrgTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbOrgTypeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbOrgTypeActionPerformed
-
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
 
         userProcessContainer.remove(this);
@@ -210,6 +188,9 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_btnBackActionPerformed
 
+    private void cmbOrgTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbOrgTypeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbOrgTypeActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddOrg;
@@ -217,7 +198,6 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
     private javax.swing.JComboBox cmbOrgType;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblOrg;
     // End of variables declaration//GEN-END:variables

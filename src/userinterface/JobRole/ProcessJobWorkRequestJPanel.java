@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package userinterface.JobRole;
 
@@ -11,9 +12,10 @@ import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+
 /**
  *
- * @author vandanarangaswamy
+ * @author anirudhraj
  */
 public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
 
@@ -45,7 +47,6 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txtJobRole = new javax.swing.JTextField();
@@ -57,19 +58,19 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
         txtCandidateName = new javax.swing.JTextField();
         btnback = new javax.swing.JButton();
 
-        jPanel1.setBackground(new java.awt.Color(246, 198, 103));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(246, 198, 103));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Process Job Request");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, -1, -1));
 
         jLabel2.setText("Suggested Job Role :");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, -1, -1));
 
         txtJobRole.setEditable(false);
-        jPanel1.add(txtJobRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 340, -1));
+        add(txtJobRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 340, -1));
 
         btnApprove.setBackground(new java.awt.Color(12, 36, 60));
         btnApprove.setForeground(new java.awt.Color(255, 255, 255));
@@ -79,7 +80,7 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
                 btnApproveActionPerformed(evt);
             }
         });
-        jPanel1.add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 100, 50));
+        add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 100, 50));
 
         btnReject.setBackground(new java.awt.Color(12, 36, 60));
         btnReject.setForeground(new java.awt.Color(255, 255, 255));
@@ -89,14 +90,14 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
                 btnRejectActionPerformed(evt);
             }
         });
-        jPanel1.add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 350, 110, 50));
+        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 350, 110, 50));
 
         jLabel3.setText("Comments :");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, -1, -1));
-        jPanel1.add(txtComment, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 340, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, -1, -1));
+        add(txtComment, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 340, -1));
 
         jLabel4.setText("Candidate Name :");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, 20));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, 20));
 
         txtCandidateName.setEditable(false);
         txtCandidateName.addActionListener(new java.awt.event.ActionListener() {
@@ -104,7 +105,7 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
                 txtCandidateNameActionPerformed(evt);
             }
         });
-        jPanel1.add(txtCandidateName, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 340, -1));
+        add(txtCandidateName, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 340, -1));
 
         btnback.setBackground(new java.awt.Color(12, 36, 60));
         btnback.setForeground(new java.awt.Color(255, 255, 255));
@@ -114,28 +115,7 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
                 btnbackActionPerformed(evt);
             }
         });
-        jPanel1.add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, 100, 30));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 900, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, 100, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnApproveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApproveActionPerformed
@@ -182,7 +162,6 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtCandidateName;
     private javax.swing.JTextField txtComment;
     private javax.swing.JTextField txtJobRole;

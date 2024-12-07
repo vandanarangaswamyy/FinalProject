@@ -1,9 +1,8 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package userinterface.AdministrativeRole;
-
 
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
@@ -95,7 +94,6 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         btnCreate = new javax.swing.JButton();
         txtUserName = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -112,8 +110,8 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         jLabel8 = new javax.swing.JLabel();
         txtPassword = new javax.swing.JPasswordField();
 
-        jPanel1.setBackground(new java.awt.Color(246, 198, 103));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(246, 198, 103));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnCreate.setBackground(new java.awt.Color(12, 36, 60));
         btnCreate.setForeground(new java.awt.Color(255, 255, 255));
@@ -123,11 +121,11 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
                 btnCreateActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 310, 120, 40));
-        jPanel1.add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 230, 170, -1));
+        add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 310, 120, 40));
+        add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 230, 170, -1));
 
         jLabel1.setText("User Name");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 230, -1, 20));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 230, -1, 20));
 
         tblUserAc.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -153,17 +151,21 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
             }
         });
         jScrollPane1.setViewportView(tblUserAc);
+        if (tblUserAc.getColumnModel().getColumnCount() > 0) {
+            tblUserAc.getColumnModel().getColumn(0).setResizable(false);
+            tblUserAc.getColumnModel().getColumn(1).setResizable(false);
+        }
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 375, 179));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 375, 179));
 
         jLabel2.setText("Password");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, -1, -1));
 
         jLabel3.setText("Employee");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, -1, -1));
 
         cmbEmp.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel1.add(cmbEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 170, -1));
+        add(cmbEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 170, -1));
 
         btnBack.setBackground(new java.awt.Color(12, 36, 60));
         btnBack.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
@@ -174,10 +176,10 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
-        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 80, 30));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 80, 30));
 
         jLabel5.setText("Organization");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 100, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 100, -1, -1));
 
         cmbOrg.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cmbOrg.addActionListener(new java.awt.event.ActionListener() {
@@ -185,50 +187,30 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
                 cmbOrgActionPerformed(evt);
             }
         });
-        jPanel1.add(cmbOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 170, -1));
+        add(cmbOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 170, -1));
 
         jLabel4.setText("Role");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 180, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 180, -1, -1));
 
         cmbRole.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel1.add(cmbRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 180, 170, -1));
+        add(cmbRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 180, 170, -1));
 
         jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel8.setText("Manage User Account");
         jLabel8.setFocusable(false);
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
-        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, 170, -1));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 705, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 575, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 575, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
+        add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, 170, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed
         String userName = txtUserName.getText();
-        //        String password = passwordJTextField.getText();
-        //        String password = jPasswordField1.getName();
-
+//        String password = passwordJTextField.getText();
+//        String password = jPasswordField1.getName();
+        
         char[] passwordCharArray = txtPassword.getPassword();
         String password = String.valueOf(passwordCharArray);
-
+        
+     
         Organization organization = (Organization) cmbOrg.getSelectedItem();
         Employee employee = (Employee) cmbEmp.getSelectedItem();
         Role role = (Role) cmbRole.getSelectedItem();
@@ -255,7 +237,6 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_cmbOrgActionPerformed
 
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnCreate;
@@ -268,7 +249,6 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblUserAc;
     private javax.swing.JPasswordField txtPassword;
