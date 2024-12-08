@@ -112,23 +112,23 @@ public class MHC_WorkRequestJPanel extends javax.swing.JPanel {
         txt_EmailID = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setForeground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnBack.setBackground(new java.awt.Color(12, 36, 60));
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
+        btnBack.setBackground(new java.awt.Color(204, 204, 204));
         btnBack.setText("Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, -1, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, 40, -1));
 
-        btnSubmitReq.setBackground(new java.awt.Color(12, 36, 60));
-        btnSubmitReq.setForeground(new java.awt.Color(255, 255, 255));
+        btnSubmitReq.setBackground(new java.awt.Color(204, 204, 204));
         btnSubmitReq.setText("Submit Result");
+        btnSubmitReq.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnSubmitReq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSubmitReqActionPerformed(evt);
@@ -136,12 +136,15 @@ public class MHC_WorkRequestJPanel extends javax.swing.JPanel {
         });
         add(btnSubmitReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 420, 130, 40));
 
+        lblMainConcern.setForeground(new java.awt.Color(255, 255, 255));
         lblMainConcern.setText("jLabel2");
         add(lblMainConcern, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 153, 140, 33));
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Main Concern:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 162, -1, -1));
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Comments");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 190, -1, -1));
 
@@ -151,59 +154,76 @@ public class MHC_WorkRequestJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, 225, 133));
 
+        lbl.setForeground(new java.awt.Color(255, 255, 255));
         lbl.setText("Analysis");
         add(lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 130, -1, -1));
         add(txtAnalysis, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, 225, -1));
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Patient Name: ");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 121, -1, -1));
 
+        lbl_patientName.setForeground(new java.awt.Color(255, 255, 255));
         lbl_patientName.setText("jLabel5");
         add(lbl_patientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 121, 98, -1));
 
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Concern Description:");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, 30));
 
+        lbl_concernDescription.setForeground(new java.awt.Color(255, 255, 255));
         lbl_concernDescription.setText("jLabel7");
         add(lbl_concernDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 169, 50));
 
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Medical History");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 100, 30));
 
+        lbl_MedicalHistory.setForeground(new java.awt.Color(255, 255, 255));
         lbl_MedicalHistory.setText("jLabel8");
         add(lbl_MedicalHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, -1, 30));
 
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Serious Injury");
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, 30));
 
+        lbl_Brain_injury.setForeground(new java.awt.Color(255, 255, 255));
         lbl_Brain_injury.setText("jLabel9");
         add(lbl_Brain_injury, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 350, -1, 30));
 
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Symptoms");
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, 30));
 
+        lbl_symptoms.setForeground(new java.awt.Color(255, 255, 255));
         lbl_symptoms.setText("jLabel10");
         add(lbl_symptoms, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, -1, 30));
 
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Mood:");
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, -1, 30));
 
+        lbl_Mood.setForeground(new java.awt.Color(255, 255, 255));
         lbl_Mood.setText("jLabel11");
         add(lbl_Mood, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, -1, 30));
 
-        jLabel11.setFont(new java.awt.Font("Tamil MN", 1, 18)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Niramit", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Student Details");
         add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 197, -1));
 
-        jLabel12.setFont(new java.awt.Font("Tamil MN", 1, 18)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Niramit", 1, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Doctor Analysis");
         add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, -1, -1));
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Email ID");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 380, 79, 23));
         add(txt_EmailID, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 380, 220, -1));
 
-        jLabel14.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Process Mental Healthcare Request");
         jLabel14.setFocusable(false);
         add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, -1, 30));

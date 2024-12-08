@@ -104,7 +104,7 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
         txtWelcome = new javax.swing.JLabel();
         btnViewAllStudents = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         refreshJButton.setBackground(new java.awt.Color(12, 36, 60));
@@ -117,8 +117,8 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 30, -1, -1));
 
-        workRequestJTable.setBackground(new java.awt.Color(12, 36, 60));
-        workRequestJTable.setForeground(new java.awt.Color(255, 255, 255));
+        workRequestJTable.setBackground(new java.awt.Color(204, 204, 204));
+        workRequestJTable.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null},
@@ -149,9 +149,9 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 639, 96));
 
-        assignJButton.setBackground(new java.awt.Color(12, 36, 60));
-        assignJButton.setForeground(new java.awt.Color(255, 255, 255));
+        assignJButton.setBackground(new java.awt.Color(204, 204, 204));
         assignJButton.setText("Assign to me");
+        assignJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignJButtonActionPerformed(evt);
@@ -159,9 +159,9 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 180, 40));
 
-        processJButton.setBackground(new java.awt.Color(12, 36, 60));
-        processJButton.setForeground(new java.awt.Color(255, 255, 255));
+        processJButton.setBackground(new java.awt.Color(204, 204, 204));
         processJButton.setText("Process");
+        processJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processJButtonActionPerformed(evt);
@@ -169,9 +169,9 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 170, 40));
 
-        addpermhousingjButton.setBackground(new java.awt.Color(12, 36, 60));
-        addpermhousingjButton.setForeground(new java.awt.Color(255, 255, 255));
+        addpermhousingjButton.setBackground(new java.awt.Color(204, 204, 204));
         addpermhousingjButton.setText("Add Listing ");
+        addpermhousingjButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         addpermhousingjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addpermhousingjButtonActionPerformed(evt);
@@ -184,118 +184,138 @@ public class PermHousingWorkAreaJPanel extends javax.swing.JPanel {
         AvailableHousesText.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         add(AvailableHousesText, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, 240, -1));
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 3, 13)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Niramit", 1, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Available Houses :");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 130, 50));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Permanent Housing Work Area ");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Niramit", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Overall - Across Organization");
         jLabel4.setFocusable(false);
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
 
         txtTotalRequests1.setBackground(new java.awt.Color(153, 255, 255));
-        txtTotalRequests1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        txtTotalRequests1.setFont(new java.awt.Font("Niramit", 1, 12)); // NOI18N
+        txtTotalRequests1.setForeground(new java.awt.Color(255, 255, 255));
         txtTotalRequests1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTotalRequests1.setFocusable(false);
         txtTotalRequests1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         add(txtTotalRequests1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 88, 34));
 
         txtAcc.setBackground(new java.awt.Color(153, 255, 255));
-        txtAcc.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        txtAcc.setFont(new java.awt.Font("Niramit", 1, 12)); // NOI18N
+        txtAcc.setForeground(new java.awt.Color(255, 255, 255));
         txtAcc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtAcc.setFocusable(false);
         txtAcc.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         add(txtAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 88, 34));
 
         txtRej.setBackground(new java.awt.Color(153, 255, 255));
-        txtRej.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        txtRej.setFont(new java.awt.Font("Niramit", 1, 12)); // NOI18N
+        txtRej.setForeground(new java.awt.Color(255, 255, 255));
         txtRej.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtRej.setFocusable(false);
         txtRej.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         add(txtRej, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 88, 34));
 
         txtPend.setBackground(new java.awt.Color(153, 255, 255));
-        txtPend.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        txtPend.setFont(new java.awt.Font("Niramit", 1, 12)); // NOI18N
+        txtPend.setForeground(new java.awt.Color(255, 255, 255));
         txtPend.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPend.setFocusable(false);
         txtPend.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         add(txtPend, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 88, 34));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Total Requests");
         jLabel3.setFocusable(false);
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Total Accepted");
         jLabel5.setFocusable(false);
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Total Rejected");
         jLabel6.setFocusable(false);
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Total Pending");
         jLabel11.setFocusable(false);
         add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Niramit", 1, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("My Requests");
         jLabel10.setFocusable(false);
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
 
         txtTotalRequests2.setBackground(new java.awt.Color(153, 153, 255));
-        txtTotalRequests2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        txtTotalRequests2.setFont(new java.awt.Font("Niramit", 1, 12)); // NOI18N
+        txtTotalRequests2.setForeground(new java.awt.Color(255, 255, 255));
         txtTotalRequests2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTotalRequests2.setFocusable(false);
         txtTotalRequests2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         add(txtTotalRequests2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 88, 34));
 
         txtAcc1.setBackground(new java.awt.Color(153, 153, 255));
-        txtAcc1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        txtAcc1.setFont(new java.awt.Font("Niramit", 1, 12)); // NOI18N
+        txtAcc1.setForeground(new java.awt.Color(255, 255, 255));
         txtAcc1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtAcc1.setFocusable(false);
         txtAcc1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         add(txtAcc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 88, 34));
 
         txtRej1.setBackground(new java.awt.Color(153, 153, 255));
-        txtRej1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        txtRej1.setFont(new java.awt.Font("Niramit", 1, 12)); // NOI18N
+        txtRej1.setForeground(new java.awt.Color(255, 255, 255));
         txtRej1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtRej1.setFocusable(false);
         txtRej1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         add(txtRej1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 88, 34));
 
         txtPend1.setBackground(new java.awt.Color(153, 153, 255));
-        txtPend1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        txtPend1.setFont(new java.awt.Font("Niramit", 1, 12)); // NOI18N
+        txtPend1.setForeground(new java.awt.Color(255, 255, 255));
         txtPend1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPend1.setFocusable(false);
         txtPend1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         add(txtPend1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 88, 34));
 
-        jLabel9.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Total Requests");
         jLabel9.setFocusable(false);
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Total Accepted");
         jLabel8.setFocusable(false);
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Total Rejected");
         jLabel7.setFocusable(false);
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Total Pending");
         jLabel12.setFocusable(false);
         add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, -1, -1));

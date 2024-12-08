@@ -63,11 +63,12 @@ public class RequestPartTimeJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jSeparator1 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
-        fundingAssistanceComboBox = new javax.swing.JComboBox<String>();
-        campusComboBox = new javax.swing.JComboBox<String>();
-        coursesComboBox = new javax.swing.JComboBox<String>();
-        educationComboBox = new javax.swing.JComboBox<String>();
+        fundingAssistanceComboBox = new javax.swing.JComboBox<>();
+        campusComboBox = new javax.swing.JComboBox<>();
+        coursesComboBox = new javax.swing.JComboBox<>();
+        educationComboBox = new javax.swing.JComboBox<>();
         txtSubmit = new javax.swing.JButton();
         txtAdditionalSkills = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -77,47 +78,53 @@ public class RequestPartTimeJPanel extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Apply for Part-time Job");
         jLabel1.setFocusable(false);
 
-        fundingAssistanceComboBox.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Yes", "No" }));
+        fundingAssistanceComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
 
-        campusComboBox.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Online", "Boston", "New Jersey", "Phoenix" }));
+        campusComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Online", "Boston", "New Jersey", "Phoenix" }));
 
-        coursesComboBox.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Graduate Office Front Desk ", "Receation Club Assistant", "Library Assistant", "Library Help", "Library Tech Support", " " }));
+        coursesComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Graduate Office Front Desk ", "Receation Club Assistant", "Library Assistant", "Library Help", "Library Tech Support", " " }));
         coursesComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 coursesComboBoxActionPerformed(evt);
             }
         });
 
-        educationComboBox.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "High School", "High School Diploma", "Bachelors", "Masters" }));
+        educationComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "High School", "High School Diploma", "Bachelors", "Masters" }));
 
-        txtSubmit.setBackground(new java.awt.Color(12, 36, 60));
-        txtSubmit.setForeground(new java.awt.Color(255, 255, 255));
+        txtSubmit.setBackground(new java.awt.Color(204, 204, 204));
         txtSubmit.setText("Submit");
+        txtSubmit.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txtSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSubmitActionPerformed(evt);
             }
         });
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Area of Interest");
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Campus");
 
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Highest Qualification");
 
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Funding Required?");
 
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Additional Information");
 
-        backJButton.setBackground(new java.awt.Color(12, 36, 60));
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setBackground(new java.awt.Color(204, 204, 204));
         backJButton.setText("<<Back");
+        backJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
@@ -139,20 +146,20 @@ public class RequestPartTimeJPanel extends javax.swing.JPanel {
                             .addComponent(jLabel6)
                             .addComponent(jLabel7))
                         .addGap(62, 62, 62)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(campusComboBox, 0, 169, Short.MAX_VALUE)
-                            .addComponent(coursesComboBox, 0, 169, Short.MAX_VALUE)
-                            .addComponent(fundingAssistanceComboBox, 0, 169, Short.MAX_VALUE)
-                            .addComponent(educationComboBox, 0, 169, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(fundingAssistanceComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtAdditionalSkills, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtSubmit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(txtSubmit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(coursesComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(campusComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(educationComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(117, 117, 117)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(backJButton)))
-                .addContainerGap(133, Short.MAX_VALUE))
+                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(103, 103, 103))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -181,7 +188,7 @@ public class RequestPartTimeJPanel extends javax.swing.JPanel {
                     .addComponent(txtAdditionalSkills, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(34, 34, 34)
                 .addComponent(txtSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                 .addComponent(backJButton)
                 .addGap(30, 30, 30))
         );
@@ -282,6 +289,7 @@ public class RequestPartTimeJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField txtAdditionalSkills;
     private javax.swing.JButton txtSubmit;
     // End of variables declaration//GEN-END:variables

@@ -65,12 +65,11 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setForeground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        networkJTable.setBackground(new java.awt.Color(12, 36, 60));
-        networkJTable.setForeground(new java.awt.Color(255, 255, 255));
+        networkJTable.setBackground(new java.awt.Color(204, 204, 204));
         networkJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null},
@@ -104,32 +103,34 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 404, 91));
 
-        submitJButton.setBackground(new java.awt.Color(12, 36, 60));
-        submitJButton.setForeground(new java.awt.Color(255, 255, 255));
+        submitJButton.setBackground(new java.awt.Color(204, 204, 204));
         submitJButton.setText("Submit");
+        submitJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, 150, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, 170, -1));
         add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 330, -1));
 
-        backJButton.setBackground(new java.awt.Color(12, 36, 60));
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setBackground(new java.awt.Color(204, 204, 204));
         backJButton.setText("<< Back");
+        backJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 70, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel6.setText("Manage Region");
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("MANAGE REGION");
         jLabel6.setFocusable(false);
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, -1, -1));
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Name");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, 30));
     }// </editor-fold>//GEN-END:initComponents

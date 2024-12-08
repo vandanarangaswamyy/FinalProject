@@ -68,24 +68,29 @@ public class AddTempListingJPanel extends javax.swing.JPanel {
         BtnAdd = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Add Temporary Housing Listing ");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Niramit", 0, 13)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Housing Society Name :");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 88, -1, -1));
         add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(269, 84, 315, -1));
 
+        jLabel3.setFont(new java.awt.Font("Niramit", 0, 13)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Number Of People :");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, -1, -1));
         add(txtNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(269, 156, 315, -1));
 
-        BtnAdd.setBackground(new java.awt.Color(12, 36, 60));
-        BtnAdd.setForeground(new java.awt.Color(255, 255, 255));
+        BtnAdd.setBackground(new java.awt.Color(204, 204, 204));
+        BtnAdd.setFont(new java.awt.Font("Niramit", 0, 13)); // NOI18N
         BtnAdd.setText("Add");
         BtnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,8 +99,8 @@ public class AddTempListingJPanel extends javax.swing.JPanel {
         });
         add(BtnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 210, 120, 40));
 
-        btnBack.setBackground(new java.awt.Color(12, 36, 60));
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
+        btnBack.setBackground(new java.awt.Color(204, 204, 204));
+        btnBack.setFont(new java.awt.Font("Niramit", 0, 13)); // NOI18N
         btnBack.setText("<<Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

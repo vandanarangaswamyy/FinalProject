@@ -141,7 +141,7 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         txt_EmailID = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         backJButton.setBackground(new java.awt.Color(12, 36, 60));
@@ -154,9 +154,10 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 650, -1, -1));
 
-        submitJButton.setBackground(new java.awt.Color(12, 36, 60));
-        submitJButton.setForeground(new java.awt.Color(255, 255, 255));
+        submitJButton.setBackground(new java.awt.Color(204, 204, 204));
+        submitJButton.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         submitJButton.setText("Submit Result");
+        submitJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
@@ -164,50 +165,67 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         });
         add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 510, 130, 40));
 
+        jLabel4.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Student Name: ");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, -1));
 
         lbl_patientName.setText("jLabel5");
         add(lbl_patientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 98, 14));
 
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Main Concern:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Niramit", 0, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Student Details");
         add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 65, 197, -1));
 
         lblMainConcern.setText("jLabel2");
         add(lblMainConcern, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 140, 33));
 
+        jLabel9.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Symptoms");
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
 
         lbl_symptoms.setText("jLabel10");
         add(lbl_symptoms, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, -1, -1));
 
+        jLabel6.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Concern Description:");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, -1, -1));
 
         lbl_concernDescription.setText("jLabel7");
         add(lbl_concernDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 169, 45));
 
+        jLabel7.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Medical History");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 133, -1));
 
         lbl_MedicalHistory.setText("jLabel8");
         add(lbl_MedicalHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, -1, -1));
 
+        jLabel8.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Physical Injury:");
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, -1));
 
         lbl_Brain_injury.setText("jLabel9");
         add(lbl_Brain_injury, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, -1, -1));
 
+        lbl.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl.setForeground(new java.awt.Color(255, 255, 255));
         lbl.setText("Analysis");
         add(lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(421, 123, -1, -1));
         add(txtArea_analysis, new org.netbeans.lib.awtextra.AbsoluteConstraints(554, 119, 468, -1));
 
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Doctor Notes and Comments");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(421, 341, -1, -1));
 
@@ -217,54 +235,75 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(623, 325, 338, 47));
 
-        jLabel12.setFont(new java.awt.Font("Tamil MN", 0, 18)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Niramit", 0, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Doctor Analysis");
         add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 70, -1, -1));
 
+        jLabel10.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Blood pressure");
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
 
         lbl_BP.setText("jLabel13");
         add(lbl_BP, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, -1, -1));
 
+        diabetic.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        diabetic.setForeground(new java.awt.Color(255, 255, 255));
         diabetic.setText("diabetic");
         add(diabetic, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 510, -1, -1));
 
         lbl_diabetic.setText("jLabel13");
         add(lbl_diabetic, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 510, -1, -1));
 
+        jLabel14.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Radiation Exposure:");
         add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, -1, -1));
 
         lbl_heartDisease.setText("jLabel15");
         add(lbl_heartDisease, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 390, -1, -1));
 
+        jLabel16.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Prosthesis Requirement");
         add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, -1, -1));
 
         lbl_prosthesis.setText("jLabel17");
         add(lbl_prosthesis, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, -1, -1));
 
+        jLabel18.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("Min BP");
         add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(421, 165, -1, -1));
 
+        jLabel19.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("Max BP");
         add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(669, 165, -1, -1));
         add(max_BP, new org.netbeans.lib.awtextra.AbsoluteConstraints(773, 161, 68, -1));
         add(txt_minBP, new org.netbeans.lib.awtextra.AbsoluteConstraints(554, 161, 68, -1));
 
+        jLabel20.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("Blood Sugar Level");
         add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(421, 225, -1, -1));
         add(txt_BloodSugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(554, 221, 68, -1));
 
+        jLabel21.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("Body Temperature");
         add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 225, -1, -1));
         add(txt_bodyTemp, new org.netbeans.lib.awtextra.AbsoluteConstraints(773, 221, 68, -1));
 
+        jLabel22.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setText("Pulse Rate");
         add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(859, 165, 89, -1));
         add(txt_pulserate, new org.netbeans.lib.awtextra.AbsoluteConstraints(954, 161, 68, -1));
 
+        jLabel13.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Prescribe Medicine");
         add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(421, 279, -1, -1));
 
@@ -274,11 +313,14 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(623, 263, 338, 44));
 
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Email ID");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 420, 79, 23));
         add(txt_EmailID, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 420, 177, -1));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Process Physical Healthcare Request");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 480, 39));
     }// </editor-fold>//GEN-END:initComponents

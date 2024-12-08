@@ -65,13 +65,13 @@ public class Request_MHC_JPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        c_brainInjury = new javax.swing.JComboBox<String>();
-        c_MentalSymptons = new javax.swing.JComboBox<String>();
+        c_brainInjury = new javax.swing.JComboBox<>();
+        c_MentalSymptons = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txt_mood = new javax.swing.JTextArea();
         jLabel5 = new javax.swing.JLabel();
-        c_before_MHC = new javax.swing.JComboBox<String>();
+        c_before_MHC = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         txtDetails = new javax.swing.JTextArea();
@@ -80,16 +80,17 @@ public class Request_MHC_JPanel extends javax.swing.JPanel {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("List any medication that you are on:");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 280, 20));
         add(txt_MedicalHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, 152, -1));
 
-        requestTestJButton.setBackground(new java.awt.Color(12, 36, 60));
-        requestTestJButton.setForeground(new java.awt.Color(255, 255, 255));
+        requestTestJButton.setBackground(new java.awt.Color(204, 204, 204));
         requestTestJButton.setText("Request Mental Healthcare");
+        requestTestJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestTestJButtonActionPerformed(evt);
@@ -107,18 +108,21 @@ public class Request_MHC_JPanel extends javax.swing.JPanel {
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 650, -1, -1));
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Did you have brain injury previously?");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 290, 20));
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Do you think you have any of listed Symptoms:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 186, -1, 30));
 
-        c_brainInjury.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Yes", "No" }));
+        c_brainInjury.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
         add(c_brainInjury, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, 150, -1));
 
-        c_MentalSymptons.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "None", "Depression", "Post traumatic stress disorder", "Anxiety", "Obsessive compulsive disorder", "Bipolar disorder", "Sleep disorder" }));
+        c_MentalSymptons.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Depression", "Post traumatic stress disorder", "Anxiety", "Obsessive compulsive disorder", "Bipolar disorder", "Sleep disorder" }));
         add(c_MentalSymptons, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 150, -1));
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Describe your Mood:");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 140, -1));
 
@@ -128,12 +132,14 @@ public class Request_MHC_JPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 290, 80));
 
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Have you availed Mental Health Services before:");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
 
-        c_before_MHC.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Yes", "No" }));
+        c_before_MHC.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
         add(c_before_MHC, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 150, -1));
 
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Enter any additional information that you feel ");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, 400, 20));
 
@@ -143,15 +149,18 @@ public class Request_MHC_JPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 140, 300, 170));
 
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("State your concern ");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 130, -1));
         add(txt_mainConcern, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 280, 155, 30));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText(" Mental Healthcare Request");
         jLabel8.setFocusable(false);
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, -1, -1));
 
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("is necessary to aid your diagnosis");
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 120, -1, -1));
     }// </editor-fold>//GEN-END:initComponents

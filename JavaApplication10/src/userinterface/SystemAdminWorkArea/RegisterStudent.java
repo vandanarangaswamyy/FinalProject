@@ -147,6 +147,7 @@ public class RegisterStudent extends javax.swing.JPanel {
         jLabel9.setText("Student ID");
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 470, -1, -1));
 
+        txtStudentID.setEditable(false);
         txtStudentID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtStudentIDActionPerformed(evt);
@@ -255,11 +256,11 @@ public class RegisterStudent extends javax.swing.JPanel {
         v.setLastName(txtLastName.getText());
         v.setAge(txtAge.getText());
         v.setArmyType(txtArmyType.getText());
-        v.setStudent_ID(txtEducationDetails.getText());
+//        v.stStudent_ID(txtEducationDetails.getText());
         v.setGender((String) jComboBox1.getSelectedItem());
         v.setResidentAddress(txtResAddress.getText());
         v.setArmyType(txtArmyType.getText());
-        v.setStudent_ID(txtStudentID.getText());
+//        v.setStudent_ID(txtStudentID.getText());
         v.setUsername(txtUsername.getText());
         v.setPassword(password);
         JOptionPane.showMessageDialog(null, "Registered Student succesfully");

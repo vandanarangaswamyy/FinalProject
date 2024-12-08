@@ -61,13 +61,13 @@ public class Request_PHC_JPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
         txt_mainConcern = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        c_before_PHC = new javax.swing.JComboBox<String>();
+        c_before_PHC = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        c_physicalInjury = new javax.swing.JComboBox<String>();
+        c_physicalInjury = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        c_lSymptoms = new javax.swing.JComboBox<String>();
+        c_lSymptoms = new javax.swing.JComboBox<>();
         jScrollPane2 = new javax.swing.JScrollPane();
         txtDetails = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
@@ -78,43 +78,49 @@ public class Request_PHC_JPanel extends javax.swing.JPanel {
         c_diabetic = new javax.swing.JCheckBox();
         jLabel9 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(967, 6, 130, -1));
 
-        backJButton.setBackground(new java.awt.Color(12, 36, 60));
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setBackground(new java.awt.Color(204, 204, 204));
+        backJButton.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         backJButton.setText("<<Back");
+        backJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, 60, -1));
         add(txt_mainConcern, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 280, 120, 50));
 
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Were you ever diagonized for Mental Healthcare before?");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 108, -1, -1));
 
-        c_before_PHC.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Yes", "No" }));
+        c_before_PHC.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
         add(c_before_PHC, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 120, -1));
 
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("State your concern:");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 130, -1));
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Did you have any physical injury previously?");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 307, -1));
 
-        c_physicalInjury.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Yes", "No" }));
+        c_physicalInjury.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
         add(c_physicalInjury, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 120, -1));
 
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Please Describe your Concern: ");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 216, 27));
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Do you think you have any of listed Symptoms:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
 
-        c_lSymptoms.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "None", "Fever", "BodyAche", "Flu", "Rash", "Body Ache", "Chest Pain", "Cough", "Diarrhea", "Fatigue", "Faintness", "Headache", "Nausea" }));
+        c_lSymptoms.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Fever", "BodyAche", "Flu", "Rash", "Body Ache", "Chest Pain", "Cough", "Diarrhea", "Fatigue", "Faintness", "Headache", "Nausea" }));
         add(c_lSymptoms, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, 120, -1));
 
         txtDetails.setColumns(20);
@@ -123,24 +129,28 @@ public class Request_PHC_JPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 231, 130));
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText(" Medical History or condition affected previously");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, 20));
         add(txt_MedicalHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 120, -1));
 
-        requestTestJButton1.setBackground(new java.awt.Color(12, 36, 60));
-        requestTestJButton1.setForeground(new java.awt.Color(255, 255, 255));
+        requestTestJButton1.setBackground(new java.awt.Color(204, 204, 204));
+        requestTestJButton1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         requestTestJButton1.setText("Request Medical Assistance");
+        requestTestJButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         requestTestJButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestTestJButton1ActionPerformed(evt);
             }
         });
-        add(requestTestJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 520, 250, 30));
+        add(requestTestJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 520, 260, 30));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Please Check the below which are relevant and enter the Details:");
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(605, 88, 492, 41));
 
+        c_BP.setForeground(new java.awt.Color(255, 255, 255));
         c_BP.setText("Blood Pressure");
         c_BP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,10 +159,12 @@ public class Request_PHC_JPanel extends javax.swing.JPanel {
         });
         add(c_BP, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 140, -1, -1));
 
+        c_diabetic.setForeground(new java.awt.Color(255, 255, 255));
         c_diabetic.setText("Diabetic");
         add(c_diabetic, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 170, 77, -1));
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Medical Assistance Request");
         jLabel9.setFocusable(false);
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, -1, -1));
