@@ -270,6 +270,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         btnViewAllStudents = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -297,73 +298,79 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         jSplitPane.setLeftComponent(jPanel1);
 
-        jPanel2.setBackground(new java.awt.Color(246, 198, 103));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 204));
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnManageNetwork.setBackground(new java.awt.Color(12, 36, 60));
-        btnManageNetwork.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageNetwork.setBackground(new java.awt.Color(204, 204, 204));
         btnManageNetwork.setText("Manage Region");
+        btnManageNetwork.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnManageNetwork.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageNetworkActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 250, 50));
+        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 250, 50));
 
-        btnManageEnterprise.setBackground(new java.awt.Color(12, 36, 60));
-        btnManageEnterprise.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageEnterprise.setBackground(new java.awt.Color(204, 204, 204));
         btnManageEnterprise.setText("Manage Enterprise");
+        btnManageEnterprise.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnManageEnterprise.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageEnterpriseActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 250, 50));
+        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 250, 50));
 
-        btnManageAdmin.setBackground(new java.awt.Color(12, 36, 60));
-        btnManageAdmin.setForeground(new java.awt.Color(255, 255, 255));
-        btnManageAdmin.setText("Manage Enterprise User");
+        btnManageAdmin.setBackground(new java.awt.Color(204, 204, 204));
+        btnManageAdmin.setText("Manage Enterprise Admin");
+        btnManageAdmin.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnManageAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageAdminActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 250, 50));
+        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, 250, 50));
 
-        btnRegisterStudent.setBackground(new java.awt.Color(12, 36, 60));
-        btnRegisterStudent.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegisterStudent.setBackground(new java.awt.Color(204, 204, 204));
         btnRegisterStudent.setText("Register Student");
+        btnRegisterStudent.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnRegisterStudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegisterStudentActionPerformed(evt);
             }
         });
-        jPanel2.add(btnRegisterStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 240, 250, 50));
+        jPanel2.add(btnRegisterStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 250, 50));
 
-        btnViewAllStudents.setBackground(new java.awt.Color(12, 36, 60));
-        btnViewAllStudents.setForeground(new java.awt.Color(255, 255, 255));
+        btnViewAllStudents.setBackground(new java.awt.Color(204, 204, 204));
         btnViewAllStudents.setText("View Students");
+        btnViewAllStudents.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnViewAllStudents.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewAllStudentsActionPerformed(evt);
             }
         });
-        jPanel2.add(btnViewAllStudents, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, 250, 50));
+        jPanel2.add(btnViewAllStudents, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 250, 50));
 
-        jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel2.setText("Student Services");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 150, -1));
+        jLabel2.setFont(new java.awt.Font("Niramit", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("NETWORK SERVICES");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, 170, -1));
 
-        jButton1.setBackground(new java.awt.Color(12, 36, 60));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setText("Report");
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 340, 250, 50));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, 250, 50));
+
+        jLabel3.setFont(new java.awt.Font("Niramit", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("STUDENT SERVICES");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 170, -1));
 
         jSplitPane.setRightComponent(jPanel2);
 
@@ -428,6 +435,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnViewAllStudents;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;

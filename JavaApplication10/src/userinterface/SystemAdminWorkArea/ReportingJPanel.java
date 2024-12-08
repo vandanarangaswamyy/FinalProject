@@ -97,10 +97,9 @@ public class ReportingJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
 
-        enterpriseJTable.setBackground(new java.awt.Color(12, 36, 60));
-        enterpriseJTable.setForeground(new java.awt.Color(255, 255, 255));
+        enterpriseJTable.setBackground(new java.awt.Color(204, 204, 204));
         enterpriseJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -122,17 +121,17 @@ public class ReportingJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(enterpriseJTable);
 
-        backJButton.setBackground(new java.awt.Color(12, 36, 60));
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setBackground(new java.awt.Color(204, 204, 204));
+        backJButton.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         backJButton.setText("<< Back");
+        backJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
 
-        tblViewAllStudent.setBackground(new java.awt.Color(12, 36, 60));
-        tblViewAllStudent.setForeground(new java.awt.Color(255, 255, 255));
+        tblViewAllStudent.setBackground(new java.awt.Color(204, 204, 204));
         tblViewAllStudent.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -146,10 +145,12 @@ public class ReportingJPanel extends javax.swing.JPanel {
         ));
         jScrollPane2.setViewportView(tblViewAllStudent);
 
-        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 3, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Niramit", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("ENTERPRISE");
 
-        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 3, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Niramit", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("STUDENTS");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -157,7 +158,7 @@ public class ReportingJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(55, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel1)
@@ -174,7 +175,7 @@ public class ReportingJPanel extends javax.swing.JPanel {
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(19, 19, 19)
-                        .addComponent(backJButton)))
+                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -188,7 +189,7 @@ public class ReportingJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(backJButton)
                 .addGap(29, 29, 29))
         );

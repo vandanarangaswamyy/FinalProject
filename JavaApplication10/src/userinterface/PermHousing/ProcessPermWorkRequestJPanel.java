@@ -58,26 +58,27 @@ public class ProcessPermWorkRequestJPanel extends javax.swing.JPanel {
         btnAccept = new javax.swing.JButton();
         btnReject = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 204, 102));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Result");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, -1, -1));
         add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 169, -1));
 
-        backJButton.setBackground(new java.awt.Color(20, 53, 94));
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setBackground(new java.awt.Color(204, 204, 204));
         backJButton.setText("Back");
+        backJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 50, -1));
 
-        btnAccept.setBackground(new java.awt.Color(12, 36, 60));
-        btnAccept.setForeground(new java.awt.Color(255, 255, 255));
+        btnAccept.setBackground(new java.awt.Color(204, 204, 204));
         btnAccept.setText("Accept");
+        btnAccept.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAccept.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAcceptActionPerformed(evt);
@@ -85,9 +86,9 @@ public class ProcessPermWorkRequestJPanel extends javax.swing.JPanel {
         });
         add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 130, 40));
 
-        btnReject.setBackground(new java.awt.Color(12, 36, 60));
-        btnReject.setForeground(new java.awt.Color(255, 255, 255));
+        btnReject.setBackground(new java.awt.Color(204, 204, 204));
         btnReject.setText("Reject");
+        btnReject.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnReject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRejectActionPerformed(evt);

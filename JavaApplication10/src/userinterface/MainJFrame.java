@@ -18,6 +18,7 @@ import Business.Student.StudentDirectory;
 import java.awt.CardLayout;
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import userinterface.StudentRole.StudentWorkAreaJPanel;
@@ -49,21 +50,20 @@ public class MainJFrame extends javax.swing.JFrame {
         system = dB4OUtil.retrieveSystem();
         
         
-        
-        String f = "img/a.jpg";
-        ImageIcon ficon = new ImageIcon(f.toString());
-        Image fimage = ficon.getImage();
-        Image fimagescaling = fimage.getScaledInstance(75, 75, Image.SCALE_SMOOTH);
-        ImageIcon scaled = new ImageIcon(fimagescaling);
-        homePic1.setIcon(scaled);
-    
-         if(system.getVd()== null && system.getUad()== null && system.getHsd() == null){
-         system.setVd(student_Di);
-         system.setUad(user_Dir);
-         system.setHsd(hsd);
-         system.setThsd(thsd);
-         }
-        this.setSize(1200, 800);
+//        String f = "education.jpg";
+//        ImageIcon ficon = new ImageIcon(f.toString());
+//        Image fimage = ficon.getImage();
+//        Image fimagescaling = fimage.getScaledInstance(75, 75, Image.SCALE_SMOOTH);
+//        ImageIcon scaled = new ImageIcon(fimagescaling);
+//        homePic1.setIcon(scaled);
+//    
+//         if(system.getVd()== null && system.getUad()== null && system.getHsd() == null){
+//         system.setVd(student_Di);
+//         system.setUad(user_Dir);
+//         system.setHsd(hsd);
+//         system.setThsd(thsd);
+//         }
+//        this.setSize(1200, 800);
     }
 
     public StudentDirectory getDir() {
@@ -87,7 +87,6 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         loginJLabel = new javax.swing.JLabel();
         txtLogout = new javax.swing.JButton();
-        txtSignUp = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         container = new javax.swing.JPanel();
@@ -95,30 +94,30 @@ public class MainJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(246, 198, 103));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setToolTipText("");
         jPanel1.setMinimumSize(new java.awt.Dimension(274, 462));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtLogin.setBackground(new java.awt.Color(12, 36, 60));
+        txtLogin.setBackground(new java.awt.Color(0, 0, 204));
         txtLogin.setForeground(new java.awt.Color(255, 255, 255));
         txtLogin.setText("Login");
+        txtLogin.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txtLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtLoginActionPerformed(evt);
             }
         });
-        jPanel1.add(txtLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 120, -1));
+        jPanel1.add(txtLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 120, 30));
         jPanel1.add(txtuserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 170, -1));
         jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 170, -1));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Niramit", 0, 14)); // NOI18N
         jLabel1.setText("Username");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, -1, -1));
         jPanel1.add(loginJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 253, -1, -1));
 
-        txtLogout.setBackground(new java.awt.Color(12, 36, 60));
-        txtLogout.setForeground(new java.awt.Color(255, 255, 255));
+        txtLogout.setBackground(new java.awt.Color(204, 204, 204));
         txtLogout.setText("Logout");
         txtLogout.setEnabled(false);
         txtLogout.addActionListener(new java.awt.event.ActionListener() {
@@ -128,28 +127,20 @@ public class MainJFrame extends javax.swing.JFrame {
         });
         jPanel1.add(txtLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 120, -1));
 
-        txtSignUp.setBackground(new java.awt.Color(12, 36, 60));
-        txtSignUp.setForeground(new java.awt.Color(255, 255, 255));
-        txtSignUp.setText("SignUp");
-        txtSignUp.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtSignUpActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtSignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, 120, -1));
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Niramit", 0, 14)); // NOI18N
         jLabel3.setText("Password");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel4.setText("Login");
+        jLabel4.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
+        jLabel4.setText("LOGIN");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 80, 30));
 
         jSplitPane1.setLeftComponent(jPanel1);
 
         container.setBackground(new java.awt.Color(255, 204, 204));
         container.setLayout(new java.awt.CardLayout());
+
+        homePic1.setBackground(new java.awt.Color(204, 204, 204));
         container.add(homePic1, "card2");
 
         jSplitPane1.setRightComponent(container);
@@ -242,14 +233,6 @@ public class MainJFrame extends javax.swing.JFrame {
         dB4OUtil.storeSystem(system);
     }//GEN-LAST:event_txtLogoutActionPerformed
 
-    private void txtSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSignUpActionPerformed
-        // TODO add your handling code here:
-                GuestUserJPanel panel = new GuestUserJPanel(container, system,student_Di, user_Dir);
-                container.add("GuestUserJPanel", panel);
-                CardLayout layout = (CardLayout) container.getLayout();
-                layout.next(container);
-    }//GEN-LAST:event_txtSignUpActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -296,7 +279,6 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JButton txtLogin;
     private javax.swing.JButton txtLogout;
     private javax.swing.JPasswordField txtPassword;
-    private javax.swing.JButton txtSignUp;
     private javax.swing.JTextField txtuserName;
     // End of variables declaration//GEN-END:variables
 }

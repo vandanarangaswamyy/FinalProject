@@ -94,16 +94,18 @@ public class RequestPermHousingJPanel extends javax.swing.JPanel {
         housingListTable = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Additional Information");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, -1, -1));
         add(messageJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 334, 510, 30));
 
-        requestTestJButton.setBackground(new java.awt.Color(12, 36, 60));
-        requestTestJButton.setForeground(new java.awt.Color(255, 255, 255));
+        requestTestJButton.setBackground(new java.awt.Color(204, 204, 204));
+        requestTestJButton.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         requestTestJButton.setText("Apply");
+        requestTestJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         requestTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestTestJButtonActionPerformed(evt);
@@ -111,9 +113,10 @@ public class RequestPermHousingJPanel extends javax.swing.JPanel {
         });
         add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 400, 100, 40));
 
-        backJButton.setBackground(new java.awt.Color(12, 36, 60));
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setBackground(new java.awt.Color(204, 204, 204));
+        backJButton.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         backJButton.setText("<<Back");
+        backJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
@@ -121,8 +124,7 @@ public class RequestPermHousingJPanel extends javax.swing.JPanel {
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, 100, -1));
 
-        housingListTable.setBackground(new java.awt.Color(12, 36, 60));
-        housingListTable.setForeground(new java.awt.Color(255, 255, 255));
+        housingListTable.setBackground(new java.awt.Color(204, 204, 204));
         housingListTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -135,7 +137,8 @@ public class RequestPermHousingJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 674, 210));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Permanent Accomodation");
         jLabel2.setFocusable(false);
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, -1, -1));

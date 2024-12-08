@@ -60,32 +60,35 @@ public class RequestTempHousingJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        housingSocietyComboBox = new javax.swing.JComboBox<String>();
+        housingSocietyComboBox = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
-        NumberComboBox = new javax.swing.JComboBox<String>();
+        NumberComboBox = new javax.swing.JComboBox<>();
         btnRequest = new javax.swing.JButton();
         txtMessage = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         btnback = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Number Of Members: ");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
 
         add(housingSocietyComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, 231, -1));
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Society : ");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, -1, -1));
 
-        NumberComboBox.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "1", "2", "3", "4", "5", "6" }));
+        NumberComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6" }));
         add(NumberComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 231, -1));
 
-        btnRequest.setBackground(new java.awt.Color(12, 36, 60));
-        btnRequest.setForeground(new java.awt.Color(255, 255, 255));
+        btnRequest.setBackground(new java.awt.Color(204, 204, 204));
+        btnRequest.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         btnRequest.setText("Request");
+        btnRequest.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRequestActionPerformed(evt);
@@ -94,12 +97,14 @@ public class RequestTempHousingJPanel extends javax.swing.JPanel {
         add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 330, 130, 40));
         add(txtMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 231, 40));
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Message:");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, -1, -1));
 
-        btnback.setBackground(new java.awt.Color(12, 36, 60));
-        btnback.setForeground(new java.awt.Color(255, 255, 255));
+        btnback.setBackground(new java.awt.Color(204, 204, 204));
+        btnback.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         btnback.setText("Back");
+        btnback.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnback.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnbackActionPerformed(evt);
@@ -107,7 +112,8 @@ public class RequestTempHousingJPanel extends javax.swing.JPanel {
         });
         add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 540, 100, -1));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Temporary Housing");
         jLabel5.setFocusable(false);
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, -1, -1));

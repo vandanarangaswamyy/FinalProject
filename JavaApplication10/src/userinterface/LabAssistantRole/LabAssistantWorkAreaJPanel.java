@@ -79,8 +79,11 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
         processJButton = new javax.swing.JButton();
         refreshJButton = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        workRequestJTable.setAutoCreateRowSorter(true);
+        workRequestJTable.setBackground(new java.awt.Color(204, 204, 204));
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -117,32 +120,35 @@ public class LabAssistantWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 58, 375, 96));
 
-        assignJButton.setBackground(new java.awt.Color(255, 51, 51));
+        assignJButton.setBackground(new java.awt.Color(204, 204, 204));
         assignJButton.setText("Assign to me");
+        assignJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 215, -1, -1));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 100, -1));
 
-        processJButton.setBackground(new java.awt.Color(255, 51, 51));
+        processJButton.setBackground(new java.awt.Color(204, 204, 204));
         processJButton.setText("Process");
+        processJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(446, 215, -1, -1));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, 70, -1));
 
-        refreshJButton.setBackground(new java.awt.Color(255, 51, 51));
+        refreshJButton.setBackground(new java.awt.Color(204, 204, 204));
         refreshJButton.setText("Refresh");
+        refreshJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 26, -1, -1));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 26, 70, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed

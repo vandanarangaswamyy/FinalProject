@@ -52,18 +52,23 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         resultJTextField = new javax.swing.JTextField();
         backJButton = new javax.swing.JButton();
 
-        submitJButton.setBackground(new java.awt.Color(255, 51, 51));
+        setBackground(new java.awt.Color(0, 0, 204));
+
+        submitJButton.setBackground(new java.awt.Color(204, 204, 204));
         submitJButton.setText("Submit Result");
+        submitJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 submitJButtonActionPerformed(evt);
             }
         });
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Result");
 
-        backJButton.setBackground(new java.awt.Color(255, 51, 51));
+        backJButton.setBackground(new java.awt.Color(204, 204, 204));
         backJButton.setText("Back");
+        backJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
@@ -76,18 +81,16 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(53, 53, 53)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(backJButton)
-                    .addComponent(jLabel1))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
-                        .addComponent(submitJButton)
-                        .addGap(63, 63, 63))
+                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(78, 78, 78)
+                        .addComponent(submitJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
                         .addGap(46, 46, 46)
-                        .addComponent(resultJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(resultJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(127, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -100,7 +103,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(submitJButton)
                     .addComponent(backJButton))
-                .addContainerGap(169, Short.MAX_VALUE))
+                .addContainerGap(171, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
