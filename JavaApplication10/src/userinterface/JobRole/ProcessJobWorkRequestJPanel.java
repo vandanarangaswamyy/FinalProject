@@ -58,46 +58,55 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
         txtCandidateName = new javax.swing.JTextField();
         btnback = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Process Job Request");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Prior Job Experience:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, -1, -1));
 
         txtJobRole.setEditable(false);
-        add(txtJobRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 340, -1));
+        add(txtJobRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 340, 30));
 
-        btnApprove.setBackground(new java.awt.Color(12, 36, 60));
-        btnApprove.setForeground(new java.awt.Color(255, 255, 255));
+        btnApprove.setBackground(new java.awt.Color(204, 204, 204));
+        btnApprove.setForeground(new java.awt.Color(0, 0, 0));
         btnApprove.setText("Approve");
+        btnApprove.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnApprove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnApproveActionPerformed(evt);
             }
         });
-        add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 100, 50));
+        add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 100, 30));
 
-        btnReject.setBackground(new java.awt.Color(12, 36, 60));
-        btnReject.setForeground(new java.awt.Color(255, 255, 255));
+        btnReject.setBackground(new java.awt.Color(204, 204, 204));
+        btnReject.setForeground(new java.awt.Color(0, 0, 0));
         btnReject.setText("Reject");
+        btnReject.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnReject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRejectActionPerformed(evt);
             }
         });
-        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 350, 110, 50));
+        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 360, 110, 30));
 
+        jLabel3.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Comments :");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, -1, -1));
-        add(txtComment, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 340, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, -1, 20));
+        add(txtComment, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, 340, 30));
 
+        jLabel4.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Candidate Name :");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, 20));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, -1, 20));
 
         txtCandidateName.setEditable(false);
         txtCandidateName.addActionListener(new java.awt.event.ActionListener() {
@@ -105,11 +114,13 @@ public class ProcessJobWorkRequestJPanel extends javax.swing.JPanel {
                 txtCandidateNameActionPerformed(evt);
             }
         });
-        add(txtCandidateName, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 340, -1));
+        add(txtCandidateName, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 340, 30));
 
-        btnback.setBackground(new java.awt.Color(12, 36, 60));
-        btnback.setForeground(new java.awt.Color(255, 255, 255));
+        btnback.setBackground(new java.awt.Color(204, 204, 204));
+        btnback.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        btnback.setForeground(new java.awt.Color(0, 0, 0));
         btnback.setText("Back");
+        btnback.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnback.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnbackActionPerformed(evt);

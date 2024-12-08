@@ -100,7 +100,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtOrgTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -135,7 +135,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             txtOrgTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 480, 92));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 480, 92));
 
         btnCreateEmployee.setBackground(new java.awt.Color(12, 36, 60));
         btnCreateEmployee.setForeground(new java.awt.Color(255, 255, 255));
@@ -145,7 +145,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 btnCreateEmployeeActionPerformed(evt);
             }
         });
-        add(btnCreateEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, 170, 40));
+        add(btnCreateEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, 130, 40));
 
         cmbOrg.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cmbOrg.addActionListener(new java.awt.event.ActionListener() {
@@ -153,8 +153,10 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 cmbOrgActionPerformed(evt);
             }
         });
-        add(cmbOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 80, 180, -1));
+        add(cmbOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, 180, -1));
 
+        jLabel1.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Organization");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, -1, -1));
 
@@ -168,20 +170,25 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         });
         add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, -1));
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 180, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, -1, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 180, -1));
 
         cmgOrg2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(cmgOrg2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 180, -1));
+        add(cmgOrg2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 180, -1));
 
+        jLabel3.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Organization");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Manage Employee");
         jLabel8.setFocusable(false);
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCreateEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateEmployeeActionPerformed

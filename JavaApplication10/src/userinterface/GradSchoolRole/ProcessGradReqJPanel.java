@@ -106,28 +106,38 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
         btnReject = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtHeader.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        txtHeader.setForeground(new java.awt.Color(255, 255, 255));
         txtHeader.setFocusable(false);
         add(txtHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 357, 32));
 
-        txtVetID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtVetID.setBackground(new java.awt.Color(255, 255, 255));
+        txtVetID.setForeground(new java.awt.Color(255, 255, 255));
+        txtVetID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         add(txtVetID, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 280, 23));
 
-        txtGender.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtGender.setBackground(new java.awt.Color(255, 255, 255));
+        txtGender.setForeground(new java.awt.Color(255, 255, 255));
+        txtGender.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         add(txtGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 280, 23));
 
-        txtMilType.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtMilType.setBackground(new java.awt.Color(255, 255, 255));
+        txtMilType.setForeground(new java.awt.Color(255, 255, 255));
+        txtMilType.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         add(txtMilType, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 280, 23));
 
-        txtAddress.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtAddress.setBackground(new java.awt.Color(255, 255, 255));
+        txtAddress.setForeground(new java.awt.Color(255, 255, 255));
+        txtAddress.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         add(txtAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 280, 23));
 
-        btnBack.setBackground(new java.awt.Color(12, 36, 60));
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("Back");
+        btnBack.setBackground(new java.awt.Color(204, 204, 204));
+        btnBack.setForeground(new java.awt.Color(0, 0, 0));
+        btnBack.setText("<<Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -135,60 +145,90 @@ public class ProcessGradReqJPanel extends javax.swing.JPanel {
         });
         add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 100, -1));
 
-        txtHS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtHS.setBackground(new java.awt.Color(255, 255, 255));
+        txtHS.setForeground(new java.awt.Color(255, 255, 255));
+        txtHS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         add(txtHS, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 140, 272, 26));
 
-        txtHS1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtHS1.setBackground(new java.awt.Color(255, 255, 255));
+        txtHS1.setForeground(new java.awt.Color(255, 255, 255));
+        txtHS1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         add(txtHS1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 272, 26));
 
-        txtHS2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtHS2.setBackground(new java.awt.Color(255, 255, 255));
+        txtHS2.setForeground(new java.awt.Color(255, 255, 255));
+        txtHS2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         add(txtHS2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, 272, 26));
 
-        txtHS3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtHS3.setBackground(new java.awt.Color(255, 255, 255));
+        txtHS3.setForeground(new java.awt.Color(255, 255, 255));
+        txtHS3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         add(txtHS3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 272, 26));
 
-        txtHS4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtHS4.setBackground(new java.awt.Color(255, 255, 255));
+        txtHS4.setForeground(new java.awt.Color(255, 255, 255));
+        txtHS4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         add(txtHS4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 272, 26));
 
-        jLabel1.setText("Applicant Details");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Applicant Details:");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, 30));
 
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Seeking Admission for:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
 
-        jLabel3.setText("Bachelor's Degree Information");
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Bachelor's Degree Information:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 280, -1, -1));
 
-        txtHS5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtHS5.setBackground(new java.awt.Color(255, 255, 255));
+        txtHS5.setForeground(new java.awt.Color(255, 255, 255));
+        txtHS5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         add(txtHS5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 272, 26));
 
-        txtHS6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtHS6.setBackground(new java.awt.Color(255, 255, 255));
+        txtHS6.setForeground(new java.awt.Color(255, 255, 255));
+        txtHS6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         add(txtHS6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 272, 26));
 
-        txtHS7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtHS7.setBackground(new java.awt.Color(255, 255, 255));
+        txtHS7.setForeground(new java.awt.Color(255, 255, 255));
+        txtHS7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         add(txtHS7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 272, 26));
 
-        btnAccept.setBackground(new java.awt.Color(12, 36, 60));
-        btnAccept.setForeground(new java.awt.Color(255, 255, 255));
+        btnAccept.setBackground(new java.awt.Color(204, 204, 204));
+        btnAccept.setForeground(new java.awt.Color(0, 0, 0));
         btnAccept.setText("Accept");
+        btnAccept.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAccept.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAcceptActionPerformed(evt);
             }
         });
-        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, 130, 40));
+        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 460, 130, 40));
 
-        btnReject.setBackground(new java.awt.Color(12, 36, 60));
-        btnReject.setForeground(new java.awt.Color(255, 255, 255));
+        btnReject.setBackground(new java.awt.Color(204, 204, 204));
+        btnReject.setForeground(new java.awt.Color(0, 0, 0));
         btnReject.setText("Reject");
+        btnReject.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnReject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRejectActionPerformed(evt);
             }
         });
-        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 460, 130, 40));
+        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 510, 130, 40));
 
-        jLabel4.setText("High School Information");
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("High School Information:");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 

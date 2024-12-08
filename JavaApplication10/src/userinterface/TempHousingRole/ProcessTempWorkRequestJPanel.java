@@ -43,14 +43,46 @@ public class ProcessTempWorkRequestJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnReject = new javax.swing.JButton();
+        backJButton = new javax.swing.JButton();
+        btnAccept = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         submitJButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         resultJTextField = new javax.swing.JTextField();
-        backJButton = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(246, 198, 103));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnReject.setBackground(new java.awt.Color(12, 36, 60));
+        btnReject.setForeground(new java.awt.Color(255, 255, 255));
+        btnReject.setText("Reject");
+        btnReject.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRejectActionPerformed(evt);
+            }
+        });
+        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, 130, 40));
+
+        backJButton.setBackground(new java.awt.Color(12, 36, 60));
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setText("Back");
+        backJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backJButtonActionPerformed(evt);
+            }
+        });
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 80, -1));
+
+        btnAccept.setBackground(new java.awt.Color(12, 36, 60));
+        btnAccept.setForeground(new java.awt.Color(255, 255, 255));
+        btnAccept.setText("Accept");
+        btnAccept.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAcceptActionPerformed(evt);
+            }
+        });
+        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 130, 40));
 
         jPanel1.setBackground(new java.awt.Color(246, 198, 103));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -63,23 +95,13 @@ public class ProcessTempWorkRequestJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, -1, 30));
+        jPanel1.add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, -1, 30));
 
         jLabel1.setText("Result");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, -1, -1));
         jPanel1.add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 169, -1));
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 85, -1, -1));
-
-        backJButton.setBackground(new java.awt.Color(12, 36, 60));
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
-        backJButton.setText("Back");
-        backJButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backJButtonActionPerformed(evt);
-            }
-        });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 80, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -96,18 +118,44 @@ public class ProcessTempWorkRequestJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
 
+    private void btnAcceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcceptActionPerformed
+
+        tempHousingRequest.setComment(resultJTextField.getText());
+
+        tempHousingRequest.setStatus("Accepted");
+        JOptionPane.showMessageDialog(null, "House Assigned to student: " + tempHousingRequest.getSender(), "Information", JOptionPane.INFORMATION_MESSAGE);
+        btnAccept.setEnabled(false);
+        btnReject.setEnabled(false);
+        resultJTextField.setText("");
+        tempHousingRequest.setMessage(resultJTextField.getText());
+
+
+    }//GEN-LAST:event_btnAcceptActionPerformed
+
+    private void btnRejectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRejectActionPerformed
+        // TODO add your handling code here:
+        tempHousingRequest.setComment(resultJTextField.getText());
+
+        tempHousingRequest.setStatus("Rejected");
+        JOptionPane.showMessageDialog(null, "House assignment rejected for" + tempHousingRequest.getSender(), "Information", JOptionPane.INFORMATION_MESSAGE);
+        btnReject.setEnabled(false);
+        btnAccept.setEnabled(false);
+        tempHousingRequest.setMessage(resultJTextField.getText());
+
+    }//GEN-LAST:event_btnRejectActionPerformed
+
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
 
         tempHousingRequest.setStatus("Accepted");
-
         JOptionPane.showMessageDialog(null, "House Assigned to student" + tempHousingRequest.getSender(), "Information", JOptionPane.INFORMATION_MESSAGE);
-
         tempHousingRequest.setMessage(resultJTextField.getText());
     }//GEN-LAST:event_submitJButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
+    private javax.swing.JButton btnAccept;
+    private javax.swing.JButton btnReject;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField resultJTextField;

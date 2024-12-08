@@ -101,7 +101,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         btnBack = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblOrg.setModel(new javax.swing.table.DefaultTableModel(
@@ -138,9 +138,9 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 480, 92));
 
-        btnAddOrg.setBackground(new java.awt.Color(12, 36, 60));
-        btnAddOrg.setForeground(new java.awt.Color(255, 255, 255));
+        btnAddOrg.setBackground(new java.awt.Color(204, 204, 204));
         btnAddOrg.setText("Add Organization");
+        btnAddOrg.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAddOrg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddOrgActionPerformed(evt);
@@ -154,14 +154,16 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                 cmbOrgTypeActionPerformed(evt);
             }
         });
-        add(cmbOrgType, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 210, -1));
+        add(cmbOrgType, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 210, -1));
 
+        jLabel1.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Organization Type ");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
 
-        btnBack.setBackground(new java.awt.Color(12, 36, 60));
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
+        btnBack.setBackground(new java.awt.Color(204, 204, 204));
         btnBack.setText("<< Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -169,10 +171,11 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         });
         add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Manage Organization");
         jLabel8.setFocusable(false);
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddOrgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddOrgActionPerformed

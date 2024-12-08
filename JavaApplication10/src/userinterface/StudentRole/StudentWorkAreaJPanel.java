@@ -98,12 +98,8 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         GradRequestJButton = new javax.swing.JButton();
         PhysicalHealthCareRequestJButton = new javax.swing.JButton();
         MentalHealthCareJButton = new javax.swing.JButton();
-        hospPic = new javax.swing.JLabel();
         txtWelcome = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        eduPic = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        homePic = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         permhousingrequestjButton1 = new javax.swing.JButton();
         txtTotalRequests1 = new javax.swing.JLabel();
@@ -112,120 +108,150 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         eduRequestsTable = new javax.swing.JTable();
         jLabel7 = new javax.swing.JLabel();
-        txtTotalRequests2 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        refreshTestJButton.setBackground(new java.awt.Color(12, 36, 60));
-        refreshTestJButton.setForeground(new java.awt.Color(255, 255, 255));
+        refreshTestJButton.setBackground(new java.awt.Color(204, 204, 204));
+        refreshTestJButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        refreshTestJButton.setForeground(new java.awt.Color(0, 0, 0));
         refreshTestJButton.setText("Refresh");
+        refreshTestJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        refreshTestJButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         refreshTestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshTestJButtonActionPerformed(evt);
             }
         });
-        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 103, 100, 40));
+        add(refreshTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 100, 40));
 
-        permhousingrequestjButton.setBackground(new java.awt.Color(12, 36, 60));
-        permhousingrequestjButton.setForeground(new java.awt.Color(255, 255, 255));
+        permhousingrequestjButton.setBackground(new java.awt.Color(204, 204, 204));
+        permhousingrequestjButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        permhousingrequestjButton.setForeground(new java.awt.Color(0, 0, 0));
         permhousingrequestjButton.setText("Perm Housing Request");
+        permhousingrequestjButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        permhousingrequestjButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        permhousingrequestjButton.setMaximumSize(new java.awt.Dimension(142, 25));
+        permhousingrequestjButton.setMinimumSize(new java.awt.Dimension(142, 25));
         permhousingrequestjButton.setPreferredSize(new java.awt.Dimension(152, 32));
         permhousingrequestjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 permhousingrequestjButtonActionPerformed(evt);
             }
         });
-        add(permhousingrequestjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 220, 200, -1));
+        add(permhousingrequestjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 270, 30));
 
-        VocationalRequestJButton.setBackground(new java.awt.Color(12, 36, 60));
-        VocationalRequestJButton.setForeground(new java.awt.Color(255, 255, 255));
+        VocationalRequestJButton.setBackground(new java.awt.Color(204, 204, 204));
+        VocationalRequestJButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        VocationalRequestJButton.setForeground(new java.awt.Color(0, 0, 0));
         VocationalRequestJButton.setText("Part-Time Job");
+        VocationalRequestJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        VocationalRequestJButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        VocationalRequestJButton.setMaximumSize(new java.awt.Dimension(142, 25));
+        VocationalRequestJButton.setMinimumSize(new java.awt.Dimension(142, 25));
         VocationalRequestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VocationalRequestJButtonActionPerformed(evt);
             }
         });
-        add(VocationalRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 260, 200, 30));
+        add(VocationalRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 340, 270, 30));
 
-        GradRequestJButton.setBackground(new java.awt.Color(12, 36, 60));
-        GradRequestJButton.setForeground(new java.awt.Color(255, 255, 255));
+        GradRequestJButton.setBackground(new java.awt.Color(204, 204, 204));
+        GradRequestJButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        GradRequestJButton.setForeground(new java.awt.Color(0, 0, 0));
         GradRequestJButton.setText("Apply for Grad School");
+        GradRequestJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        GradRequestJButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         GradRequestJButton.setPreferredSize(new java.awt.Dimension(152, 32));
         GradRequestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 GradRequestJButtonActionPerformed(evt);
             }
         });
-        add(GradRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, 200, -1));
+        add(GradRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 300, 270, 30));
 
-        PhysicalHealthCareRequestJButton.setBackground(new java.awt.Color(12, 36, 60));
-        PhysicalHealthCareRequestJButton.setForeground(new java.awt.Color(255, 255, 255));
+        PhysicalHealthCareRequestJButton.setBackground(new java.awt.Color(204, 204, 204));
+        PhysicalHealthCareRequestJButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        PhysicalHealthCareRequestJButton.setForeground(new java.awt.Color(0, 0, 0));
         PhysicalHealthCareRequestJButton.setText("Physical Healthcare Request");
+        PhysicalHealthCareRequestJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PhysicalHealthCareRequestJButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        PhysicalHealthCareRequestJButton.setMaximumSize(new java.awt.Dimension(142, 25));
+        PhysicalHealthCareRequestJButton.setMinimumSize(new java.awt.Dimension(142, 25));
         PhysicalHealthCareRequestJButton.setPreferredSize(new java.awt.Dimension(152, 32));
         PhysicalHealthCareRequestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PhysicalHealthCareRequestJButtonActionPerformed(evt);
             }
         });
-        add(PhysicalHealthCareRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 200, -1));
+        add(PhysicalHealthCareRequestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, 280, 30));
 
-        MentalHealthCareJButton.setBackground(new java.awt.Color(12, 36, 60));
-        MentalHealthCareJButton.setForeground(new java.awt.Color(255, 255, 255));
+        MentalHealthCareJButton.setBackground(new java.awt.Color(204, 204, 204));
+        MentalHealthCareJButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        MentalHealthCareJButton.setForeground(new java.awt.Color(0, 0, 0));
         MentalHealthCareJButton.setText("Mental Healthcare Request");
+        MentalHealthCareJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        MentalHealthCareJButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        MentalHealthCareJButton.setMaximumSize(new java.awt.Dimension(142, 25));
+        MentalHealthCareJButton.setMinimumSize(new java.awt.Dimension(142, 25));
         MentalHealthCareJButton.setPreferredSize(new java.awt.Dimension(152, 32));
         MentalHealthCareJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MentalHealthCareJButtonActionPerformed(evt);
             }
         });
-        add(MentalHealthCareJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 200, -1));
-        add(hospPic, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, 80, 70));
+        add(MentalHealthCareJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 440, 280, 30));
 
         txtWelcome.setBackground(new java.awt.Color(42, 42, 42));
-        txtWelcome.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        add(txtWelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 330, 30));
+        txtWelcome.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        add(txtWelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 480, 50));
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Get Medical Help");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 300, -1));
-        add(eduPic, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 210, 80, 70));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 400, 370, -1));
 
-        jLabel4.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel4.setText("Total Requests Raised");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, 200, -1));
-        add(homePic, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 80, 70));
-
-        jLabel5.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Apply for Housing");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 180, 300, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 370, -1));
 
-        permhousingrequestjButton1.setBackground(new java.awt.Color(12, 36, 60));
-        permhousingrequestjButton1.setForeground(new java.awt.Color(255, 255, 255));
+        permhousingrequestjButton1.setBackground(new java.awt.Color(204, 204, 204));
+        permhousingrequestjButton1.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        permhousingrequestjButton1.setForeground(new java.awt.Color(0, 0, 0));
         permhousingrequestjButton1.setText("Temp Housing Request");
+        permhousingrequestjButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        permhousingrequestjButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        permhousingrequestjButton1.setMaximumSize(new java.awt.Dimension(142, 25));
+        permhousingrequestjButton1.setMinimumSize(new java.awt.Dimension(142, 25));
         permhousingrequestjButton1.setPreferredSize(new java.awt.Dimension(152, 32));
         permhousingrequestjButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 permhousingrequestjButton1ActionPerformed(evt);
             }
         });
-        add(permhousingrequestjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 260, 200, -1));
+        add(permhousingrequestjButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 200, 270, -1));
 
         txtTotalRequests1.setBackground(new java.awt.Color(51, 51, 51));
         txtTotalRequests1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        txtTotalRequests1.setForeground(new java.awt.Color(255, 255, 255));
         txtTotalRequests1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTotalRequests1.setFocusable(false);
         txtTotalRequests1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtTotalRequests1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 360, 110, 70));
+        add(txtTotalRequests1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 110, 70));
 
-        jLabel6.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Apply for Education");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 180, 300, -1));
-        add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 158, 492, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 260, 370, -1));
 
-        eduRequestsTable.setBackground(new java.awt.Color(12, 36, 60));
-        eduRequestsTable.setForeground(new java.awt.Color(255, 255, 255));
+        jSeparator3.setBackground(new java.awt.Color(0, 0, 0));
+        add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 492, 20));
+
+        eduRequestsTable.setBackground(new java.awt.Color(204, 204, 204));
+        eduRequestsTable.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        eduRequestsTable.setForeground(new java.awt.Color(0, 0, 0));
         eduRequestsTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -254,22 +280,17 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(eduRequestsTable);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 540, 210));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 540, 210));
 
-        jLabel7.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel7.setText("My Requests");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 300, -1));
+        jLabel7.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("My Requests:");
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 300, -1));
 
-        txtTotalRequests2.setBackground(new java.awt.Color(51, 51, 51));
-        txtTotalRequests2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        txtTotalRequests2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        txtTotalRequests2.setFocusable(false);
-        txtTotalRequests2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtTotalRequests2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 360, 110, 70));
-
-        jLabel8.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel8.setText("Total Requests Processed");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 330, 230, -1));
+        jLabel8.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Total Requests Raised:");
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 350, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void refreshTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshTestJButtonActionPerformed
@@ -416,7 +437,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         }
 
         txtTotalRequests1.setText(Integer.toString(totalRequests));
-        txtTotalRequests2.setText(Integer.toString( (acceptedRequests + rejectedRequests)));
+       
 
     }
 
@@ -425,12 +446,8 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton MentalHealthCareJButton;
     private javax.swing.JButton PhysicalHealthCareRequestJButton;
     private javax.swing.JButton VocationalRequestJButton;
-    private javax.swing.JLabel eduPic;
     private javax.swing.JTable eduRequestsTable;
-    private javax.swing.JLabel homePic;
-    private javax.swing.JLabel hospPic;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -441,7 +458,6 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton permhousingrequestjButton1;
     private javax.swing.JButton refreshTestJButton;
     private javax.swing.JLabel txtTotalRequests1;
-    private javax.swing.JLabel txtTotalRequests2;
     private javax.swing.JLabel txtWelcome;
     // End of variables declaration//GEN-END:variables
 }
