@@ -71,7 +71,6 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
            lbl_concernDescription.setText(((PhysicalHealthCareRequest) request).getDetails_concern());
            
            
-           txt_EmailID.setEnabled(false);
           
           
            lbl_patientName.setText(studentName);
@@ -137,15 +136,13 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         jLabel13 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         txt_PrescribeMedicine = new javax.swing.JTextArea();
-        jLabel1 = new javax.swing.JLabel();
-        txt_EmailID = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        backJButton.setBackground(new java.awt.Color(12, 36, 60));
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setBackground(new java.awt.Color(204, 204, 204));
+        backJButton.setForeground(new java.awt.Color(0, 0, 0));
         backJButton.setText("Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,6 +167,8 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         jLabel4.setText("Student Name: ");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, -1));
 
+        lbl_patientName.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_patientName.setForeground(new java.awt.Color(255, 255, 255));
         lbl_patientName.setText("jLabel5");
         add(lbl_patientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 98, 14));
 
@@ -183,6 +182,8 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         jLabel11.setText("Student Details");
         add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 65, 197, -1));
 
+        lblMainConcern.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lblMainConcern.setForeground(new java.awt.Color(255, 255, 255));
         lblMainConcern.setText("jLabel2");
         add(lblMainConcern, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 140, 33));
 
@@ -191,6 +192,8 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         jLabel9.setText("Symptoms");
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
 
+        lbl_symptoms.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_symptoms.setForeground(new java.awt.Color(255, 255, 255));
         lbl_symptoms.setText("jLabel10");
         add(lbl_symptoms, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, -1, -1));
 
@@ -199,6 +202,8 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         jLabel6.setText("Concern Description:");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, -1, -1));
 
+        lbl_concernDescription.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_concernDescription.setForeground(new java.awt.Color(255, 255, 255));
         lbl_concernDescription.setText("jLabel7");
         add(lbl_concernDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 169, 45));
 
@@ -207,6 +212,8 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         jLabel7.setText("Medical History");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 133, -1));
 
+        lbl_MedicalHistory.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_MedicalHistory.setForeground(new java.awt.Color(255, 255, 255));
         lbl_MedicalHistory.setText("jLabel8");
         add(lbl_MedicalHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, -1, -1));
 
@@ -215,6 +222,8 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         jLabel8.setText("Physical Injury:");
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, -1));
 
+        lbl_Brain_injury.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_Brain_injury.setForeground(new java.awt.Color(255, 255, 255));
         lbl_Brain_injury.setText("jLabel9");
         add(lbl_Brain_injury, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, -1, -1));
 
@@ -245,6 +254,8 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         jLabel10.setText("Blood pressure");
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
 
+        lbl_BP.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_BP.setForeground(new java.awt.Color(255, 255, 255));
         lbl_BP.setText("jLabel13");
         add(lbl_BP, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, -1, -1));
 
@@ -253,6 +264,8 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         diabetic.setText("diabetic");
         add(diabetic, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 510, -1, -1));
 
+        lbl_diabetic.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_diabetic.setForeground(new java.awt.Color(255, 255, 255));
         lbl_diabetic.setText("jLabel13");
         add(lbl_diabetic, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 510, -1, -1));
 
@@ -261,6 +274,8 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         jLabel14.setText("Radiation Exposure:");
         add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, -1, -1));
 
+        lbl_heartDisease.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_heartDisease.setForeground(new java.awt.Color(255, 255, 255));
         lbl_heartDisease.setText("jLabel15");
         add(lbl_heartDisease, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 390, -1, -1));
 
@@ -269,6 +284,8 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         jLabel16.setText("Prosthesis Requirement");
         add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 450, -1, -1));
 
+        lbl_prosthesis.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_prosthesis.setForeground(new java.awt.Color(255, 255, 255));
         lbl_prosthesis.setText("jLabel17");
         add(lbl_prosthesis, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, -1, -1));
 
@@ -312,12 +329,6 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         jScrollPane2.setViewportView(txt_PrescribeMedicine);
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(623, 263, 338, 44));
-
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Email ID");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 420, 79, 23));
-        add(txt_EmailID, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 420, 177, -1));
 
         jLabel5.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -438,30 +449,12 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
             
         }     
         
-             String to = String.valueOf(request.getSender().getUsername());
-             String subject = "Report for the PHC request raised : "+ request.getMain_Concern();
-             String user = "maheshprasad4569@gmail.com";
-             String pass = "Mahi1234$";   
-             String message = " Hello "+ studentName 
-                         + "Please Look into the report provide by your dcotor for your PHC request concern: " + ((PhysicalHealthCareRequest) request).getMain_Concern()
-                         + " Doctor Name: "+  request.getReceiver() + "  \n"+ 
-                     "According to the reports generated by your doctor, You are facing :  " + txtArea_analysis.getText()+
-                          "with comments  : " + txtArea_Comments.getText()+"\n\n"+" Please contact your doctor for more details. "
-                     +"\n\n "+
-                     "Basic Vital Sign Reports include : \n\n"
-                     +" Blood Pressure: Min : " +  txt_minBP.getText() +" Max : "+ txt_minBP.getText()+"\n"
-                     +" Pulse Rate : "+txt_pulserate.getText()+"\n"
-                     +" Body temperature : "+ txt_bodyTemp.getText()+"\n"+
-                      " Prescribed Medicine : "+ txt_PrescribeMedicine.getText()+"\n"
-                        +  " Blood Sugar Level : "+ txt_BloodSugar.getText()+"\n"
-                     + "Regards "+
-                     request.getReceiver();
+             
 
          txtArea_analysis.setText("");
                 txt_minBP.setText("");
                         max_BP.setText("");
                                 txt_pulserate.setText("");
-                                       txt_EmailID.setText("");
                                                 txt_BloodSugar.setText("");
                                                         txt_bodyTemp.setText("");
                                                                 txt_PrescribeMedicine.setText("");
@@ -485,20 +478,10 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
         
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
- private boolean usernamePatternCorrect() {
-       Pattern p = Pattern.compile("^[a-zA-Z0-9]+[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$");
-       
-       Matcher m = p.matcher(txt_EmailID.getText());
-       
-       boolean b = m.matches();
-       
-       return b;
-   }
-
+ 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
     private javax.swing.JLabel diabetic;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -536,7 +519,6 @@ public class PHC_WorkRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JTextArea txtArea_Comments;
     private javax.swing.JTextField txtArea_analysis;
     private javax.swing.JTextField txt_BloodSugar;
-    private javax.swing.JTextField txt_EmailID;
     private javax.swing.JTextArea txt_PrescribeMedicine;
     private javax.swing.JTextField txt_bodyTemp;
     private javax.swing.JTextField txt_minBP;

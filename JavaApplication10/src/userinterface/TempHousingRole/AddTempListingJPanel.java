@@ -80,34 +80,36 @@ public class AddTempListingJPanel extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Niramit", 0, 13)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Housing Society Name :");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 88, -1, -1));
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(269, 84, 315, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 315, -1));
 
         jLabel3.setFont(new java.awt.Font("Niramit", 0, 13)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Number Of People :");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, -1, -1));
-        add(txtNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(269, 156, 315, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, -1));
+        add(txtNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 315, -1));
 
         BtnAdd.setBackground(new java.awt.Color(204, 204, 204));
         BtnAdd.setFont(new java.awt.Font("Niramit", 0, 13)); // NOI18N
         BtnAdd.setText("Add");
+        BtnAdd.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BtnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnAddActionPerformed(evt);
             }
         });
-        add(BtnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 210, 120, 40));
+        add(BtnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 200, 110, 30));
 
         btnBack.setBackground(new java.awt.Color(204, 204, 204));
         btnBack.setFont(new java.awt.Font("Niramit", 0, 13)); // NOI18N
         btnBack.setText("<<Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 100, 30));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 80, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAddActionPerformed

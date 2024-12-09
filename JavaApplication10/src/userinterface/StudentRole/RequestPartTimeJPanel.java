@@ -79,15 +79,19 @@ public class RequestPartTimeJPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(0, 0, 204));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Apply for Part-time Job");
         jLabel1.setFocusable(false);
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(117, 22, -1, -1));
 
         fundingAssistanceComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
+        add(fundingAssistanceComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 200, 171, -1));
 
         campusComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Online", "Boston", "New Jersey", "Phoenix" }));
+        add(campusComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 138, 171, -1));
 
         coursesComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Graduate Office Front Desk ", "Receation Club Assistant", "Library Assistant", "Library Help", "Library Tech Support", " " }));
         coursesComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -95,8 +99,10 @@ public class RequestPartTimeJPanel extends javax.swing.JPanel {
                 coursesComboBoxActionPerformed(evt);
             }
         });
+        add(coursesComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 108, -1, -1));
 
         educationComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "High School", "High School Diploma", "Bachelors", "Masters" }));
+        add(educationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 170, 171, -1));
 
         txtSubmit.setBackground(new java.awt.Color(204, 204, 204));
         txtSubmit.setText("Submit");
@@ -106,21 +112,28 @@ public class RequestPartTimeJPanel extends javax.swing.JPanel {
                 txtSubmitActionPerformed(evt);
             }
         });
+        add(txtSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 289, 171, 39));
+        add(txtAdditionalSkills, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 236, 171, -1));
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Area of Interest");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 113, -1, -1));
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Campus");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 143, -1, -1));
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Highest Qualification");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 175, -1, -1));
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Funding Required?");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 205, -1, -1));
 
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Additional Information");
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 236, -1, -1));
 
         backJButton.setBackground(new java.awt.Color(204, 204, 204));
         backJButton.setText("<<Back");
@@ -130,68 +143,7 @@ public class RequestPartTimeJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel7))
-                        .addGap(62, 62, 62)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(fundingAssistanceComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(txtAdditionalSkills, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtSubmit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(coursesComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(campusComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(educationComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(117, 117, 117)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(103, 103, 103))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(jLabel1)
-                .addGap(54, 54, 54)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(coursesComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(campusComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(8, 8, 8)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(educationComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fundingAssistanceComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(txtAdditionalSkills, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addComponent(txtSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
-                .addComponent(backJButton)
-                .addGap(30, 30, 30))
-        );
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 358, 68, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void coursesComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_coursesComboBoxActionPerformed

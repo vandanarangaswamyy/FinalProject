@@ -77,118 +77,129 @@ public class RegisterStudent extends javax.swing.JPanel {
         txtAge = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        txtEducationDetails = new javax.swing.JTextField();
+        txtStudentID = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
-        txtStudentID = new javax.swing.JTextField();
         txtUsername = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
         jComboBox1 = new javax.swing.JComboBox<>();
         btnBack = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        txtEducationDetails = new javax.swing.JTextField();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setForeground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("First Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, -1));
-        add(txtFirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 220, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, -1, -1));
+        add(txtFirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, 220, -1));
 
+        jLabel3.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Last Name");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, -1, -1));
-        add(txtLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 210, 220, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, -1, -1));
+        add(txtLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 220, -1));
 
+        jLabel4.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Address");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, 60, 20));
-        add(txtResAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 250, 220, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 60, 20));
+        add(txtResAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 220, -1));
 
+        jLabel5.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Undergrad Major");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, -1, 20));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, -1, 20));
 
         txtArmyType.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtArmyTypeActionPerformed(evt);
             }
         });
-        add(txtArmyType, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 220, -1));
+        add(txtArmyType, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, 220, -1));
 
+        jLabel6.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Age");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 340, -1, 20));
-        add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 340, 220, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, -1, 20));
+        add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 220, -1));
 
+        jLabel7.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Gender");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 390, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 400, -1, -1));
 
+        jLabel8.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Education Details");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 430, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 450, -1, -1));
 
-        txtEducationDetails.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtEducationDetailsActionPerformed(evt);
-            }
-        });
-        add(txtEducationDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 430, 220, -1));
-
-        jButton1.setBackground(new java.awt.Color(12, 36, 60));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Register");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 580, 160, 30));
-
-        jLabel9.setText("Student ID");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 470, -1, -1));
-
-        txtStudentID.setEditable(false);
         txtStudentID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtStudentIDActionPerformed(evt);
             }
         });
-        add(txtStudentID, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 470, 220, -1));
+        add(txtStudentID, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 490, 220, -1));
+
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setText("Register");
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 300, 120, 30));
+
+        jLabel9.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Student ID");
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 490, -1, -1));
 
         txtUsername.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUsernameActionPerformed(evt);
             }
         });
-        add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 160, 220, -1));
+        add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 190, 220, -1));
 
+        jLabel10.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("User Name");
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, -1, -1));
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, -1, -1));
 
+        jLabel11.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Password");
-        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 200, -1, 30));
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 230, -1, 30));
 
-        jLabel12.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel12.setText("Details");
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 90, -1));
+        jLabel12.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("Credentials");
+        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 130, 140, -1));
 
-        jLabel15.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel15.setText("Credentials");
-        add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 100, -1));
-
-        jLabel20.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel20.setText("Register a Student");
-        add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 30, 250, -1));
+        jLabel20.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setText("REGISTER A STUDENT");
+        add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, 250, -1));
 
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordField1ActionPerformed(evt);
             }
         });
-        add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 200, 220, -1));
+        add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 240, 220, -1));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Prefer not to Answer" }));
-        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 380, 220, -1));
+        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 220, -1));
 
         btnBack.setBackground(new java.awt.Color(12, 36, 60));
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
@@ -198,12 +209,24 @@ public class RegisterStudent extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 670, -1, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 590, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Details");
+        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 90, -1));
+
+        txtEducationDetails.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEducationDetailsActionPerformed(evt);
+            }
+        });
+        add(txtEducationDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 220, -1));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtEducationDetailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEducationDetailsActionPerformed
+    private void txtStudentIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtStudentIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtEducationDetailsActionPerformed
+    }//GEN-LAST:event_txtStudentIDActionPerformed
 
     private void txtArmyTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtArmyTypeActionPerformed
         // TODO add your handling code here:
@@ -256,11 +279,11 @@ public class RegisterStudent extends javax.swing.JPanel {
         v.setLastName(txtLastName.getText());
         v.setAge(txtAge.getText());
         v.setArmyType(txtArmyType.getText());
-//        v.stStudent_ID(txtEducationDetails.getText());
+        v.setStudent_ID(txtEducationDetails.getText());
         v.setGender((String) jComboBox1.getSelectedItem());
         v.setResidentAddress(txtResAddress.getText());
         v.setArmyType(txtArmyType.getText());
-//        v.setStudent_ID(txtStudentID.getText());
+        v.setStudent_ID(txtStudentID.getText());
         v.setUsername(txtUsername.getText());
         v.setPassword(password);
         JOptionPane.showMessageDialog(null, "Registered Student succesfully");
@@ -270,19 +293,13 @@ public class RegisterStudent extends javax.swing.JPanel {
         txtLastName.setText("");
         txtAge.setText("");
         txtArmyType.setText("");
-
-        txtEducationDetails.setText("");
+        txtStudentID.setText("");
         txtArmyType.setText("");
         txtResAddress.setText("");
-        txtStudentID.setText("");
         txtUsername.setText("");
         jPasswordField1.setText("");
 
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void txtStudentIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtStudentIDActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtStudentIDActionPerformed
 
     private void txtUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsernameActionPerformed
         // TODO add your handling code here:
@@ -299,6 +316,10 @@ public class RegisterStudent extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_btnBackActionPerformed
 
+    private void txtEducationDetailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEducationDetailsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEducationDetailsActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
@@ -307,7 +328,7 @@ public class RegisterStudent extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;

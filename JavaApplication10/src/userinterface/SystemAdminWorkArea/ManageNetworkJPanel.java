@@ -101,7 +101,7 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
             networkJTable.getColumnModel().getColumn(0).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 404, 91));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 404, 91));
 
         submitJButton.setBackground(new java.awt.Color(204, 204, 204));
         submitJButton.setText("Submit");
@@ -111,8 +111,8 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, 170, -1));
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 330, -1));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 110, -1));
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, 240, -1));
 
         backJButton.setBackground(new java.awt.Color(204, 204, 204));
         backJButton.setText("<< Back");
@@ -122,17 +122,17 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 70, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 70, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("MANAGE REGION");
         jLabel6.setFocusable(false);
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, -1, -1));
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, 30));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 70, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed

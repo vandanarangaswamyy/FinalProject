@@ -96,7 +96,15 @@ public class ViewAllStudents extends javax.swing.JPanel {
             new String [] {
                 "Student Name ", "Student ID", "Age", "Gender"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane1.setViewportView(tblViewAllStudent);
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 820, 185));

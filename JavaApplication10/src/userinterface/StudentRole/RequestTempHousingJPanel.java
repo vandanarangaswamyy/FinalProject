@@ -74,16 +74,16 @@ public class RequestTempHousingJPanel extends javax.swing.JPanel {
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Number Of Members: ");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, -1, -1));
 
-        add(housingSocietyComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, 231, -1));
+        add(housingSocietyComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 231, -1));
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Society : ");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, -1, -1));
 
         NumberComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6" }));
-        add(NumberComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 231, -1));
+        add(NumberComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 231, -1));
 
         btnRequest.setBackground(new java.awt.Color(204, 204, 204));
         btnRequest.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
@@ -94,12 +94,12 @@ public class RequestTempHousingJPanel extends javax.swing.JPanel {
                 btnRequestActionPerformed(evt);
             }
         });
-        add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 330, 130, 40));
-        add(txtMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 231, 40));
+        add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 340, 130, 40));
+        add(txtMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, 231, 40));
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Message:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, -1, -1));
 
         btnback.setBackground(new java.awt.Color(204, 204, 204));
         btnback.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
@@ -154,12 +154,10 @@ public class RequestTempHousingJPanel extends javax.swing.JPanel {
         if (org != null) {
             org.getWorkQueue().getWorkRequestList().add(tr);
 //            System.out.println("Added Request to Org ");
-            JOptionPane.showMessageDialog(null, "Added Request to Org ");
 
             userAccount.getWorkQueue().getWorkRequestList().add(tr);
 //            System.out.println("Added Request to UserAccount ");
 
-            JOptionPane.showMessageDialog(null, "Added Request to UserAccount ");
     }//GEN-LAST:event_btnRequestActionPerformed
     JOptionPane.showMessageDialog(null, "Request Has Been Raised. You will be notified accordingly.", "Warning", JOptionPane.WARNING_MESSAGE);
     btnRequest.setEnabled(false);

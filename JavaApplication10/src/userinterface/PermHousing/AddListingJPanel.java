@@ -86,32 +86,32 @@ public class AddListingJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Area");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, -1, -1));
         add(txtArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, 270, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Street Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 170, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, -1, -1));
         add(txtStreetName, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 270, -1));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Door Number");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, -1, -1));
         add(txtDoorNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, 270, -1));
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("City");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 300, -1, -1));
         add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 270, -1));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Pin Code");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, -1, -1));
-        add(txtPinCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 370, 270, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, -1, -1));
+        add(txtPinCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 270, -1));
 
         btnAdd.setBackground(new java.awt.Color(204, 204, 204));
         btnAdd.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
@@ -122,13 +122,13 @@ public class AddListingJPanel extends javax.swing.JPanel {
                 btnAddActionPerformed(evt);
             }
         });
-        add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 430, 130, 40));
+        add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 430, 130, 40));
 
         jLabel6.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Add Permanent House Listing");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, 40));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, -1, 40));
 
         btnBack.setBackground(new java.awt.Color(204, 204, 204));
         btnBack.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
@@ -174,6 +174,14 @@ public class AddListingJPanel extends javax.swing.JPanel {
          }
          catch(NumberFormatException ex){
           JOptionPane.showMessageDialog(null,"  Pincode cannot be a string");
+           return;
+         }
+        try{
+                      if(!txtDoorNumber.getText().equals(""))
+         Integer.parseInt(txtDoorNumber.getText());
+         }
+         catch(NumberFormatException ex){
+          JOptionPane.showMessageDialog(null,"  Door number cannot be a string");
            return;
          }
         HouseListing houseListing = business.getHsd().addHouseListing();

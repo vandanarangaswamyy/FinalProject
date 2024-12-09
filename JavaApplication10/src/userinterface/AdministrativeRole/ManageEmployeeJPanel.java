@@ -137,9 +137,10 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 480, 92));
 
-        btnCreateEmployee.setBackground(new java.awt.Color(12, 36, 60));
-        btnCreateEmployee.setForeground(new java.awt.Color(255, 255, 255));
+        btnCreateEmployee.setBackground(new java.awt.Color(204, 204, 204));
+        btnCreateEmployee.setForeground(new java.awt.Color(0, 0, 0));
         btnCreateEmployee.setText("Create Employee");
+        btnCreateEmployee.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnCreateEmployee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreateEmployeeActionPerformed(evt);
@@ -160,9 +161,10 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         jLabel1.setText("Organization");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, -1, -1));
 
-        btnBack.setBackground(new java.awt.Color(12, 36, 60));
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
+        btnBack.setBackground(new java.awt.Color(204, 204, 204));
+        btnBack.setForeground(new java.awt.Color(0, 0, 0));
         btnBack.setText("<< Back");
+        btnBack.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);

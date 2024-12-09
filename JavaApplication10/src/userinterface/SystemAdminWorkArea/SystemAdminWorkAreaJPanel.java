@@ -293,7 +293,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 161, Short.MAX_VALUE))
+                .addGap(0, 190, Short.MAX_VALUE))
         );
 
         jSplitPane.setLeftComponent(jPanel1);
@@ -340,7 +340,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 btnRegisterStudentActionPerformed(evt);
             }
         });
-        jPanel2.add(btnRegisterStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 250, 50));
+        jPanel2.add(btnRegisterStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 250, 50));
 
         btnViewAllStudents.setBackground(new java.awt.Color(204, 204, 204));
         btnViewAllStudents.setText("View Students");
@@ -350,12 +350,12 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 btnViewAllStudentsActionPerformed(evt);
             }
         });
-        jPanel2.add(btnViewAllStudents, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 250, 50));
+        jPanel2.add(btnViewAllStudents, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 250, 50));
 
         jLabel2.setFont(new java.awt.Font("Niramit", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("NETWORK SERVICES");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, 170, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, 200, -1));
 
         jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setText("Report");
@@ -365,12 +365,12 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, 250, 50));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 380, 250, 50));
 
         jLabel3.setFont(new java.awt.Font("Niramit", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("STUDENT SERVICES");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 170, -1));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 190, -1));
 
         jSplitPane.setRightComponent(jPanel2);
 

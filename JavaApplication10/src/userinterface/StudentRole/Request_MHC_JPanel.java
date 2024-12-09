@@ -85,8 +85,8 @@ public class Request_MHC_JPanel extends javax.swing.JPanel {
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("List any medication that you are on:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 280, 20));
-        add(txt_MedicalHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, 152, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 280, 20));
+        add(txt_MedicalHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 152, 20));
 
         requestTestJButton.setBackground(new java.awt.Color(204, 204, 204));
         requestTestJButton.setText("Request Mental Healthcare");
@@ -96,10 +96,10 @@ public class Request_MHC_JPanel extends javax.swing.JPanel {
                 requestTestJButtonActionPerformed(evt);
             }
         });
-        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 500, 290, 40));
+        add(requestTestJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 500, 150, 30));
 
-        backJButton.setBackground(new java.awt.Color(12, 36, 60));
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setBackground(new java.awt.Color(204, 204, 204));
+        backJButton.setForeground(new java.awt.Color(0, 0, 0));
         backJButton.setText("<<Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,59 +110,59 @@ public class Request_MHC_JPanel extends javax.swing.JPanel {
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Did you have brain injury previously?");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 290, 20));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 290, 20));
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Do you think you have any of listed Symptoms:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 186, -1, 30));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, -1, 30));
 
         c_brainInjury.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
-        add(c_brainInjury, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, 150, -1));
+        add(c_brainInjury, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 150, -1));
 
         c_MentalSymptons.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Depression", "Post traumatic stress disorder", "Anxiety", "Obsessive compulsive disorder", "Bipolar disorder", "Sleep disorder" }));
-        add(c_MentalSymptons, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 150, -1));
+        add(c_MentalSymptons, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, 150, -1));
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Describe your Mood:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 140, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 370, 140, -1));
 
         txt_mood.setColumns(20);
         txt_mood.setRows(5);
         jScrollPane1.setViewportView(txt_mood);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 290, 80));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 400, 310, 80));
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Have you availed Mental Health Services before:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, -1));
 
         c_before_MHC.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
-        add(c_before_MHC, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 150, -1));
+        add(c_before_MHC, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 150, -1));
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Enter any additional information that you feel ");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, 400, 20));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, 400, 20));
 
         txtDetails.setColumns(20);
         txtDetails.setRows(5);
         jScrollPane2.setViewportView(txtDetails);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 140, 300, 170));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, 300, 170));
 
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("State your concern ");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 130, -1));
-        add(txt_mainConcern, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 280, 155, 30));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 130, -1));
+        add(txt_mainConcern, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, 155, 20));
 
         jLabel8.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText(" Mental Healthcare Request");
         jLabel8.setFocusable(false);
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, -1, -1));
 
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("is necessary to aid your diagnosis");
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 120, -1, -1));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 130, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed

@@ -88,7 +88,7 @@ public class MainJFrame extends javax.swing.JFrame {
         loginJLabel = new javax.swing.JLabel();
         txtLogout = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         container = new javax.swing.JPanel();
         homePic1 = new javax.swing.JLabel();
 
@@ -110,7 +110,7 @@ public class MainJFrame extends javax.swing.JFrame {
         });
         jPanel1.add(txtLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 120, 30));
         jPanel1.add(txtuserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 170, -1));
-        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 170, -1));
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 170, -1));
 
         jLabel1.setFont(new java.awt.Font("Niramit", 0, 14)); // NOI18N
         jLabel1.setText("Username");
@@ -129,18 +129,20 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Niramit", 0, 14)); // NOI18N
         jLabel3.setText("Password");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
-        jLabel4.setText("LOGIN");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 80, 30));
+        jLabel6.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
+        jLabel6.setText("LOGIN");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 80, 30));
 
         jSplitPane1.setLeftComponent(jPanel1);
 
-        container.setBackground(new java.awt.Color(255, 204, 204));
+        container.setBackground(new java.awt.Color(0, 0, 204));
         container.setLayout(new java.awt.CardLayout());
 
-        homePic1.setBackground(new java.awt.Color(204, 204, 204));
+        homePic1.setBackground(new java.awt.Color(0, 0, 204));
+        homePic1.setFont(new java.awt.Font("Rage Italic", 1, 36)); // NOI18N
+        homePic1.setForeground(new java.awt.Color(255, 255, 255));
         container.add(homePic1, "card2");
 
         jSplitPane1.setRightComponent(container);
@@ -272,7 +274,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel homePic1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JLabel loginJLabel;

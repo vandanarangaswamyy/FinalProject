@@ -123,7 +123,7 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(workRequestJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 860, 132));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 860, 132));
 
         refreshJButton.setBackground(new java.awt.Color(204, 204, 204));
         refreshJButton.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
@@ -134,7 +134,7 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 210, 110, 40));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 480, 110, 40));
 
         assignJButton.setBackground(new java.awt.Color(204, 204, 204));
         assignJButton.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
@@ -145,7 +145,7 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
                 assignJButtonActionPerformed(evt);
             }
         });
-        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 170, 40));
+        add(assignJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 490, 170, 40));
 
         txtAcc.setBackground(new java.awt.Color(255, 102, 0));
         txtAcc.setFont(new java.awt.Font("Niramit", 1, 14)); // NOI18N
@@ -153,7 +153,7 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
         txtAcc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtAcc.setFocusable(false);
         txtAcc.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 88, 34));
+        add(txtAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 88, 34));
 
         processJButton.setBackground(new java.awt.Color(204, 204, 204));
         processJButton.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
@@ -164,17 +164,18 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 530, 170, 40));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 480, 130, 40));
 
         txtWelcome.setFont(new java.awt.Font("Arial", 2, 14)); // NOI18N
+        txtWelcome.setForeground(new java.awt.Color(255, 255, 255));
         txtWelcome.setFocusable(false);
-        add(txtWelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 580, 30));
+        add(txtWelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 580, 30));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Total Requests");
         jLabel3.setFocusable(false);
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
 
         txtTotalRequests1.setBackground(new java.awt.Color(255, 102, 0));
         txtTotalRequests1.setFont(new java.awt.Font("Niramit", 1, 14)); // NOI18N
@@ -182,7 +183,7 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
         txtTotalRequests1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTotalRequests1.setFocusable(false);
         txtTotalRequests1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtTotalRequests1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 88, 34));
+        add(txtTotalRequests1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 88, 34));
 
         txtRej.setBackground(new java.awt.Color(255, 102, 0));
         txtRej.setFont(new java.awt.Font("Niramit", 1, 14)); // NOI18N
@@ -190,25 +191,25 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
         txtRej.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtRej.setFocusable(false);
         txtRej.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtRej, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 88, 34));
+        add(txtRej, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, 88, 34));
 
         jLabel4.setFont(new java.awt.Font("Niramit", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Overall - Across Organization");
         jLabel4.setFocusable(false);
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Total Accepted");
         jLabel5.setFocusable(false);
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Total Rejected");
         jLabel6.setFocusable(false);
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, -1, -1));
 
         txtTotalRequests2.setBackground(new java.awt.Color(255, 153, 0));
         txtTotalRequests2.setFont(new java.awt.Font("Niramit", 1, 14)); // NOI18N
@@ -216,7 +217,7 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
         txtTotalRequests2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTotalRequests2.setFocusable(false);
         txtTotalRequests2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtTotalRequests2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 88, 34));
+        add(txtTotalRequests2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 88, 34));
 
         txtAcc1.setBackground(new java.awt.Color(255, 153, 0));
         txtAcc1.setFont(new java.awt.Font("Niramit", 1, 14)); // NOI18N
@@ -224,7 +225,7 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
         txtAcc1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtAcc1.setFocusable(false);
         txtAcc1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtAcc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 88, 34));
+        add(txtAcc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 88, 34));
 
         txtRej1.setBackground(new java.awt.Color(255, 153, 0));
         txtRej1.setFont(new java.awt.Font("Niramit", 1, 14)); // NOI18N
@@ -232,31 +233,31 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
         txtRej1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtRej1.setFocusable(false);
         txtRej1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtRej1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 88, 34));
+        add(txtRej1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 88, 34));
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Total Rejected");
         jLabel7.setFocusable(false);
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Total Accepted");
         jLabel8.setFocusable(false);
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Total Requests");
         jLabel9.setFocusable(false);
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Niramit", 1, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("My Requests");
         jLabel10.setFocusable(false);
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
 
         txtPend.setBackground(new java.awt.Color(255, 102, 0));
         txtPend.setFont(new java.awt.Font("Niramit", 1, 14)); // NOI18N
@@ -264,13 +265,13 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
         txtPend.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPend.setFocusable(false);
         txtPend.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtPend, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 88, 34));
+        add(txtPend, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 130, 88, 34));
 
         jLabel11.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Recommended");
         jLabel11.setFocusable(false);
-        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 80, -1));
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 80, -1));
 
         txtPend1.setBackground(new java.awt.Color(255, 153, 0));
         txtPend1.setFont(new java.awt.Font("Niramit", 1, 14)); // NOI18N
@@ -278,13 +279,13 @@ public class PartTImeAreaJPanel extends javax.swing.JPanel {
         txtPend1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPend1.setFocusable(false);
         txtPend1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        add(txtPend1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 88, 34));
+        add(txtPend1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 230, 88, 34));
 
         jLabel12.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Recommended");
         jLabel12.setFocusable(false);
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, -1, -1));
+        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));

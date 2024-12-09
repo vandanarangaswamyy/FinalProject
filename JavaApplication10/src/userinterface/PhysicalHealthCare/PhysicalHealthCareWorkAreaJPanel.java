@@ -277,6 +277,7 @@ public class PhysicalHealthCareWorkAreaJPanel extends javax.swing.JPanel {
 
         txtWelcome.setBackground(new java.awt.Color(204, 204, 255));
         txtWelcome.setFont(new java.awt.Font("Arial", 2, 14)); // NOI18N
+        txtWelcome.setForeground(new java.awt.Color(255, 255, 255));
         txtWelcome.setFocusable(false);
         add(txtWelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 49, 580, 30));
 

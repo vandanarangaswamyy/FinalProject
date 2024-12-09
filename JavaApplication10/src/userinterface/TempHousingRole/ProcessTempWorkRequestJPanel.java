@@ -47,61 +47,57 @@ public class ProcessTempWorkRequestJPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
         btnAccept = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        submitJButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         resultJTextField = new javax.swing.JTextField();
 
-        setBackground(new java.awt.Color(246, 198, 103));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnReject.setBackground(new java.awt.Color(12, 36, 60));
-        btnReject.setForeground(new java.awt.Color(255, 255, 255));
+        btnReject.setBackground(new java.awt.Color(204, 204, 204));
+        btnReject.setFont(new java.awt.Font("Nirmala UI", 0, 13)); // NOI18N
+        btnReject.setForeground(new java.awt.Color(0, 0, 0));
         btnReject.setText("Reject");
+        btnReject.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnReject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRejectActionPerformed(evt);
             }
         });
-        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, 130, 40));
+        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 200, 120, 30));
 
-        backJButton.setBackground(new java.awt.Color(12, 36, 60));
-        backJButton.setForeground(new java.awt.Color(255, 255, 255));
+        backJButton.setBackground(new java.awt.Color(204, 204, 204));
+        backJButton.setFont(new java.awt.Font("Nirmala UI", 0, 13)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(0, 0, 0));
         backJButton.setText("Back");
+        backJButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 80, -1));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 80, 20));
 
-        btnAccept.setBackground(new java.awt.Color(12, 36, 60));
-        btnAccept.setForeground(new java.awt.Color(255, 255, 255));
+        btnAccept.setBackground(new java.awt.Color(204, 204, 204));
+        btnAccept.setFont(new java.awt.Font("Nirmala UI", 0, 13)); // NOI18N
+        btnAccept.setForeground(new java.awt.Color(0, 0, 0));
         btnAccept.setText("Accept");
+        btnAccept.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAccept.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAcceptActionPerformed(evt);
             }
         });
-        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 130, 40));
+        add(btnAccept, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 120, 30));
 
-        jPanel1.setBackground(new java.awt.Color(246, 198, 103));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        submitJButton.setBackground(new java.awt.Color(12, 36, 60));
-        submitJButton.setForeground(new java.awt.Color(255, 255, 255));
-        submitJButton.setText("Submit Result");
-        submitJButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                submitJButtonActionPerformed(evt);
-            }
-        });
-        jPanel1.add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, -1, 30));
-
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Result");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 40, 20));
         jPanel1.add(resultJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 169, -1));
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 85, -1, -1));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -144,13 +140,6 @@ public class ProcessTempWorkRequestJPanel extends javax.swing.JPanel {
 
     }//GEN-LAST:event_btnRejectActionPerformed
 
-    private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
-
-        tempHousingRequest.setStatus("Accepted");
-        JOptionPane.showMessageDialog(null, "House Assigned to student" + tempHousingRequest.getSender(), "Information", JOptionPane.INFORMATION_MESSAGE);
-        tempHousingRequest.setMessage(resultJTextField.getText());
-    }//GEN-LAST:event_submitJButtonActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
@@ -159,6 +148,5 @@ public class ProcessTempWorkRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField resultJTextField;
-    private javax.swing.JButton submitJButton;
     // End of variables declaration//GEN-END:variables
 }

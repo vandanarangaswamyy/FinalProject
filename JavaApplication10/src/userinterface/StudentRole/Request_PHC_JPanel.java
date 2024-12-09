@@ -92,7 +92,7 @@ public class Request_PHC_JPanel extends javax.swing.JPanel {
             }
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, 60, -1));
-        add(txt_mainConcern, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 280, 120, 50));
+        add(txt_mainConcern, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 340, 60));
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Were you ever diagonized for Mental Healthcare before?");
@@ -103,7 +103,7 @@ public class Request_PHC_JPanel extends javax.swing.JPanel {
 
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("State your concern:");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 130, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 90, 130, 20));
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Did you have any physical injury previously?");
@@ -114,7 +114,7 @@ public class Request_PHC_JPanel extends javax.swing.JPanel {
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Please Describe your Concern: ");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 216, 27));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 190, 216, 27));
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Do you think you have any of listed Symptoms:");
@@ -127,7 +127,7 @@ public class Request_PHC_JPanel extends javax.swing.JPanel {
         txtDetails.setRows(5);
         jScrollPane2.setViewportView(txtDetails);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 231, 130));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 220, 340, 90));
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText(" Medical History or condition affected previously");
@@ -143,12 +143,12 @@ public class Request_PHC_JPanel extends javax.swing.JPanel {
                 requestTestJButton1ActionPerformed(evt);
             }
         });
-        add(requestTestJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 520, 260, 30));
+        add(requestTestJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 340, 260, 30));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Please Check the below which are relevant and enter the Details:");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(605, 88, 492, 41));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 492, 41));
 
         c_BP.setForeground(new java.awt.Color(255, 255, 255));
         c_BP.setText("Blood Pressure");
@@ -157,17 +157,17 @@ public class Request_PHC_JPanel extends javax.swing.JPanel {
                 c_BPActionPerformed(evt);
             }
         });
-        add(c_BP, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 140, -1, -1));
+        add(c_BP, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, -1));
 
         c_diabetic.setForeground(new java.awt.Color(255, 255, 255));
         c_diabetic.setText("Diabetic");
-        add(c_diabetic, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 170, 77, -1));
+        add(c_diabetic, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 100, -1));
 
         jLabel9.setFont(new java.awt.Font("Niramit", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Medical Assistance Request");
         jLabel9.setFocusable(false);
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, -1, -1));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed

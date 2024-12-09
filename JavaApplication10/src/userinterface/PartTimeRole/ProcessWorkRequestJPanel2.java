@@ -70,10 +70,10 @@ public class ProcessWorkRequestJPanel2 extends javax.swing.JPanel {
             }
         }
 
-        txtCampus.setText("Campus: " + request.getCampus());
-        txtQual.setText("Highest Qualification: " + request.getHighestQualification());
-        txtCourse.setText("Course: " + request.getAreaOfInterest());
-        txtFunding.setText("Funding Required?: " + request.getFundingRequired());
+        txtCampus.setText(request.getCampus());
+        txtQual.setText( request.getHighestQualification());
+        txtCourse.setText(request.getAreaOfInterest());
+        txtFunding.setText(request.getFundingRequired());
     }
 
     /**

@@ -51,7 +51,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 0, 255));
+        setBackground(new java.awt.Color(0, 0, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -66,7 +66,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 txtManageUsreActionPerformed(evt);
             }
         });
-        add(txtManageUsre, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 309, 210, 60));
+        add(txtManageUsre, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 350, 210, 60));
 
         txtManageEmployee.setBackground(new java.awt.Color(204, 204, 204));
         txtManageEmployee.setForeground(new java.awt.Color(0, 0, 0));
@@ -77,7 +77,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 txtManageEmployeeActionPerformed(evt);
             }
         });
-        add(txtManageEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 249, 210, 60));
+        add(txtManageEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 210, 60));
 
         txtManageOrg.setBackground(new java.awt.Color(204, 204, 204));
         txtManageOrg.setForeground(new java.awt.Color(0, 0, 0));
@@ -88,24 +88,24 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 txtManageOrgActionPerformed(evt);
             }
         });
-        add(txtManageOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 189, 210, 60));
+        add(txtManageOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 210, 60));
 
         valueLabel.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
         valueLabel.setForeground(new java.awt.Color(255, 255, 255));
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, 130, 20));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 130, 20));
 
         jLabel7.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Welcome!");
         jLabel7.setFocusable(false);
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("ADMIN WORK AREA");
         jLabel8.setFocusable(false);
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtManageUsreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtManageUsreActionPerformed

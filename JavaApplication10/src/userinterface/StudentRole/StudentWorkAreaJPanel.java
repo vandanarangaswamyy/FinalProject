@@ -205,6 +205,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
 
         txtWelcome.setBackground(new java.awt.Color(42, 42, 42));
         txtWelcome.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        txtWelcome.setForeground(new java.awt.Color(255, 255, 255));
         add(txtWelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 480, 50));
 
         jLabel1.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
