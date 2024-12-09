@@ -1,4 +1,4 @@
-# GradHub
+# EduAid
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@
 
 ## 1. Overview
 
-**GradHub** is a comprehensive application designed to support underprivileged undergraduate students in their pursuit of graduate studies. The platform focuses on four essential enterprises: Medical, Accommodation, Education, and Job. Within each enterprise, users can access various organizations, each offering multiple roles to address the diverse needs of the users.
+**EduAid** is a comprehensive application designed to support underprivileged undergraduate students in their pursuit of graduate studies. The platform focuses on four essential enterprises: Medical, Accommodation, Education, and Job. Within each enterprise, users can access various organizations, each offering multiple roles to address the diverse needs of the users.
 
 ## 2. Features
 
